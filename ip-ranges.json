@@ -1,6 +1,6 @@
 {
-  "syncToken": "1501798332",
-  "createDate": "2017-08-03-22-12-12",
+  "syncToken": "1502125932",
+  "createDate": "2017-08-07-17-12-12",
   "prefixes": [
     {
       "ip_prefix": "13.32.0.0/15",
@@ -4845,17 +4845,7 @@
       "service": "AMAZON"
     },
     {
-      "ipv6_prefix": "2600:1fa0:1040::/44",
-      "region": "ca-central-1",
-      "service": "AMAZON"
-    },
-    {
-      "ipv6_prefix": "2600:1fa0:1080::/44",
-      "region": "ca-central-1",
-      "service": "AMAZON"
-    },
-    {
-      "ipv6_prefix": "2600:1fa0:10c0::/44",
+      "ipv6_prefix": "2600:1fa0:1000::/40",
       "region": "ca-central-1",
       "service": "AMAZON"
     },
@@ -5142,6 +5132,11 @@
     {
       "ipv6_prefix": "2a01:578:13::/64",
       "region": "eu-central-1",
+      "service": "AMAZON"
+    },
+    {
+      "ipv6_prefix": "2a05:d000:2000::/40",
+      "region": "eu-west-3",
       "service": "AMAZON"
     },
     {
@@ -5575,17 +5570,7 @@
       "service": "S3"
     },
     {
-      "ipv6_prefix": "2600:1fa0:1040::/44",
-      "region": "ca-central-1",
-      "service": "S3"
-    },
-    {
-      "ipv6_prefix": "2600:1fa0:1080::/44",
-      "region": "ca-central-1",
-      "service": "S3"
-    },
-    {
-      "ipv6_prefix": "2600:1fa0:10c0::/44",
+      "ipv6_prefix": "2600:1fa0:1000::/40",
       "region": "ca-central-1",
       "service": "S3"
     },
@@ -6042,6 +6027,11 @@
     {
       "ipv6_prefix": "2a01:578:13::/64",
       "region": "eu-central-1",
+      "service": "EC2"
+    },
+    {
+      "ipv6_prefix": "2a05:d000:2000::/40",
+      "region": "eu-west-3",
       "service": "EC2"
     },
     {
