@@ -1,6 +1,6 @@
 {
-  "syncToken": "1507050731",
-  "createDate": "2017-10-03-17-12-11",
+  "syncToken": "1507239730",
+  "createDate": "2017-10-05-21-42-10",
   "prefixes": [
     {
       "ip_prefix": "13.32.0.0/15",
@@ -4556,6 +4556,51 @@
       "ip_prefix": "216.137.32.0/19",
       "region": "GLOBAL",
       "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "13.55.255.216/29",
+      "region": "ap-southeast-2",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "13.112.191.184/29",
+      "region": "ap-northeast-1",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "34.228.4.208/28",
+      "region": "us-east-1",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "34.250.63.248/29",
+      "region": "eu-west-1",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "35.157.127.248/29",
+      "region": "eu-central-1",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "35.176.92.32/29",
+      "region": "eu-west-2",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "52.15.247.208/29",
+      "region": "us-east-2",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "52.43.76.88/29",
+      "region": "us-west-2",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "52.221.221.128/29",
+      "region": "ap-southeast-1",
+      "service": "CODEBUILD"
     }
   ],
   "ipv6_prefixes": [
