@@ -1,6 +1,6 @@
 {
-  "syncToken": "1507239730",
-  "createDate": "2017-10-05-21-42-10",
+  "syncToken": "1507241531",
+  "createDate": "2017-10-05-22-12-11",
   "prefixes": [
     {
       "ip_prefix": "13.32.0.0/15",
@@ -4563,6 +4563,11 @@
       "service": "CODEBUILD"
     },
     {
+      "ip_prefix": "13.56.32.200/29",
+      "region": "us-west-1",
+      "service": "CODEBUILD"
+    },
+    {
       "ip_prefix": "13.112.191.184/29",
       "region": "ap-northeast-1",
       "service": "CODEBUILD"
@@ -4585,6 +4590,11 @@
     {
       "ip_prefix": "35.176.92.32/29",
       "region": "eu-west-2",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "35.182.14.48/29",
+      "region": "ca-central-1",
       "service": "CODEBUILD"
     },
     {
