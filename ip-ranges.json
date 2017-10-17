@@ -1,6 +1,6 @@
 {
-  "syncToken": "1507750931",
-  "createDate": "2017-10-11-19-42-11",
+  "syncToken": "1508254932",
+  "createDate": "2017-10-17-15-42-12",
   "prefixes": [
     {
       "ip_prefix": "13.32.0.0/15",
@@ -869,7 +869,7 @@
     },
     {
       "ip_prefix": "52.94.116.0/22",
-      "region": "us-east-2",
+      "region": "us-east-1",
       "service": "AMAZON"
     },
     {
@@ -3669,7 +3669,7 @@
     },
     {
       "ip_prefix": "52.94.116.0/22",
-      "region": "us-east-2",
+      "region": "us-east-1",
       "service": "EC2"
     },
     {
