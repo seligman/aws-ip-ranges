@@ -1,6 +1,6 @@
 {
-  "syncToken": "1511899933",
-  "createDate": "2017-11-28-20-12-13",
+  "syncToken": "1512006133",
+  "createDate": "2017-11-30-01-42-13",
   "prefixes": [
     {
       "ip_prefix": "13.32.0.0/15",
@@ -3700,6 +3700,21 @@
     {
       "ip_prefix": "52.94.116.0/22",
       "region": "us-east-1",
+      "service": "EC2"
+    },
+    {
+      "ip_prefix": "52.94.248.0/28",
+      "region": "us-east-1",
+      "service": "EC2"
+    },
+    {
+      "ip_prefix": "52.94.248.16/28",
+      "region": "eu-west-1",
+      "service": "EC2"
+    },
+    {
+      "ip_prefix": "52.94.248.32/28",
+      "region": "ap-southeast-1",
       "service": "EC2"
     },
     {
