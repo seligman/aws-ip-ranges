@@ -1,9 +1,14 @@
 {
-  "syncToken": "1515172330",
-  "createDate": "2018-01-05-17-12-10",
+  "syncToken": "1515528731",
+  "createDate": "2018-01-09-20-12-11",
   "prefixes": [
     {
       "ip_prefix": "13.32.0.0/15",
+      "region": "GLOBAL",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "13.35.0.0/16",
       "region": "GLOBAL",
       "service": "AMAZON"
     },
@@ -4669,6 +4674,11 @@
     },
     {
       "ip_prefix": "13.32.0.0/15",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "13.35.0.0/16",
       "region": "GLOBAL",
       "service": "CLOUDFRONT"
     },
