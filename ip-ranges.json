@@ -1,6 +1,6 @@
 {
-  "syncToken": "1522194377",
-  "createDate": "2018-03-27-23-46-17",
+  "syncToken": "1522197978",
+  "createDate": "2018-03-28-00-46-18",
   "prefixes": [
     {
       "ip_prefix": "13.32.0.0/15",
@@ -5525,6 +5525,11 @@
     {
       "ip_prefix": "52.43.76.88/29",
       "region": "us-west-2",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "52.47.73.72/29",
+      "region": "eu-west-3",
       "service": "CODEBUILD"
     },
     {
