@@ -1,6 +1,6 @@
 {
-  "syncToken": "1525284977",
-  "createDate": "2018-05-02-18-16-17",
+  "syncToken": "1525880776",
+  "createDate": "2018-05-09-15-46-16",
   "prefixes": [
     {
       "ip_prefix": "13.32.0.0/15",
@@ -1875,6 +1875,11 @@
     {
       "ip_prefix": "52.119.252.0/22",
       "region": "us-west-2",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "52.124.128.0/17",
+      "region": "GLOBAL",
       "service": "AMAZON"
     },
     {
@@ -5483,6 +5488,11 @@
       "service": "CLOUDFRONT"
     },
     {
+      "ip_prefix": "52.124.128.0/17",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
       "ip_prefix": "52.199.127.192/26",
       "region": "ap-northeast-1",
       "service": "CLOUDFRONT"
@@ -5689,53 +5699,53 @@
     },
     {
       "ip_prefix": "13.250.186.128/27",
-      "service": "CLOUD9",
-      "region": "ap-southeast-1"
+      "region": "ap-southeast-1",
+      "service": "CLOUD9"
     },
     {
       "ip_prefix": "13.250.186.160/27",
-      "service": "CLOUD9",
-      "region": "ap-southeast-1"
+      "region": "ap-southeast-1",
+      "service": "CLOUD9"
     },
     {
       "ip_prefix": "18.188.9.0/27",
-      "service": "CLOUD9",
-      "region": "us-east-2"
+      "region": "us-east-2",
+      "service": "CLOUD9"
     },
     {
       "ip_prefix": "18.188.9.32/27",
-      "service": "CLOUD9",
-      "region": "us-east-2"
+      "region": "us-east-2",
+      "service": "CLOUD9"
     },
     {
       "ip_prefix": "34.217.141.224/27",
-      "service": "CLOUD9",
-      "region": "us-west-2"
+      "region": "us-west-2",
+      "service": "CLOUD9"
     },
     {
       "ip_prefix": "34.218.119.32/27",
-      "service": "CLOUD9",
-      "region": "us-west-2"
+      "region": "us-west-2",
+      "service": "CLOUD9"
     },
     {
       "ip_prefix": "34.245.205.0/27",
-      "service": "CLOUD9",
-      "region": "eu-west-1"
+      "region": "eu-west-1",
+      "service": "CLOUD9"
     },
     {
       "ip_prefix": "34.245.205.64/27",
-      "service": "CLOUD9",
-      "region": "eu-west-1"
+      "region": "eu-west-1",
+      "service": "CLOUD9"
     },
     {
       "ip_prefix": "35.172.155.192/27",
-      "service": "CLOUD9",
-      "region": "us-east-1"
+      "region": "us-east-1",
+      "service": "CLOUD9"
     },
     {
       "ip_prefix": "35.172.155.96/27",
-      "service": "CLOUD9",
-      "region": "us-east-1"
+      "region": "us-east-1",
+      "service": "CLOUD9"
     }
   ],
   "ipv6_prefixes": [
