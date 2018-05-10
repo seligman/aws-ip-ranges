@@ -1,6 +1,6 @@
 {
-  "syncToken": "1525880776",
-  "createDate": "2018-05-09-15-46-16",
+  "syncToken": "1525982178",
+  "createDate": "2018-05-10-19-56-18",
   "prefixes": [
     {
       "ip_prefix": "13.32.0.0/15",
@@ -5696,6 +5696,46 @@
       "ip_prefix": "177.71.207.16/29",
       "region": "sa-east-1",
       "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "13.210.2.192/26",
+      "region": "ap-southeast-2",
+      "service": "AMAZON_CONNECT"
+    },
+    {
+      "ip_prefix": "13.236.8.0/25",
+      "region": "ap-southeast-2",
+      "service": "AMAZON_CONNECT"
+    },
+    {
+      "ip_prefix": "18.184.2.128/25",
+      "region": "eu-central-1",
+      "service": "AMAZON_CONNECT"
+    },
+    {
+      "ip_prefix": "18.233.213.128/25",
+      "region": "us-east-1",
+      "service": "AMAZON_CONNECT"
+    },
+    {
+      "ip_prefix": "18.236.61.0/25",
+      "region": "us-west-2",
+      "service": "AMAZON_CONNECT"
+    },
+    {
+      "ip_prefix": "35.158.127.64/26",
+      "region": "eu-central-1",
+      "service": "AMAZON_CONNECT"
+    },
+    {
+      "ip_prefix": "52.55.191.224/27",
+      "region": "us-east-1",
+      "service": "AMAZON_CONNECT"
+    },
+    {
+      "ip_prefix": "54.190.198.32/28",
+      "region": "us-west-2",
+      "service": "AMAZON_CONNECT"
     },
     {
       "ip_prefix": "13.250.186.128/27",
