@@ -1,6 +1,6 @@
 {
-  "syncToken": "1531335151",
-  "createDate": "2018-07-11-18-52-31",
+  "syncToken": "1531344152",
+  "createDate": "2018-07-11-21-22-32",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -6075,6 +6075,16 @@
       "service": "AMAZON"
     },
     {
+      "ipv6_prefix": "2a05:d07e:e000::/40",
+      "region": "me-south-1",
+      "service": "AMAZON"
+    },
+    {
+      "ipv6_prefix": "2a05:d07c:e000::/40",
+      "region": "me-south-1",
+      "service": "AMAZON"
+    },
+    {
       "ipv6_prefix": "2400:6500:0:7100::/56",
       "region": "ap-northeast-1",
       "service": "AMAZON"
@@ -6190,6 +6200,11 @@
       "service": "AMAZON"
     },
     {
+      "ipv6_prefix": "2a05:d07f:e000::/40",
+      "region": "me-south-1",
+      "service": "AMAZON"
+    },
+    {
       "ipv6_prefix": "2406:daa0:6000::/40",
       "region": "ap-northeast-3",
       "service": "AMAZON"
@@ -6230,6 +6245,11 @@
       "service": "AMAZON"
     },
     {
+      "ipv6_prefix": "2a05:d079:e000::/40",
+      "region": "me-south-1",
+      "service": "AMAZON"
+    },
+    {
       "ipv6_prefix": "2620:108:d000::/44",
       "region": "us-gov-west-1",
       "service": "AMAZON"
@@ -6257,6 +6277,11 @@
     {
       "ipv6_prefix": "2600:1f00:1000::/40",
       "region": "ca-central-1",
+      "service": "AMAZON"
+    },
+    {
+      "ipv6_prefix": "2a05:d000:e000::/40",
+      "region": "me-south-1",
       "service": "AMAZON"
     },
     {
@@ -6575,6 +6600,11 @@
       "service": "AMAZON"
     },
     {
+      "ipv6_prefix": "2a05:d01e::/36",
+      "region": "me-south-1",
+      "service": "AMAZON"
+    },
+    {
       "ipv6_prefix": "2600:1fa0:6000::/40",
       "region": "us-east-2",
       "service": "AMAZON"
@@ -6647,6 +6677,11 @@
     {
       "ipv6_prefix": "2600:1fa0:2000::/40",
       "region": "us-gov-west-1",
+      "service": "AMAZON"
+    },
+    {
+      "ipv6_prefix": "2a05:d078:e000::/40",
+      "region": "me-south-1",
       "service": "AMAZON"
     },
     {
@@ -7050,6 +7085,11 @@
       "service": "AMAZON"
     },
     {
+      "ipv6_prefix": "2a05:d07a:e000::/40",
+      "region": "me-south-1",
+      "service": "AMAZON"
+    },
+    {
       "ipv6_prefix": "2600:1ffc:5000::/40",
       "region": "us-gov-east-1",
       "service": "AMAZON"
@@ -7330,6 +7370,11 @@
       "service": "S3"
     },
     {
+      "ipv6_prefix": "2a05:d079:e000::/40",
+      "region": "me-south-1",
+      "service": "S3"
+    },
+    {
       "ipv6_prefix": "2600:1fa0:4000::/40",
       "region": "us-west-2",
       "service": "S3"
@@ -7495,6 +7540,11 @@
       "service": "S3"
     },
     {
+      "ipv6_prefix": "2a05:d078:e000::/40",
+      "region": "me-south-1",
+      "service": "S3"
+    },
+    {
       "ipv6_prefix": "2600:1ff9:1000::/40",
       "region": "ca-central-1",
       "service": "S3"
@@ -7640,6 +7690,11 @@
       "service": "S3"
     },
     {
+      "ipv6_prefix": "2a05:d07a:e000::/40",
+      "region": "me-south-1",
+      "service": "S3"
+    },
+    {
       "ipv6_prefix": "240f:80fa:4000::/40",
       "region": "cn-northwest-1",
       "service": "S3"
@@ -7705,6 +7760,11 @@
       "service": "EC2"
     },
     {
+      "ipv6_prefix": "2a05:d07f:e000::/40",
+      "region": "me-south-1",
+      "service": "EC2"
+    },
+    {
       "ipv6_prefix": "2600:1fff:1000::/40",
       "region": "ca-central-1",
       "service": "EC2"
@@ -7727,6 +7787,11 @@
     {
       "ipv6_prefix": "2600:1f00:1000::/40",
       "region": "ca-central-1",
+      "service": "EC2"
+    },
+    {
+      "ipv6_prefix": "2a05:d000:e000::/40",
+      "region": "me-south-1",
       "service": "EC2"
     },
     {
@@ -7827,6 +7892,11 @@
     {
       "ipv6_prefix": "2600:1f1e::/36",
       "region": "sa-east-1",
+      "service": "EC2"
+    },
+    {
+      "ipv6_prefix": "2a05:d01e::/36",
+      "region": "me-south-1",
       "service": "EC2"
     },
     {
