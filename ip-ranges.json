@@ -1,6 +1,6 @@
 {
-  "syncToken": "1531774353",
-  "createDate": "2018-07-16-20-52-33",
+  "syncToken": "1532362951",
+  "createDate": "2018-07-23-16-22-31",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -5876,6 +5876,16 @@
       "ip_prefix": "34.228.4.208/28",
       "region": "us-east-1",
       "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "13.251.113.64/26",
+      "region": "ap-southeast-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "13.251.116.0/23",
+      "region": "ap-southeast-1",
+      "service": "AMAZON"
     },
     {
       "ip_prefix": "13.210.2.192/26",
