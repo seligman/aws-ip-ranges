@@ -1,6 +1,6 @@
 {
-  "syncToken": "1533140554",
-  "createDate": "2018-08-01-16-22-34",
+  "syncToken": "1533147753",
+  "createDate": "2018-08-01-18-22-33",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -835,6 +835,11 @@
     {
       "ip_prefix": "52.93.112.35/32",
       "region": "eu-west-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "52.95.29.0/26",
+      "region": "us-east-2",
       "service": "AMAZON"
     },
     {
@@ -2055,6 +2060,11 @@
     {
       "ip_prefix": "54.251.0.0/16",
       "region": "ap-southeast-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "52.95.52.0/22",
+      "region": "us-east-1",
       "service": "AMAZON"
     },
     {
