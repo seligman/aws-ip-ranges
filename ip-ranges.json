@@ -1,6 +1,6 @@
 {
-  "syncToken": "1538619160",
-  "createDate": "2018-10-04-02-12-40",
+  "syncToken": "1538673161",
+  "createDate": "2018-10-04-17-12-41",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -270,11 +270,6 @@
     {
       "ip_prefix": "52.94.198.32/28",
       "region": "us-gov-west-1",
-      "service": "AMAZON"
-    },
-    {
-      "ip_prefix": "52.219.112.0/22",
-      "region": "us-west-1",
       "service": "AMAZON"
     },
     {
@@ -685,6 +680,11 @@
     {
       "ip_prefix": "13.248.128.0/17",
       "region": "GLOBAL",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "52.82.128.0/19",
+      "region": "cn-northwest-1",
       "service": "AMAZON"
     },
     {
@@ -1209,11 +1209,6 @@
     },
     {
       "ip_prefix": "52.94.249.80/28",
-      "region": "us-west-1",
-      "service": "AMAZON"
-    },
-    {
-      "ip_prefix": "52.219.116.0/22",
       "region": "us-west-1",
       "service": "AMAZON"
     },
@@ -2648,6 +2643,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "52.219.112.0/21",
+      "region": "us-west-1",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "54.224.0.0/15",
       "region": "us-east-1",
       "service": "AMAZON"
@@ -3853,11 +3853,6 @@
       "service": "S3"
     },
     {
-      "ip_prefix": "52.219.112.0/22",
-      "region": "us-west-1",
-      "service": "S3"
-    },
-    {
       "ip_prefix": "52.92.48.0/22",
       "region": "us-west-1",
       "service": "S3"
@@ -3950,11 +3945,6 @@
     {
       "ip_prefix": "52.219.56.0/22",
       "region": "ap-northeast-2",
-      "service": "S3"
-    },
-    {
-      "ip_prefix": "52.219.116.0/22",
-      "region": "us-west-1",
       "service": "S3"
     },
     {
@@ -4075,6 +4065,11 @@
     {
       "ip_prefix": "52.92.68.0/22",
       "region": "eu-central-1",
+      "service": "S3"
+    },
+    {
+      "ip_prefix": "52.219.112.0/21",
+      "region": "us-west-1",
       "service": "S3"
     },
     {
@@ -5800,6 +5795,11 @@
     {
       "ip_prefix": "54.239.128.0/18",
       "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "52.82.128.0/19",
+      "region": "cn-northwest-1",
       "service": "CLOUDFRONT"
     },
     {
