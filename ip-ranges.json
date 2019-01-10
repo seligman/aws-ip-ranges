@@ -1,6 +1,6 @@
 {
-  "syncToken": "1547076676",
-  "createDate": "2019-01-09-23-31-16",
+  "syncToken": "1547116275",
+  "createDate": "2019-01-10-10-31-15",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -7447,6 +7447,11 @@
     {
       "ipv6_prefix": "2600:1f16::/36",
       "region": "us-east-2",
+      "service": "AMAZON"
+    },
+    {
+      "ipv6_prefix": "2600:1f01:48d2:100::/56",
+      "region": "ap-southeast-2",
       "service": "AMAZON"
     },
     {
