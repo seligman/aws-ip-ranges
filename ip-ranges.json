@@ -1,6 +1,6 @@
 {
-  "syncToken": "1551223286",
-  "createDate": "2019-02-26-23-21-26",
+  "syncToken": "1551378085",
+  "createDate": "2019-02-28-18-21-25",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -6915,6 +6915,16 @@
     {
       "ip_prefix": "13.250.186.160/27",
       "region": "ap-southeast-1",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "18.179.48.128/27",
+      "region": "ap-northeast-1",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "18.179.48.96/27",
+      "region": "ap-northeast-1",
       "service": "CLOUD9"
     },
     {
