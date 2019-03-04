@@ -1,6 +1,6 @@
 {
-  "syncToken": "1551733289",
-  "createDate": "2019-03-04-21-01-29",
+  "syncToken": "1551740488",
+  "createDate": "2019-03-04-23-01-28",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -4298,11 +4298,6 @@
       "service": "S3"
     },
     {
-      "ip_prefix": "54.222.52.0/22",
-      "region": "cn-north-1",
-      "service": "S3"
-    },
-    {
       "ip_prefix": "54.231.128.0/19",
       "region": "eu-west-1",
       "service": "S3"
@@ -4315,11 +4310,6 @@
     {
       "ip_prefix": "52.95.157.0/24",
       "region": "ap-northeast-3",
-      "service": "S3"
-    },
-    {
-      "ip_prefix": "52.82.164.0/22",
-      "region": "cn-northwest-1",
       "service": "S3"
     },
     {
