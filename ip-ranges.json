@@ -1,6 +1,6 @@
 {
-  "syncToken": "1552503691",
-  "createDate": "2019-03-13-19-01-31",
+  "syncToken": "1552594898",
+  "createDate": "2019-03-14-20-21-38",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -40,6 +40,11 @@
     {
       "ip_prefix": "13.210.0.0/15",
       "region": "ap-southeast-2",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "52.82.131.0/24",
+      "region": "GLOBAL",
       "service": "AMAZON"
     },
     {
@@ -753,11 +758,6 @@
       "service": "AMAZON"
     },
     {
-      "ip_prefix": "52.82.128.0/19",
-      "region": "cn-northwest-1",
-      "service": "AMAZON"
-    },
-    {
       "ip_prefix": "52.95.255.96/28",
       "region": "us-west-1",
       "service": "AMAZON"
@@ -1448,6 +1448,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "52.82.144.0/20",
+      "region": "GLOBAL",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "52.94.16.0/24",
       "region": "eu-west-3",
       "service": "AMAZON"
@@ -1873,6 +1878,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "52.82.133.0/24",
+      "region": "GLOBAL",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "52.93.51.29/32",
       "region": "us-east-1",
       "service": "AMAZON"
@@ -1910,6 +1920,11 @@
     {
       "ip_prefix": "52.46.168.0/23",
       "region": "us-east-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "52.82.134.0/24",
+      "region": "GLOBAL",
       "service": "AMAZON"
     },
     {
@@ -2545,6 +2560,11 @@
     {
       "ip_prefix": "52.64.128.0/17",
       "region": "ap-southeast-2",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "52.82.129.0/24",
+      "region": "GLOBAL",
       "service": "AMAZON"
     },
     {
@@ -3763,6 +3783,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "52.82.128.0/24",
+      "region": "GLOBAL",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "54.239.56.0/21",
       "region": "eu-central-1",
       "service": "AMAZON"
@@ -4038,6 +4063,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "52.82.132.0/24",
+      "region": "GLOBAL",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "52.93.97.0/24",
       "region": "us-east-1",
       "service": "AMAZON"
@@ -4100,6 +4130,11 @@
     {
       "ip_prefix": "54.239.4.0/22",
       "region": "eu-central-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "52.82.135.0/24",
+      "region": "GLOBAL",
       "service": "AMAZON"
     },
     {
@@ -6353,6 +6388,11 @@
       "service": "ROUTE53"
     },
     {
+      "ip_prefix": "52.82.131.0/24",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
       "ip_prefix": "13.124.199.0/24",
       "region": "ap-northeast-2",
       "service": "CLOUDFRONT"
@@ -6375,11 +6415,6 @@
     {
       "ip_prefix": "54.239.128.0/18",
       "region": "GLOBAL",
-      "service": "CLOUDFRONT"
-    },
-    {
-      "ip_prefix": "52.82.128.0/19",
-      "region": "cn-northwest-1",
       "service": "CLOUDFRONT"
     },
     {
@@ -6453,6 +6488,11 @@
       "service": "CLOUDFRONT"
     },
     {
+      "ip_prefix": "52.82.144.0/20",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
       "ip_prefix": "54.239.192.0/19",
       "region": "GLOBAL",
       "service": "CLOUDFRONT"
@@ -6473,8 +6513,18 @@
       "service": "CLOUDFRONT"
     },
     {
+      "ip_prefix": "52.82.133.0/24",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
       "ip_prefix": "13.113.203.0/24",
       "region": "ap-northeast-1",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "52.82.134.0/24",
+      "region": "GLOBAL",
       "service": "CLOUDFRONT"
     },
     {
@@ -6539,6 +6589,11 @@
     },
     {
       "ip_prefix": "205.251.249.0/24",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "52.82.129.0/24",
       "region": "GLOBAL",
       "service": "CLOUDFRONT"
     },
@@ -6618,6 +6673,11 @@
       "service": "CLOUDFRONT"
     },
     {
+      "ip_prefix": "52.82.128.0/24",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
       "ip_prefix": "54.240.128.0/18",
       "region": "GLOBAL",
       "service": "CLOUDFRONT"
@@ -6645,6 +6705,16 @@
     {
       "ip_prefix": "34.232.163.208/29",
       "region": "us-east-1",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "52.82.132.0/24",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "52.82.135.0/24",
+      "region": "GLOBAL",
       "service": "CLOUDFRONT"
     },
     {
