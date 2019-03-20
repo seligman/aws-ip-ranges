@@ -1,6 +1,6 @@
 {
-  "syncToken": "1553097687",
-  "createDate": "2019-03-20-16-01-27",
+  "syncToken": "1553102488",
+  "createDate": "2019-03-20-17-21-28",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -8682,6 +8682,11 @@
     {
       "ipv6_prefix": "2406:daf8:8000::/40",
       "region": "ap-southeast-1",
+      "service": "S3"
+    },
+    {
+      "ipv6_prefix": "2600:1ff0:6040::/48",
+      "region": "us-east-2",
       "service": "S3"
     },
     {
