@@ -1,6 +1,6 @@
 {
-  "syncToken": "1553102488",
-  "createDate": "2019-03-20-17-21-28",
+  "syncToken": "1553104889",
+  "createDate": "2019-03-20-18-01-29",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -8685,11 +8685,6 @@
       "service": "S3"
     },
     {
-      "ipv6_prefix": "2600:1ff0:6040::/48",
-      "region": "us-east-2",
-      "service": "S3"
-    },
-    {
       "ipv6_prefix": "2600:1ff8:4000::/40",
       "region": "us-west-2",
       "service": "S3"
@@ -8942,6 +8937,11 @@
     {
       "ipv6_prefix": "240f:80f8:8000::/40",
       "region": "cn-north-1",
+      "service": "S3"
+    },
+    {
+      "ipv6_prefix": "2600:1ff0:6000::/40",
+      "region": "us-east-2",
       "service": "S3"
     },
     {
