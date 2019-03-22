@@ -1,6 +1,6 @@
 {
-  "syncToken": "1553274089",
-  "createDate": "2019-03-22-17-01-29",
+  "syncToken": "1553281287",
+  "createDate": "2019-03-22-19-01-27",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -6640,6 +6640,11 @@
     {
       "ip_prefix": "177.71.207.16/29",
       "region": "sa-east-1",
+      "service": "CODEBUILD"
+    },
+    {
+      "ip_prefix": "52.61.40.104/29",
+      "region": "us-gov-west-1",
       "service": "CODEBUILD"
     },
     {
