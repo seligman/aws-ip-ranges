@@ -1,6 +1,6 @@
 {
-  "syncToken": "1553871544",
-  "createDate": "2019-03-29-14-59-04",
+  "syncToken": "1554170344",
+  "createDate": "2019-04-02-01-59-04",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -10,11 +10,6 @@
     {
       "ip_prefix": "52.95.245.0/24",
       "region": "us-east-1",
-      "service": "AMAZON"
-    },
-    {
-      "ip_prefix": "3.5.128.0/23",
-      "region": "us-east-2",
       "service": "AMAZON"
     },
     {
@@ -998,11 +993,6 @@
       "service": "AMAZON"
     },
     {
-      "ip_prefix": "3.5.130.0/23",
-      "region": "us-east-2",
-      "service": "AMAZON"
-    },
-    {
       "ip_prefix": "35.160.0.0/13",
       "region": "us-west-2",
       "service": "AMAZON"
@@ -1838,11 +1828,6 @@
       "service": "AMAZON"
     },
     {
-      "ip_prefix": "3.5.132.0/23",
-      "region": "us-east-2",
-      "service": "AMAZON"
-    },
-    {
       "ip_prefix": "13.53.0.0/16",
       "region": "eu-north-1",
       "service": "AMAZON"
@@ -1945,6 +1930,11 @@
     {
       "ip_prefix": "52.94.248.80/28",
       "region": "ap-northeast-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "3.5.128.0/21",
+      "region": "us-east-2",
       "service": "AMAZON"
     },
     {
@@ -4233,11 +4223,6 @@
       "service": "ROUTE53_HEALTHCHECKS"
     },
     {
-      "ip_prefix": "3.5.128.0/23",
-      "region": "us-east-2",
-      "service": "S3"
-    },
-    {
       "ip_prefix": "52.95.154.0/23",
       "region": "eu-west-3",
       "service": "S3"
@@ -4348,11 +4333,6 @@
       "service": "S3"
     },
     {
-      "ip_prefix": "3.5.130.0/23",
-      "region": "us-east-2",
-      "service": "S3"
-    },
-    {
       "ip_prefix": "54.231.0.0/17",
       "region": "us-east-1",
       "service": "S3"
@@ -4418,7 +4398,7 @@
       "service": "S3"
     },
     {
-      "ip_prefix": "3.5.132.0/23",
+      "ip_prefix": "3.5.128.0/21",
       "region": "us-east-2",
       "service": "S3"
     },
@@ -4625,11 +4605,6 @@
     {
       "ip_prefix": "52.95.245.0/24",
       "region": "us-east-1",
-      "service": "EC2"
-    },
-    {
-      "ip_prefix": "3.5.128.0/23",
-      "region": "us-east-2",
       "service": "EC2"
     },
     {
@@ -5048,11 +5023,6 @@
       "service": "EC2"
     },
     {
-      "ip_prefix": "3.5.130.0/23",
-      "region": "us-east-2",
-      "service": "EC2"
-    },
-    {
       "ip_prefix": "35.160.0.0/13",
       "region": "us-west-2",
       "service": "EC2"
@@ -5368,11 +5338,6 @@
       "service": "EC2"
     },
     {
-      "ip_prefix": "3.5.132.0/23",
-      "region": "us-east-2",
-      "service": "EC2"
-    },
-    {
       "ip_prefix": "13.53.0.0/16",
       "region": "eu-north-1",
       "service": "EC2"
@@ -5405,6 +5370,11 @@
     {
       "ip_prefix": "52.94.248.80/28",
       "region": "ap-northeast-1",
+      "service": "EC2"
+    },
+    {
+      "ip_prefix": "3.5.128.0/21",
+      "region": "us-east-2",
       "service": "EC2"
     },
     {
