@@ -1,6 +1,6 @@
 {
-  "syncToken": "1556662744",
-  "createDate": "2019-04-30-22-19-04",
+  "syncToken": "1556824745",
+  "createDate": "2019-05-02-19-19-05",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -7705,6 +7705,11 @@
       "service": "AMAZON"
     },
     {
+      "ipv6_prefix": "2404:c2c0:a00::/40",
+      "region": "cn-northwest-1",
+      "service": "AMAZON"
+    },
+    {
       "ipv6_prefix": "2a05:d050:c000::/40",
       "region": "eu-west-2",
       "service": "AMAZON"
@@ -8197,6 +8202,11 @@
     {
       "ipv6_prefix": "240f:80f9:8000::/40",
       "region": "cn-north-1",
+      "service": "AMAZON"
+    },
+    {
+      "ipv6_prefix": "2404:c2c0:e00::/40",
+      "region": "cn-northwest-1",
       "service": "AMAZON"
     },
     {
@@ -9355,6 +9365,11 @@
       "service": "S3"
     },
     {
+      "ipv6_prefix": "2404:c2c0:e00::/40",
+      "region": "cn-northwest-1",
+      "service": "S3"
+    },
+    {
       "ipv6_prefix": "2406:dafa:e000::/40",
       "region": "ap-east-1",
       "service": "S3"
@@ -9661,6 +9676,11 @@
     },
     {
       "ipv6_prefix": "240f:80ff:4000::/40",
+      "region": "cn-northwest-1",
+      "service": "EC2"
+    },
+    {
+      "ipv6_prefix": "2404:c2c0:a00::/40",
       "region": "cn-northwest-1",
       "service": "EC2"
     },
