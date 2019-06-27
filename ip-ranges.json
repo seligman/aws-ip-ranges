@@ -1,6 +1,6 @@
 {
-  "syncToken": "1561579145",
-  "createDate": "2019-06-26-19-59-05",
+  "syncToken": "1561640345",
+  "createDate": "2019-06-27-12-59-05",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -5200,6 +5200,11 @@
     {
       "ip_prefix": "52.119.224.0/21",
       "region": "us-east-1",
+      "service": "DYNAMODB"
+    },
+    {
+      "ip_prefix": "52.119.249.0/24",
+      "region": "me-south-1",
       "service": "DYNAMODB"
     },
     {
