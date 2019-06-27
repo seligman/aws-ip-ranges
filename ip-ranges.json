@@ -1,6 +1,6 @@
 {
-  "syncToken": "1561659545",
-  "createDate": "2019-06-27-18-19-05",
+  "syncToken": "1561666744",
+  "createDate": "2019-06-27-20-19-04",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -8025,11 +8025,6 @@
     {
       "ip_prefix": "18.228.70.32/29",
       "region": "sa-east-1",
-      "service": "EC2_INSTANCE_CONNECT"
-    },
-    {
-      "ip_prefix": "18.237.140.160/29",
-      "region": "us-west-2",
       "service": "EC2_INSTANCE_CONNECT"
     },
     {
