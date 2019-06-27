@@ -1,6 +1,6 @@
 {
-  "syncToken": "1561640345",
-  "createDate": "2019-06-27-12-59-05",
+  "syncToken": "1561659545",
+  "createDate": "2019-06-27-18-19-05",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -7991,6 +7991,86 @@
       "ip_prefix": "35.172.155.96/27",
       "region": "us-east-1",
       "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "13.209.1.56/29",
+      "region": "ap-northeast-2",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "13.233.177.0/29",
+      "region": "ap-south-1",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "13.239.158.0/29",
+      "region": "ap-southeast-2",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "13.52.6.112/29",
+      "region": "us-west-1",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "18.202.216.48/29",
+      "region": "eu-west-1",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "18.206.107.24/29",
+      "region": "us-east-1",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "18.228.70.32/29",
+      "region": "sa-east-1",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "18.237.140.160/29",
+      "region": "us-west-2",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "18.237.140.160/29",
+      "region": "us-west-2",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "3.0.5.32/29",
+      "region": "ap-southeast-1",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "3.112.23.0/29",
+      "region": "ap-northeast-1",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "3.120.181.40/29",
+      "region": "eu-central-1",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "3.16.146.0/29",
+      "region": "us-east-2",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "3.8.37.24/29",
+      "region": "eu-west-2",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "35.180.112.80/29",
+      "region": "eu-west-3",
+      "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "35.183.92.176/29",
+      "region": "ca-central-1",
+      "service": "EC2_INSTANCE_CONNECT"
     }
   ],
   "ipv6_prefixes": [
