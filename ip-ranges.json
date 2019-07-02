@@ -1,6 +1,6 @@
 {
-  "syncToken": "1562041145",
-  "createDate": "2019-07-02-04-19-05",
+  "syncToken": "1562081944",
+  "createDate": "2019-07-02-15-39-04",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -7415,6 +7415,11 @@
     {
       "ip_prefix": "52.56.127.0/25",
       "region": "eu-west-2",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "34.223.80.192/26",
+      "region": "us-west-2",
       "service": "CLOUDFRONT"
     },
     {
