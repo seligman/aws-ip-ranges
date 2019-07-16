@@ -1,6 +1,6 @@
 {
-  "syncToken": "1563034744",
-  "createDate": "2019-07-13-16-19-04",
+  "syncToken": "1563284345",
+  "createDate": "2019-07-16-13-39-05",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -7298,6 +7298,11 @@
       "service": "CLOUDFRONT"
     },
     {
+      "ip_prefix": "13.52.204.0/23",
+      "region": "us-west-1",
+      "service": "CLOUDFRONT"
+    },
+    {
       "ip_prefix": "13.54.63.128/26",
       "region": "ap-southeast-2",
       "service": "CLOUDFRONT"
@@ -7365,6 +7370,11 @@
     {
       "ip_prefix": "13.113.203.0/24",
       "region": "ap-northeast-1",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "99.79.168.0/23",
+      "region": "ca-central-1",
       "service": "CLOUDFRONT"
     },
     {
@@ -7460,6 +7470,11 @@
     {
       "ip_prefix": "130.176.0.0/16",
       "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "18.200.212.0/23",
+      "region": "eu-west-1",
       "service": "CLOUDFRONT"
     },
     {
