@@ -1,6 +1,6 @@
 {
-  "syncToken": "1563369545",
-  "createDate": "2019-07-17-13-19-05",
+  "syncToken": "1563481385",
+  "createDate": "2019-07-18-20-23-05",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -635,11 +635,6 @@
     {
       "ip_prefix": "52.95.255.128/28",
       "region": "eu-central-1",
-      "service": "AMAZON"
-    },
-    {
-      "ip_prefix": "52.208.0.0/13",
-      "region": "eu-west-1",
       "service": "AMAZON"
     },
     {
@@ -1503,6 +1498,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "52.212.248.0/26",
+      "region": "eu-west-1",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "54.222.48.0/22",
       "region": "cn-north-1",
       "service": "AMAZON"
@@ -1530,6 +1530,11 @@
     {
       "ip_prefix": "52.219.56.0/22",
       "region": "ap-northeast-2",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "52.221.221.128/29",
+      "region": "ap-southeast-1",
       "service": "AMAZON"
     },
     {
@@ -2345,11 +2350,6 @@
     {
       "ip_prefix": "52.12.0.0/15",
       "region": "us-west-2",
-      "service": "AMAZON"
-    },
-    {
-      "ip_prefix": "52.220.0.0/15",
-      "region": "ap-southeast-1",
       "service": "AMAZON"
     },
     {
@@ -4293,6 +4293,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "52.220.191.0/26",
+      "region": "ap-southeast-1",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "52.66.0.0/16",
       "region": "ap-south-1",
       "service": "AMAZON"
@@ -5778,11 +5783,6 @@
       "service": "EC2"
     },
     {
-      "ip_prefix": "52.208.0.0/13",
-      "region": "eu-west-1",
-      "service": "EC2"
-    },
-    {
       "ip_prefix": "13.228.0.0/15",
       "region": "ap-southeast-1",
       "service": "EC2"
@@ -6128,6 +6128,16 @@
       "service": "EC2"
     },
     {
+      "ip_prefix": "52.212.248.0/26",
+      "region": "eu-west-1",
+      "service": "EC2"
+    },
+    {
+      "ip_prefix": "52.221.221.128/29",
+      "region": "ap-southeast-1",
+      "service": "EC2"
+    },
+    {
       "ip_prefix": "54.160.0.0/13",
       "region": "us-east-1",
       "service": "EC2"
@@ -6460,11 +6470,6 @@
     {
       "ip_prefix": "52.12.0.0/15",
       "region": "us-west-2",
-      "service": "EC2"
-    },
-    {
-      "ip_prefix": "52.220.0.0/15",
-      "region": "ap-southeast-1",
       "service": "EC2"
     },
     {
@@ -7260,6 +7265,11 @@
     {
       "ip_prefix": "52.95.247.0/24",
       "region": "us-west-2",
+      "service": "EC2"
+    },
+    {
+      "ip_prefix": "52.220.191.0/26",
+      "region": "ap-southeast-1",
       "service": "EC2"
     },
     {
