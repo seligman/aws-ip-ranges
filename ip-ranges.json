@@ -1,6 +1,6 @@
 {
-  "syncToken": "1565042585",
-  "createDate": "2019-08-05-22-03-05",
+  "syncToken": "1565100185",
+  "createDate": "2019-08-06-14-03-05",
   "prefixes": [
     {
       "ip_prefix": "18.208.0.0/13",
@@ -8481,6 +8481,71 @@
       "ip_prefix": "35.183.92.176/29",
       "region": "ca-central-1",
       "service": "EC2_INSTANCE_CONNECT"
+    },
+    {
+      "ip_prefix": "13.124.247.0/24",
+      "region": "ap-northeast-2",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "3.217.228.0/22",
+      "region": "us-east-1",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "35.176.32.0/24",
+      "region": "eu-west-2",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "35.183.255.0/24",
+      "region": "ca-central-1",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "52.19.124.0/23",
+      "region": "eu-west-1",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "52.23.61.0/24",
+      "region": "us-east-1",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "52.23.62.0/24",
+      "region": "us-east-1",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "52.59.127.0/24",
+      "region": "eu-central-1",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "52.76.127.0/24",
+      "region": "ap-southeast-1",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "54.153.254.0/24",
+      "region": "ap-southeast-2",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "54.233.204.0/24",
+      "region": "sa-east-1",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "54.244.46.0/23",
+      "region": "us-west-2",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ip_prefix": "54.250.251.0/24",
+      "region": "ap-northeast-1",
+      "service": "WORKSPACES_GATEWAYS"
     }
   ],
   "ipv6_prefixes": [
