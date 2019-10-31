@@ -1,6 +1,6 @@
 {
-  "syncToken": "1572374589",
-  "createDate": "2019-10-29-18-43-09",
+  "syncToken": "1572535389",
+  "createDate": "2019-10-31-15-23-09",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -8675,6 +8675,11 @@
     {
       "ip_prefix": "99.82.164.0/24",
       "region": "sa-east-1",
+      "service": "GLOBALACCELERATOR"
+    },
+    {
+      "ip_prefix": "13.248.111.0/24",
+      "region": "us-east-2",
       "service": "GLOBALACCELERATOR"
     },
     {
