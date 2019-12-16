@@ -1,6 +1,6 @@
 {
-  "syncToken": "1576331590",
-  "createDate": "2019-12-14-13-53-10",
+  "syncToken": "1576517590",
+  "createDate": "2019-12-16-17-33-10",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -9278,6 +9278,26 @@
       "service": "AMAZON_CONNECT"
     },
     {
+      "ip_prefix": "13.232.67.128/27",
+      "region": "ap-south-1",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "13.232.67.160/27",
+      "region": "ap-south-1",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "13.236.82.128/27",
+      "region": "ap-southeast-2",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "13.236.82.96/27",
+      "region": "ap-southeast-2",
+      "service": "CLOUD9"
+    },
+    {
       "ip_prefix": "13.250.186.128/27",
       "region": "ap-southeast-1",
       "service": "CLOUD9"
@@ -9285,6 +9305,36 @@
     {
       "ip_prefix": "13.250.186.160/27",
       "region": "ap-southeast-1",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "13.48.186.128/27",
+      "region": "eu-north-1",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "13.48.186.160/27",
+      "region": "eu-north-1",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "15.164.243.192/27",
+      "region": "ap-northeast-2",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "15.164.243.32/27",
+      "region": "ap-northeast-2",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "15.222.16.96/27",
+      "region": "ca-central-1",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "15.222.43.0/27",
+      "region": "ca-central-1",
       "service": "CLOUD9"
     },
     {
@@ -9315,6 +9365,16 @@
     {
       "ip_prefix": "18.188.9.32/27",
       "region": "us-east-2",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "3.10.127.32/27",
+      "region": "eu-west-2",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "3.10.201.64/27",
+      "region": "eu-west-2",
       "service": "CLOUD9"
     },
     {
