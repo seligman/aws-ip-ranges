@@ -1,6 +1,6 @@
 {
-  "syncToken": "1578955390",
-  "createDate": "2020-01-13-22-43-10",
+  "syncToken": "1579018389",
+  "createDate": "2020-01-14-16-13-09",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -9245,6 +9245,11 @@
     {
       "ip_prefix": "18.138.244.0/23",
       "region": "ap-southeast-1",
+      "service": "API_GATEWAY"
+    },
+    {
+      "ip_prefix": "18.144.76.128/25",
+      "region": "us-west-1",
       "service": "API_GATEWAY"
     },
     {
