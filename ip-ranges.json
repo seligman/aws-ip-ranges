@@ -1,6 +1,6 @@
 {
-  "syncToken": "1579761790",
-  "createDate": "2020-01-23-06-43-10",
+  "syncToken": "1579826590",
+  "createDate": "2020-01-24-00-43-10",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -1420,6 +1420,11 @@
     {
       "ip_prefix": "52.119.210.0/23",
       "region": "ap-southeast-2",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "15.177.91.0/24",
+      "region": "af-south-1",
       "service": "AMAZON"
     },
     {
@@ -5688,6 +5693,11 @@
       "service": "ROUTE53_HEALTHCHECKS"
     },
     {
+      "ip_prefix": "15.177.91.0/24",
+      "region": "af-south-1",
+      "service": "ROUTE53_HEALTHCHECKS"
+    },
+    {
       "ip_prefix": "15.177.82.0/24",
       "region": "ap-southeast-1",
       "service": "ROUTE53_HEALTHCHECKS"
@@ -7040,6 +7050,11 @@
     {
       "ip_prefix": "52.95.239.0/24",
       "region": "eu-west-2",
+      "service": "EC2"
+    },
+    {
+      "ip_prefix": "15.177.91.0/24",
+      "region": "af-south-1",
       "service": "EC2"
     },
     {
