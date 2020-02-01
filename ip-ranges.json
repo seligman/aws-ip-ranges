@@ -1,6 +1,6 @@
 {
-  "syncToken": "1580501589",
-  "createDate": "2020-01-31-20-13-09",
+  "syncToken": "1580515990",
+  "createDate": "2020-02-01-00-13-10",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -9683,6 +9683,11 @@
       "service": "API_GATEWAY"
     },
     {
+      "ip_prefix": "3.12.216.0/22",
+      "region": "us-east-2",
+      "service": "API_GATEWAY"
+    },
+    {
       "ip_prefix": "3.123.14.0/24",
       "region": "eu-central-1",
       "service": "API_GATEWAY"
@@ -9745,6 +9750,11 @@
     {
       "ip_prefix": "35.181.128.0/24",
       "region": "eu-west-3",
+      "service": "API_GATEWAY"
+    },
+    {
+      "ip_prefix": "44.233.54.0/23",
+      "region": "us-west-2",
       "service": "API_GATEWAY"
     },
     {
