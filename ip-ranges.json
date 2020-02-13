@@ -1,6 +1,6 @@
 {
-  "syncToken": "1581352989",
-  "createDate": "2020-02-10-16-43-09",
+  "syncToken": "1581624790",
+  "createDate": "2020-02-13-20-13-10",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -2678,6 +2678,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "64.252.64.0/24",
+      "region": "us-east-1",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "99.77.143.0/24",
       "region": "ap-southeast-1",
       "service": "AMAZON"
@@ -4335,11 +4340,6 @@
     {
       "ip_prefix": "54.228.0.0/16",
       "region": "eu-west-1",
-      "service": "AMAZON"
-    },
-    {
-      "ip_prefix": "64.252.64.0/18",
-      "region": "GLOBAL",
       "service": "AMAZON"
     },
     {
@@ -7438,6 +7438,11 @@
       "service": "EC2"
     },
     {
+      "ip_prefix": "64.252.64.0/24",
+      "region": "us-east-1",
+      "service": "EC2"
+    },
+    {
       "ip_prefix": "99.77.143.0/24",
       "region": "ap-southeast-1",
       "service": "EC2"
@@ -8783,11 +8788,6 @@
       "service": "CLOUDFRONT"
     },
     {
-      "ip_prefix": "64.252.64.0/18",
-      "region": "GLOBAL",
-      "service": "CLOUDFRONT"
-    },
-    {
       "ip_prefix": "204.246.174.0/23",
       "region": "GLOBAL",
       "service": "CLOUDFRONT"
@@ -9415,6 +9415,11 @@
     {
       "ip_prefix": "99.79.168.0/23",
       "region": "ca-central-1",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "64.252.64.0/24",
+      "region": "us-east-1",
       "service": "CLOUDFRONT"
     },
     {
