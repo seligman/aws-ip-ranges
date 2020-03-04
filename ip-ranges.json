@@ -1,6 +1,6 @@
 {
-  "syncToken": "1583287990",
-  "createDate": "2020-03-04-02-13-10",
+  "syncToken": "1583354590",
+  "createDate": "2020-03-04-20-43-10",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -1913,11 +1913,6 @@
       "service": "AMAZON"
     },
     {
-      "ip_prefix": "205.251.192.0/19",
-      "region": "GLOBAL",
-      "service": "AMAZON"
-    },
-    {
       "ip_prefix": "46.51.192.0/20",
       "region": "eu-west-1",
       "service": "AMAZON"
@@ -2610,6 +2605,11 @@
     {
       "ip_prefix": "150.222.234.0/24",
       "region": "us-west-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "205.251.208.0/20",
+      "region": "GLOBAL",
       "service": "AMAZON"
     },
     {
@@ -3498,6 +3498,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "205.251.192.0/21",
+      "region": "GLOBAL",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "52.94.80.0/20",
       "region": "ca-central-1",
       "service": "AMAZON"
@@ -4325,6 +4330,11 @@
     {
       "ip_prefix": "72.21.192.0/19",
       "region": "us-east-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "205.251.200.0/21",
+      "region": "GLOBAL",
       "service": "AMAZON"
     },
     {
@@ -8843,11 +8853,6 @@
       "service": "CLOUDFRONT"
     },
     {
-      "ip_prefix": "205.251.192.0/19",
-      "region": "GLOBAL",
-      "service": "CLOUDFRONT"
-    },
-    {
       "ip_prefix": "54.239.192.0/19",
       "region": "GLOBAL",
       "service": "CLOUDFRONT"
@@ -8859,6 +8864,11 @@
     },
     {
       "ip_prefix": "13.32.0.0/15",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "205.251.208.0/20",
       "region": "GLOBAL",
       "service": "CLOUDFRONT"
     },
@@ -8919,6 +8929,11 @@
     },
     {
       "ip_prefix": "130.176.0.0/16",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT"
+    },
+    {
+      "ip_prefix": "205.251.200.0/21",
       "region": "GLOBAL",
       "service": "CLOUDFRONT"
     },
