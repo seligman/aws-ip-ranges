@@ -1,6 +1,6 @@
 {
-  "syncToken": "1583894591",
-  "createDate": "2020-03-11-02-43-11",
+  "syncToken": "1583961191",
+  "createDate": "2020-03-11-21-13-11",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -3818,6 +3818,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "15.230.29.0/24",
+      "region": "us-east-1",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "18.191.0.0/16",
       "region": "us-east-2",
       "service": "AMAZON"
@@ -4960,6 +4965,11 @@
     {
       "ip_prefix": "150.222.91.0/24",
       "region": "ap-northeast-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "15.230.18.0/24",
+      "region": "us-east-1",
       "service": "AMAZON"
     },
     {
