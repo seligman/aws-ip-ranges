@@ -1,6 +1,6 @@
 {
-  "syncToken": "1584641591",
-  "createDate": "2020-03-19-18-13-11",
+  "syncToken": "1584643391",
+  "createDate": "2020-03-19-18-43-11",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -10120,6 +10120,11 @@
     {
       "ip_prefix": "18.184.203.128/27",
       "region": "eu-central-1",
+      "service": "CLOUD9"
+    },
+    {
+      "ip_prefix": "18.188.9.0/27",
+      "region": "us-east-2",
       "service": "CLOUD9"
     },
     {
