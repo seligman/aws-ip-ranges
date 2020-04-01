@@ -1,6 +1,6 @@
 {
-  "syncToken": "1585665791",
-  "createDate": "2020-03-31-14-43-11",
+  "syncToken": "1585707191",
+  "createDate": "2020-04-01-02-13-11",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -4193,11 +4193,6 @@
       "service": "AMAZON"
     },
     {
-      "ip_prefix": "52.92.68.0/22",
-      "region": "eu-central-1",
-      "service": "AMAZON"
-    },
-    {
       "ip_prefix": "52.94.0.0/22",
       "region": "us-east-1",
       "service": "AMAZON"
@@ -4520,11 +4515,6 @@
     {
       "ip_prefix": "54.228.0.0/16",
       "region": "eu-west-1",
-      "service": "AMAZON"
-    },
-    {
-      "ip_prefix": "52.92.52.0/22",
-      "region": "ap-southeast-2",
       "service": "AMAZON"
     },
     {
@@ -5045,11 +5035,6 @@
     {
       "ip_prefix": "46.137.224.0/19",
       "region": "ap-southeast-1",
-      "service": "AMAZON"
-    },
-    {
-      "ip_prefix": "52.92.248.0/22",
-      "region": "ap-south-1",
       "service": "AMAZON"
     },
     {
@@ -6328,11 +6313,6 @@
       "service": "S3"
     },
     {
-      "ip_prefix": "52.92.68.0/22",
-      "region": "eu-central-1",
-      "service": "S3"
-    },
-    {
       "ip_prefix": "52.219.112.0/21",
       "region": "us-west-1",
       "service": "S3"
@@ -6363,11 +6343,6 @@
       "service": "S3"
     },
     {
-      "ip_prefix": "52.92.52.0/22",
-      "region": "ap-southeast-2",
-      "service": "S3"
-    },
-    {
       "ip_prefix": "52.92.60.0/22",
       "region": "ap-northeast-1",
       "service": "S3"
@@ -6390,11 +6365,6 @@
     {
       "ip_prefix": "52.95.162.0/24",
       "region": "ap-east-1",
-      "service": "S3"
-    },
-    {
-      "ip_prefix": "52.92.248.0/22",
-      "region": "ap-south-1",
       "service": "S3"
     },
     {
