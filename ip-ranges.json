@@ -1,6 +1,6 @@
 {
-  "syncToken": "1585950191",
-  "createDate": "2020-04-03-21-43-11",
+  "syncToken": "1585964591",
+  "createDate": "2020-04-04-01-43-11",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -515,6 +515,11 @@
     {
       "ip_prefix": "52.94.20.0/24",
       "region": "ap-south-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "99.77.189.0/24",
+      "region": "GLOBAL",
       "service": "AMAZON"
     },
     {
@@ -1663,6 +1668,11 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "99.77.188.0/24",
+      "region": "GLOBAL",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "13.248.98.0/24",
       "region": "ap-northeast-1",
       "service": "AMAZON"
@@ -1875,6 +1885,11 @@
     {
       "ip_prefix": "54.240.232.0/22",
       "region": "us-east-1",
+      "service": "AMAZON"
+    },
+    {
+      "ip_prefix": "99.77.190.0/24",
+      "region": "GLOBAL",
       "service": "AMAZON"
     },
     {
@@ -5198,11 +5213,6 @@
       "service": "AMAZON"
     },
     {
-      "ip_prefix": "99.78.173.0/24",
-      "region": "us-east-1",
-      "service": "AMAZON"
-    },
-    {
       "ip_prefix": "176.32.125.230/31",
       "region": "us-east-1",
       "service": "AMAZON"
@@ -5880,11 +5890,6 @@
     {
       "ip_prefix": "18.130.0.0/16",
       "region": "eu-west-2",
-      "service": "AMAZON"
-    },
-    {
-      "ip_prefix": "35.72.0.0/17",
-      "region": "us-east-1",
       "service": "AMAZON"
     },
     {
@@ -8983,11 +8988,6 @@
       "service": "EC2"
     },
     {
-      "ip_prefix": "35.72.0.0/17",
-      "region": "us-east-1",
-      "service": "EC2"
-    },
-    {
       "ip_prefix": "52.72.0.0/15",
       "region": "us-east-1",
       "service": "EC2"
@@ -9403,6 +9403,11 @@
       "service": "GLOBALACCELERATOR"
     },
     {
+      "ip_prefix": "99.77.189.0/24",
+      "region": "GLOBAL",
+      "service": "GLOBALACCELERATOR"
+    },
+    {
       "ip_prefix": "13.248.122.0/24",
       "region": "eu-north-1",
       "service": "GLOBALACCELERATOR"
@@ -9448,6 +9453,11 @@
       "service": "GLOBALACCELERATOR"
     },
     {
+      "ip_prefix": "99.77.188.0/24",
+      "region": "GLOBAL",
+      "service": "GLOBALACCELERATOR"
+    },
+    {
       "ip_prefix": "13.248.98.0/24",
       "region": "ap-northeast-1",
       "service": "GLOBALACCELERATOR"
@@ -9460,6 +9470,11 @@
     {
       "ip_prefix": "13.248.116.0/24",
       "region": "us-east-1",
+      "service": "GLOBALACCELERATOR"
+    },
+    {
+      "ip_prefix": "99.77.190.0/24",
+      "region": "GLOBAL",
       "service": "GLOBALACCELERATOR"
     },
     {
