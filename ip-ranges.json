@@ -1,6 +1,6 @@
 {
-  "syncToken": "1586281390",
-  "createDate": "2020-04-07-17-43-10",
+  "syncToken": "1586380391",
+  "createDate": "2020-04-08-21-13-11",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -12675,6 +12675,12 @@
       "network_border_group": "us-east-1"
     },
     {
+      "ip_prefix": "3.235.112.0/21",
+      "region": "us-east-1",
+      "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "us-east-1"
+    },
+    {
       "ip_prefix": "35.176.32.0/24",
       "region": "eu-west-2",
       "service": "WORKSPACES_GATEWAYS",
@@ -12685,6 +12691,12 @@
       "region": "ca-central-1",
       "service": "WORKSPACES_GATEWAYS",
       "network_border_group": "ca-central-1"
+    },
+    {
+      "ip_prefix": "44.234.54.0/23",
+      "region": "us-west-2",
+      "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "52.19.124.0/23",
