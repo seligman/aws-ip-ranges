@@ -1,6 +1,6 @@
 {
-  "syncToken": "1587048191",
-  "createDate": "2020-04-16-14-43-11",
+  "syncToken": "1587051791",
+  "createDate": "2020-04-16-15-43-11",
   "prefixes": [
     {
       "ip_prefix": "13.248.118.0/24",
@@ -13336,6 +13336,12 @@
     },
     {
       "ip_prefix": "18.180.178.0/24",
+      "region": "ap-northeast-1",
+      "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "18.180.180.0/23",
       "region": "ap-northeast-1",
       "service": "WORKSPACES_GATEWAYS",
       "network_border_group": "ap-northeast-1"
