@@ -1,6 +1,6 @@
 {
-  "syncToken": "1587475991",
-  "createDate": "2020-04-21-13-33-11",
+  "syncToken": "1587477191",
+  "createDate": "2020-04-21-13-53-11",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -13516,6 +13516,12 @@
     },
     {
       "ip_prefix": "18.132.21.0/24",
+      "region": "eu-west-2",
+      "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "eu-west-2"
+    },
+    {
+      "ip_prefix": "18.132.22.0/23",
       "region": "eu-west-2",
       "service": "WORKSPACES_GATEWAYS",
       "network_border_group": "eu-west-2"
