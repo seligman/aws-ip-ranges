@@ -1,6 +1,6 @@
 {
-  "syncToken": "1588779191",
-  "createDate": "2020-05-06-15-33-11",
+  "syncToken": "1588884792",
+  "createDate": "2020-05-07-20-53-12",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -14401,12 +14401,6 @@
       "region": "sa-east-1",
       "service": "CLOUDFRONT",
       "network_border_group": "sa-east-1"
-    },
-    {
-      "ip_prefix": "13.52.204.0/23",
-      "region": "us-west-1",
-      "service": "CLOUDFRONT",
-      "network_border_group": "us-west-1"
     },
     {
       "ip_prefix": "13.54.63.128/26",
