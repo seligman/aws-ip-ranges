@@ -1,6 +1,6 @@
 {
-  "syncToken": "1588884792",
-  "createDate": "2020-05-07-20-53-12",
+  "syncToken": "1588897992",
+  "createDate": "2020-05-08-00-33-12",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -14385,6 +14385,12 @@
       "network_border_group": "eu-west-1"
     },
     {
+      "ip_prefix": "99.79.169.0/24",
+      "region": "ca-central-1",
+      "service": "CLOUDFRONT",
+      "network_border_group": "ca-central-1"
+    },
+    {
       "ip_prefix": "52.15.127.128/26",
       "region": "us-east-2",
       "service": "CLOUDFRONT",
@@ -14485,12 +14491,6 @@
       "region": "ap-northeast-1",
       "service": "CLOUDFRONT",
       "network_border_group": "ap-northeast-1"
-    },
-    {
-      "ip_prefix": "99.79.168.0/23",
-      "region": "ca-central-1",
-      "service": "CLOUDFRONT",
-      "network_border_group": "ca-central-1"
     },
     {
       "ip_prefix": "34.195.252.0/24",
