@@ -1,6 +1,6 @@
 {
-  "syncToken": "1589321592",
-  "createDate": "2020-05-12-22-13-12",
+  "syncToken": "1589323991",
+  "createDate": "2020-05-12-22-53-11",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -1441,12 +1441,6 @@
       "region": "ap-southeast-1",
       "service": "AMAZON",
       "network_border_group": "ap-southeast-1"
-    },
-    {
-      "ip_prefix": "3.5.216.0/24",
-      "region": "cn-northwest-1",
-      "service": "AMAZON",
-      "network_border_group": "cn-northwest-1"
     },
     {
       "ip_prefix": "52.119.248.0/24",
@@ -3007,12 +3001,6 @@
       "region": "af-south-1",
       "service": "AMAZON",
       "network_border_group": "af-south-1"
-    },
-    {
-      "ip_prefix": "3.5.214.0/23",
-      "region": "cn-northwest-1",
-      "service": "AMAZON",
-      "network_border_group": "cn-northwest-1"
     },
     {
       "ip_prefix": "15.230.39.118/31",
@@ -9609,12 +9597,6 @@
       "network_border_group": "ap-south-1"
     },
     {
-      "ip_prefix": "3.5.216.0/24",
-      "region": "cn-northwest-1",
-      "service": "S3",
-      "network_border_group": "cn-northwest-1"
-    },
-    {
       "ip_prefix": "3.5.128.0/22",
       "region": "us-east-2",
       "service": "S3",
@@ -9709,12 +9691,6 @@
       "region": "ap-south-1",
       "service": "S3",
       "network_border_group": "ap-south-1"
-    },
-    {
-      "ip_prefix": "3.5.214.0/23",
-      "region": "cn-northwest-1",
-      "service": "S3",
-      "network_border_group": "cn-northwest-1"
     },
     {
       "ip_prefix": "52.95.151.0/24",
@@ -10701,12 +10677,6 @@
       "network_border_group": "ap-southeast-1"
     },
     {
-      "ip_prefix": "3.5.216.0/24",
-      "region": "cn-northwest-1",
-      "service": "EC2",
-      "network_border_group": "cn-northwest-1"
-    },
-    {
       "ip_prefix": "15.228.0.0/15",
       "region": "sa-east-1",
       "service": "EC2",
@@ -11257,12 +11227,6 @@
       "region": "me-south-1",
       "service": "EC2",
       "network_border_group": "me-south-1"
-    },
-    {
-      "ip_prefix": "3.5.214.0/23",
-      "region": "cn-northwest-1",
-      "service": "EC2",
-      "network_border_group": "cn-northwest-1"
     },
     {
       "ip_prefix": "54.223.0.0/16",
