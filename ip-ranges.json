@@ -1,6 +1,6 @@
 {
-  "syncToken": "1590993192",
-  "createDate": "2020-06-01-06-33-12",
+  "syncToken": "1591041192",
+  "createDate": "2020-06-01-19-53-12",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -15517,6 +15517,12 @@
       "region": "ap-northeast-1",
       "service": "WORKSPACES_GATEWAYS",
       "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "3.218.180.0/22",
+      "region": "us-east-1",
+      "service": "DYNAMODB",
+      "network_border_group": "us-east-1"
     },
     {
       "ip_prefix": "18.252.4.0/30",
