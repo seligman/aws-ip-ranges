@@ -1,6 +1,6 @@
 {
-  "syncToken": "1591680792",
-  "createDate": "2020-06-09-05-33-12",
+  "syncToken": "1591716792",
+  "createDate": "2020-06-09-15-33-12",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -15583,6 +15583,186 @@
       "region": "us-east-1",
       "service": "DYNAMODB",
       "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "15.188.210.196/30",
+      "region": "eu-west-3",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "eu-west-3"
+    },
+    {
+      "ip_prefix": "15.188.210.200/30",
+      "region": "eu-west-3",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "eu-west-3"
+    },
+    {
+      "ip_prefix": "18.130.91.144/30",
+      "region": "eu-west-2",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "eu-west-2"
+    },
+    {
+      "ip_prefix": "18.130.91.148/30",
+      "region": "eu-west-2",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "eu-west-2"
+    },
+    {
+      "ip_prefix": "18.141.66.248/30",
+      "region": "ap-southeast-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-southeast-1"
+    },
+    {
+      "ip_prefix": "18.141.66.252/30",
+      "region": "ap-southeast-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-southeast-1"
+    },
+    {
+      "ip_prefix": "18.176.203.120/30",
+      "region": "ap-northeast-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "18.229.100.112/30",
+      "region": "sa-east-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "sa-east-1"
+    },
+    {
+      "ip_prefix": "18.229.100.116/30",
+      "region": "sa-east-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "sa-east-1"
+    },
+    {
+      "ip_prefix": "3.101.52.208/30",
+      "region": "us-west-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "us-west-1"
+    },
+    {
+      "ip_prefix": "3.101.52.212/30",
+      "region": "us-west-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "us-west-1"
+    },
+    {
+      "ip_prefix": "3.113.218.76/30",
+      "region": "ap-northeast-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "3.12.23.88/30",
+      "region": "us-east-2",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "us-east-2"
+    },
+    {
+      "ip_prefix": "3.12.23.92/30",
+      "region": "us-east-2",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "us-east-2"
+    },
+    {
+      "ip_prefix": "3.127.48.244/30",
+      "region": "eu-central-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "3.127.48.248/30",
+      "region": "eu-central-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "3.235.189.100/30",
+      "region": "us-east-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "3.235.189.96/30",
+      "region": "us-east-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "3.248.186.92/30",
+      "region": "eu-west-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "3.248.244.240/30",
+      "region": "eu-west-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "3.25.47.28/30",
+      "region": "ap-southeast-2",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-southeast-2"
+    },
+    {
+      "ip_prefix": "3.25.47.32/30",
+      "region": "ap-southeast-2",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-southeast-2"
+    },
+    {
+      "ip_prefix": "3.34.89.192/30",
+      "region": "ap-northeast-2",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ip_prefix": "3.34.89.196/30",
+      "region": "ap-northeast-2",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ip_prefix": "3.6.70.76/30",
+      "region": "ap-south-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-south-1"
+    },
+    {
+      "ip_prefix": "3.7.25.48/30",
+      "region": "ap-south-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-south-1"
+    },
+    {
+      "ip_prefix": "3.96.2.68/30",
+      "region": "ca-central-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ca-central-1"
+    },
+    {
+      "ip_prefix": "3.96.2.72/30",
+      "region": "ca-central-1",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "ca-central-1"
+    },
+    {
+      "ip_prefix": "44.234.73.116/30",
+      "region": "us-west-2",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "us-west-2"
+    },
+    {
+      "ip_prefix": "44.234.73.120/30",
+      "region": "us-west-2",
+      "service": "AMAZON_APPFLOW",
+      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "18.252.4.0/30",
