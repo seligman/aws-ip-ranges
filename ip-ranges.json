@@ -1,6 +1,6 @@
 {
-  "syncToken": "1591930393",
-  "createDate": "2020-06-12-02-53-13",
+  "syncToken": "1591985593",
+  "createDate": "2020-06-12-18-13-13",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -241,12 +241,6 @@
       "region": "eu-north-1",
       "service": "AMAZON",
       "network_border_group": "eu-north-1"
-    },
-    {
-      "ip_prefix": "52.92.32.0/22",
-      "region": "us-west-2",
-      "service": "AMAZON",
-      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "52.93.56.0/24",
@@ -1639,12 +1633,6 @@
       "region": "ca-central-1",
       "service": "AMAZON",
       "network_border_group": "ca-central-1"
-    },
-    {
-      "ip_prefix": "54.231.160.0/19",
-      "region": "us-west-2",
-      "service": "AMAZON",
-      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "3.104.0.0/14",
@@ -4605,12 +4593,6 @@
       "network_border_group": "us-west-2"
     },
     {
-      "ip_prefix": "52.92.76.0/22",
-      "region": "us-east-2",
-      "service": "AMAZON",
-      "network_border_group": "us-east-2"
-    },
-    {
       "ip_prefix": "54.208.0.0/15",
       "region": "us-east-1",
       "service": "AMAZON",
@@ -5563,12 +5545,6 @@
       "region": "us-east-1",
       "service": "AMAZON",
       "network_border_group": "us-east-1"
-    },
-    {
-      "ip_prefix": "52.92.48.0/22",
-      "region": "us-west-1",
-      "service": "AMAZON",
-      "network_border_group": "us-west-1"
     },
     {
       "ip_prefix": "52.94.116.0/22",
@@ -7629,12 +7605,6 @@
       "network_border_group": "us-east-2"
     },
     {
-      "ip_prefix": "52.92.0.0/20",
-      "region": "ap-northeast-2",
-      "service": "AMAZON",
-      "network_border_group": "ap-northeast-2"
-    },
-    {
       "ip_prefix": "52.95.80.0/20",
       "region": "ap-south-1",
       "service": "AMAZON",
@@ -8149,12 +8119,6 @@
       "region": "eu-central-1",
       "service": "AMAZON",
       "network_border_group": "eu-central-1"
-    },
-    {
-      "ip_prefix": "52.92.252.0/22",
-      "region": "us-gov-west-1",
-      "service": "AMAZON",
-      "network_border_group": "us-gov-west-1"
     },
     {
       "ip_prefix": "52.95.250.0/24",
@@ -9669,12 +9633,6 @@
       "network_border_group": "ap-northeast-2"
     },
     {
-      "ip_prefix": "52.92.32.0/22",
-      "region": "us-west-2",
-      "service": "S3",
-      "network_border_group": "us-west-2"
-    },
-    {
       "ip_prefix": "108.175.56.0/22",
       "region": "us-gov-west-1",
       "service": "S3",
@@ -9757,12 +9715,6 @@
       "region": "us-east-2",
       "service": "S3",
       "network_border_group": "us-east-2"
-    },
-    {
-      "ip_prefix": "54.231.160.0/19",
-      "region": "us-west-2",
-      "service": "S3",
-      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "52.95.166.0/23",
@@ -9945,12 +9897,6 @@
       "network_border_group": "af-south-1"
     },
     {
-      "ip_prefix": "52.92.76.0/22",
-      "region": "us-east-2",
-      "service": "S3",
-      "network_border_group": "us-east-2"
-    },
-    {
       "ip_prefix": "52.95.164.0/23",
       "region": "sa-east-1",
       "service": "S3",
@@ -9985,12 +9931,6 @@
       "region": "eu-west-1",
       "service": "S3",
       "network_border_group": "eu-west-1"
-    },
-    {
-      "ip_prefix": "52.92.48.0/22",
-      "region": "us-west-1",
-      "service": "S3",
-      "network_border_group": "us-west-1"
     },
     {
       "ip_prefix": "52.95.144.0/24",
@@ -10095,12 +10035,6 @@
       "network_border_group": "eu-central-1"
     },
     {
-      "ip_prefix": "52.92.0.0/20",
-      "region": "ap-northeast-2",
-      "service": "S3",
-      "network_border_group": "ap-northeast-2"
-    },
-    {
       "ip_prefix": "52.219.132.0/22",
       "region": "ap-southeast-1",
       "service": "S3",
@@ -10135,12 +10069,6 @@
       "region": "ca-central-1",
       "service": "S3",
       "network_border_group": "ca-central-1"
-    },
-    {
-      "ip_prefix": "52.92.252.0/22",
-      "region": "us-gov-west-1",
-      "service": "S3",
-      "network_border_group": "us-gov-west-1"
     },
     {
       "ip_prefix": "54.222.48.0/22",
