@@ -1,6 +1,6 @@
 {
-  "syncToken": "1594421352",
-  "createDate": "2020-07-10-22-49-12",
+  "syncToken": "1594688952",
+  "createDate": "2020-07-14-01-09-12",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -15253,6 +15253,12 @@
       "region": "ap-northeast-2",
       "service": "GLOBALACCELERATOR",
       "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ip_prefix": "13.248.126.0/24",
+      "region": "ca-central-1",
+      "service": "GLOBALACCELERATOR",
+      "network_border_group": "ca-central-1"
     },
     {
       "ip_prefix": "13.248.116.0/24",
