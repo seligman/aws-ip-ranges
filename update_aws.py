@@ -73,17 +73,15 @@ if changed or force:
     with open("history_count.json", "w") as f:
         # We're doing this manually to make the file a bit smaller
         f.write("{\n")
-        f.write(",\n".join([f'"{x}":{json.dumps(cache[x], separators=(",", ":"))}' for x in sorted(cache)]))
+        # Do this in order of the update just so it's easier to view
+        f.write(",\n".join([f'"{x}":{json.dumps(cache[x], separators=(",", ":"))}' for x in sorted(cache, key=lambda y:cache[y][0])]))
         f.write("\n}\n")
 
     # Pull in the days in the history, using the largest
     # value for the day when there are multiple entries for
     # one day
     values = {}
-    last_value = ["0"]
     for value in cache.values():
-        if value[0] > last_value[0]:
-            last_value = value
         time_str = value[0][:10]
         time = datetime.strptime(time_str, "%Y-%m-%d")
         if time_str in values:
@@ -97,18 +95,33 @@ if changed or force:
     dates = [values[x][0] for x in keys]
     values = [values[x][1] * 100.0 for x in keys]
 
+    # And also make a sorted list for the information dump
+    in_order = [cache[x] for x in sorted(cache, key=lambda y:cache[y][0])]
+
     print("Charting data...")
     # Chart everything out
-    plt.figure(figsize=(10,7))
+    plt.figure(figsize=(9, 5))
+    plt.title("History of percentage of AWS ownership of IPv4 space")
     plt.plot(dates, values)
-    plt.savefig("history_count.png")
+    plt.savefig("history_count.png", bbox_inches='tight')
 
     print("Filling out template")
     with open("README.template.md", "rt") as f:
         md = f.read()
-    md = md.replace("{time}", last_value[0])
-    md = md.replace("{aws}", f"{last_value[4]}")
-    md = md.replace("{aws_perc}", f"{last_value[1] * 100.0:.5f}")
+    
+    all_history = []
+    last_count = None
+    for item in in_order:
+        if last_count is not None:
+            diff = item[4] - last_count
+            all_history.append((diff, f"| {item[0]} | {item[1]*100.0:.5f} | {item[4]} | {'+' if diff > 0 else ''}{diff} |"))
+        last_count = item[4]
+
+    history = [x[1] for x in all_history[-10:]]
+    top_history = [x[1] for x in sorted(all_history)[-10:]][::-1]
+
+    md = md.replace("{changes}", "\n".join(history))
+    md = md.replace("{top10_changes}", "\n".join(top_history))
     with open("README.md", "wt") as f:
         f.write(md)
 

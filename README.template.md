@@ -1,16 +1,24 @@
 # AWS's ip-ranges.json
 
 AWS provides a data file showing the current IP ranges their
-services use, called [ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json).
+services use, called [ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json).  You 
+can read more about the file [here](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html).
 
-This repository tracks changes to that file, and produces this
-chart showing how what percentage of the Internet's IPv4 address space
-AWS is in control of:
+This repository tracks changes to that file, and based off a trigger on the SNS topic 
+automatically produces this chart showing how what percentage of the Internet's IPv4 
+address space AWS is in control of.
 
 ![History of AWS](history_count.png)
 
-*As of {time}*:
+# Last 10 updates:
 
-AWS has {aws} public IPv4 addresses.
+| | Percent | IPs | Change |
+| :--- | ---: | ---: | ---: |
+{changes}
 
-That represents {aws_perc}% of the possible IPs.
+
+# 10 largest changes to date:
+
+| | Percent | IPs | Change |
+| :--- | ---: | ---: | ---: |
+{top10_changes}
