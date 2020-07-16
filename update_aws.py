@@ -2,11 +2,16 @@
 
 import json
 import os
+import sys
 import subprocess
 import aws_ipv4_size
 from datetime import datetime
 import matplotlib.pyplot as plt
 from requests import get
+
+force = False
+if len(sys.argv) > 1 and sys.argv[1] == "force":
+    force = True
 
 # First off, see if the live file has changed
 ip_ranges = get("https://ip-ranges.amazonaws.com/ip-ranges.json").content
@@ -16,6 +21,7 @@ ip_ranges_cur = json.loads(ip_ranges)
 if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
     # Ok, the live file has change, write out a bit-for-bit copy
     # to our local copy
+    print("Updating ip-ranges.json...")
     with open("ip-ranges.json", "wb") as f:
         f.write(ip_ranges)
     
@@ -27,8 +33,9 @@ if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
     os.environ['GIT_COMMITTER_DATE'] = git_time
     os.environ['GIT_AUTHOR_DATE'] = git_time
     # Commit the change to ip-ranges.json to git
-    subprocess.check_call(["git", "add", "ip-ranges.json"])
-    subprocess.check_call(["git", "commit", "-a", "-m", f"ip-ranges from {time.strftime('%Y-%m-%d %H:%M:%S')}"])
+    if not force:
+        subprocess.check_call(["git", "add", "ip-ranges.json"])
+        subprocess.check_call(["git", "commit", "-a", "-m", f"ip-ranges from {time.strftime('%Y-%m-%d %H:%M:%S')}"])
 
 # Now, build up our cache of history
 cache = {}
@@ -53,25 +60,30 @@ for row in history.split("\n"):
 
             # Call our helper to get a count of how many IP addresses
             # are in this file
-            public, _internet, aws = aws_ipv4_size.parse_aws(data)
-            aws = aws / public
+            public, internet, aws = aws_ipv4_size.parse_aws(data)
+            aws_perc = aws / public
 
             # Store the final value back in our cache
             time = datetime(*[int(x) for x in data['createDate'][:19].split("-")])
-            cache[row[0]] = [time.strftime("%Y-%m-%d %H:%M:%S"), aws]
+            cache[row[0]] = [time.strftime("%Y-%m-%d %H:%M:%S"), aws_perc, public, internet, aws]
             changed = True
 
-if changed:
+if changed or force:
     # Something changed, go ahead and write things out
     with open("history_count.json", "w") as f:
-        json.dump(cache, f, indent=2, sort_keys=True)
-        f.write("\n")
+        # We're doing this manually to make the file a bit smaller
+        f.write("{\n")
+        f.write(",\n".join([f'"{x}":{json.dumps(cache[x], separators=(",", ":"))}' for x in sorted(cache)]))
+        f.write("\n}\n")
 
     # Pull in the days in the history, using the largest
     # value for the day when there are multiple entries for
     # one day
     values = {}
+    last_value = ["0"]
     for value in cache.values():
+        if value[0] > last_value[0]:
+            last_value = value
         time_str = value[0][:10]
         time = datetime.strptime(time_str, "%Y-%m-%d")
         if time_str in values:
@@ -85,15 +97,27 @@ if changed:
     dates = [values[x][0] for x in keys]
     values = [values[x][1] * 100.0 for x in keys]
 
+    print("Charting data...")
     # Chart everything out
     plt.figure(figsize=(10,7))
     plt.plot(dates, values)
     plt.savefig("history_count.png")
 
-    # Commit the cache file, and the .png file
-    subprocess.check_call(["git", "add", "history_count.json"])
-    subprocess.check_call(["git", "add", "history_count.png"])
-    subprocess.check_call(["git", "commit", "-a", "-m", "Update data files"])
+    print("Filling out template")
+    with open("README.template.md", "rt") as f:
+        md = f.read()
+    md = md.replace("{time}", last_value[0])
+    md = md.replace("{aws}", f"{last_value[4]}")
+    md = md.replace("{aws_perc}", f"{last_value[1] * 100.0:.5f}")
+    with open("README.md", "wt") as f:
+        f.write(md)
 
-    # Push the results
-    subprocess.check_call(["git", "push"])
+    if not force:
+        # Commit the cache file, and the .png file
+        subprocess.check_call(["git", "add", "history_count.json"])
+        subprocess.check_call(["git", "add", "history_count.png"])
+        subprocess.check_call(["git", "add", "README.md"])
+        subprocess.check_call(["git", "commit", "-a", "-m", "Update data files"])
+
+        # Push the results
+        subprocess.check_call(["git", "push"])

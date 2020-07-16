@@ -8,3 +8,9 @@ chart showing how what percentage of the Internet's IPv4 address space
 AWS is in control of:
 
 ![History of AWS](history_count.png)
+
+*As of 2020-07-16 00:19:12*:
+
+AWS has 51110011 public IPv4 addresses.
+
+That represents 1.38051% of the possible IPs.
