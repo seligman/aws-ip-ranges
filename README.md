@@ -9,8 +9,8 @@ AWS is in control of:
 
 ![History of AWS](history_count.png)
 
-*As of 2020-07-16 00:39:13*:
+*As of 2020-07-16 16:19:13*:
 
-AWS has 51110027 public IPv4 addresses.
+AWS has 51110019 public IPv4 addresses.
 
 That represents 1.38051% of the possible IPs.
