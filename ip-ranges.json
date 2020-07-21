@@ -1,6 +1,6 @@
 {
-  "syncToken": "1595342354",
-  "createDate": "2020-07-21-14-39-14",
+  "syncToken": "1595362752",
+  "createDate": "2020-07-21-20-19-12",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -15055,12 +15055,6 @@
       "region": "ap-northeast-1",
       "service": "CODEBUILD",
       "network_border_group": "ap-northeast-1"
-    },
-    {
-      "ip_prefix": "177.71.207.16/29",
-      "region": "sa-east-1",
-      "service": "CODEBUILD",
-      "network_border_group": "sa-east-1"
     },
     {
       "ip_prefix": "52.47.73.72/29",
