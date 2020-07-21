@@ -117,7 +117,7 @@ if changed or force:
             all_history.append((diff, f"| {item[0]} | {item[1]*100.0:.5f} | {item[4]} | {'+' if diff > 0 else ''}{diff} |"))
         last_count = item[4]
 
-    history = [x[1] for x in all_history[-10:]]
+    history = [x[1] for x in all_history[-10:]][::-1]
     top_history = [x[1] for x in sorted(all_history)[-10:]][::-1]
 
     md = md.replace("{changes}", "\n".join(history))
