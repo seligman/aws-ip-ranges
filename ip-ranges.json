@@ -1,6 +1,6 @@
 {
-  "syncToken": "1595428754",
-  "createDate": "2020-07-22-14-39-14",
+  "syncToken": "1595453952",
+  "createDate": "2020-07-22-21-39-12",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -16851,7 +16851,49 @@
       "network_border_group": "ap-northeast-1"
     },
     {
-      "ip_prefix": "3.218.180.0/22",
+      "ip_prefix": "3.218.180.0/25",
+      "region": "us-east-1",
+      "service": "DYNAMODB",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "3.218.180.128/25",
+      "region": "us-east-1",
+      "service": "DYNAMODB",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "3.218.181.0/25",
+      "region": "us-east-1",
+      "service": "DYNAMODB",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "3.218.181.128/25",
+      "region": "us-east-1",
+      "service": "DYNAMODB",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "3.218.182.0/25",
+      "region": "us-east-1",
+      "service": "DYNAMODB",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "3.218.182.128/25",
+      "region": "us-east-1",
+      "service": "DYNAMODB",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "3.218.183.0/25",
+      "region": "us-east-1",
+      "service": "DYNAMODB",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "3.218.183.128/25",
       "region": "us-east-1",
       "service": "DYNAMODB",
       "network_border_group": "us-east-1"
