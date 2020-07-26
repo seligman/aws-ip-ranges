@@ -169,6 +169,7 @@ if changed or force:
     if not force:
         # Commit the cache file, and the .png file
         subprocess.check_call(["git", "add", "history_count.json"])
+        subprocess.check_call(["git", "add", "history_changes.json"])
         subprocess.check_call(["git", "add", "history_count.png"])
         subprocess.check_call(["git", "add", "README.md"])
         subprocess.check_call(["git", "commit", "-a", "-m", "Update data files"])
