@@ -12,13 +12,13 @@ address space AWS is in control of.
 
 # Last 10 updates:
 
-| | Percent | IPs | Change |
-| :--- | ---: | ---: | ---: |
+| | Percent | IPs | Change | CIDRs |
+| :--- | ---: | ---: | ---: | :--- |
 {changes}
 
 
 # 10 largest changes to date:
 
-| | Percent | IPs | Change |
-| :--- | ---: | ---: | ---: |
+| | Percent | IPs | Change | CIDRs |
+| :--- | ---: | ---: | ---: | :--- |
 {top10_changes}

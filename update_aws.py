@@ -8,6 +8,7 @@ import aws_ipv4_size
 from datetime import datetime
 import matplotlib.pyplot as plt
 from requests import get
+from netaddr import IPSet, IPNetwork
 
 force = False
 if len(sys.argv) > 1 and sys.argv[1] == "force":
@@ -38,11 +39,23 @@ if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
         subprocess.check_call(["git", "commit", "-a", "-m", f"ip-ranges from {time.strftime('%Y-%m-%d %H:%M:%S')}"])
 
 # Now, build up our cache of history
-cache = {}
 changed = False
-if os.path.isfile("history_count.json"):
-    with open("history_count.json") as f:
-        cache = json.load(f)
+def load_cache(filename):
+    if os.path.isfile(filename):
+        with open(filename) as f:
+            return json.load(f)
+    else:
+        return {}
+def save_cache(filename, data):
+    with open(filename, "w") as f:
+        # We're doing this manually to make the file a bit smaller
+        # Do this in order of the update just so it's easier to view
+        f.write("{\n")
+        f.write(",\n".join([f'"{x}":{json.dumps(data[x], separators=(",", ":"))}' for x in sorted(cache, key=lambda y:cache[y][0])]))
+        f.write("\n}\n")
+
+cache = load_cache("history_count.json")
+changes = load_cache("history_changes.json")
 
 # Pull out all of the history items for this file:
 cmd = "git rev-list --all --objects -- ip-ranges.json"
@@ -68,14 +81,33 @@ for row in history.split("\n"):
             cache[row[0]] = [time.strftime("%Y-%m-%d %H:%M:%S"), aws_perc, public, internet, aws]
             changed = True
 
+# And track all of the changes to the addresses as well
+last_key = None
+for key in sorted(cache, key=lambda y:cache[y][0]):
+    if key not in changes:
+        changed = True
+        if last_key is None:
+            changes[key] = {"added": [], "removed": []}
+        else:
+            def load_data(key):
+                cmd = "git cat-file -p " + key
+                data = subprocess.check_output(cmd.split(' '))
+                data = json.loads(data)
+                return IPSet([IPNetwork(x["ip_prefix"]) for x in data["prefixes"]])
+            aws = load_data(key)
+            last_aws = load_data(last_key)
+            def get_diff(a, b):
+                diff = a - b
+                diff = [IPNetwork(x) for x in diff.iter_cidrs()]
+                diff = sorted(diff, key=lambda x:x.size, reverse=True)
+                return [str(x) for x in diff]
+            changes[key] = {"added": get_diff(aws, last_aws), "removed": get_diff(last_aws, aws)}
+    last_key = key
+
 if changed or force:
     # Something changed, go ahead and write things out
-    with open("history_count.json", "w") as f:
-        # We're doing this manually to make the file a bit smaller
-        f.write("{\n")
-        # Do this in order of the update just so it's easier to view
-        f.write(",\n".join([f'"{x}":{json.dumps(cache[x], separators=(",", ":"))}' for x in sorted(cache, key=lambda y:cache[y][0])]))
-        f.write("\n}\n")
+    save_cache("history_count.json", cache)
+    save_cache("history_changes.json", changes)
 
     # Pull in the days in the history, using the largest
     # value for the day when there are multiple entries for
@@ -96,7 +128,7 @@ if changed or force:
     values = [values[x][1] * 100.0 for x in keys]
 
     # And also make a sorted list for the information dump
-    in_order = [cache[x] for x in sorted(cache, key=lambda y:cache[y][0])]
+    in_order = [cache[x]+[x] for x in sorted(cache, key=lambda y:cache[y][0])]
 
     print("Charting data...")
     # Chart everything out
@@ -114,7 +146,16 @@ if changed or force:
     for item in in_order:
         if last_count is not None:
             diff = item[4] - last_count
-            all_history.append((diff, f"| {item[0]} | {item[1]*100.0:.5f} | {item[4]} | {'+' if diff > 0 else ''}{diff} |"))
+            cidrs = ['+'+x for x in changes[item[5]]['added']] + ['-'+x for x in changes[item[5]]['removed']]
+            if len(cidrs) > 3:
+                cidrs = cidrs[:3] + ['...']
+            all_history.append((diff, 
+                f"| {item[0]} |" + 
+                f" {item[1]*100.0:.5f} |" + 
+                f" {item[4]} |" + 
+                f" {'+' if diff > 0 else ''}{diff} |" + 
+                f" {', '.join(cidrs)} |"
+            ))
         last_count = item[4]
 
     history = [x[1] for x in all_history[-10:]][::-1]
