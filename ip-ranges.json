@@ -1,6 +1,6 @@
 {
-  "syncToken": "1596753554",
-  "createDate": "2020-08-06-22-39-14",
+  "syncToken": "1596773353",
+  "createDate": "2020-08-07-04-09-13",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -19101,6 +19101,12 @@
       "region": "ca-central-1",
       "service": "AMAZON",
       "network_border_group": "ca-central-1"
+    },
+    {
+      "ipv6_prefix": "2620:107:4000:a840::/58",
+      "region": "ap-southeast-3",
+      "service": "AMAZON",
+      "network_border_group": "ap-southeast-3"
     },
     {
       "ipv6_prefix": "2400:7fc0:2c00::/40",
