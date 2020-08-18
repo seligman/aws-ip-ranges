@@ -146,15 +146,21 @@ if changed or force:
     for item in in_order:
         if last_count is not None:
             diff = item[4] - last_count
-            cidrs = ['+'+x for x in changes[item[5]]['added']] + ['-'+x for x in changes[item[5]]['removed']]
-            if len(cidrs) > 3:
-                cidrs = cidrs[:3] + ['...']
-            all_history.append((diff, 
+            all_cidrs = ['+'+x for x in changes[item[5]]['added']] + ['-'+x for x in changes[item[5]]['removed']]
+            if len(all_cidrs) > 3:
+                cidrs = all_cidrs[:3] + ['...']
+            else:
+                cidrs = all_cidrs
+            all_history.append((
+                diff, 
                 f"| {item[0]} |" + 
                 f" {item[1]*100.0:.5f} |" + 
                 f" {item[4]} |" + 
                 f" {'+' if diff > 0 else ''}{diff} |" + 
-                f" {', '.join(cidrs)} |"
+                f" {', '.join(cidrs)} |",
+                item[0],
+                f"{'+' if diff > 0 else ''}{diff}",
+                all_cidrs,
             ))
         last_count = item[4]
 
@@ -166,11 +172,46 @@ if changed or force:
     with open("README.md", "wt") as f:
         f.write(md)
 
+    # Create an RSS feed, do it by hand just to 
+    # make things easy
+    with open("rss.xml", "wt") as f:
+        base_url = "https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html"
+
+        f.write('<?xml version="1.0" encoding="UTF-8" ?>')
+        f.write('<rss version="2.0">')
+        f.write('<channel>')
+        f.write('<title>AWS IP Ranges Updates</title>')
+        f.write(f'<link>{base_url}</link>')
+        f.write("<description>Changes to AWS's IP Ranges</description>")
+
+        for cur in all_history[-10:]:
+            f.write('<item>')
+            f.write(f'<title>AWS IP Ranges update for {cur[2]}</title>')
+            f.write(f'<link>{base_url}#{cur[2].replace(" ", "").replace("-", "")}</link>')
+            f.write('<description><![CDATA[')
+            if len(cur[4]) == 0:
+                f.write("No changes to IPs")
+            else:
+                f.write(f"Changed by {cur[3]}<br><br>")
+                for cur_range in cur[4]:
+                    if cur_range.startswith("+"):
+                        f.write(f"Added {cur_range[1:]}<br>")
+                    elif cur_range.startswith("-"):
+                        f.write(f"Removed {cur_range[1:]}<br>")
+                    else:
+                        f.write(f"{cur_range}<br>")
+            f.write(']]></description>')
+            f.write('</item>')
+
+        f.write('</channel>')
+        f.write('</rss>')
+
     if not force:
         # Commit the cache file, and the .png file
         subprocess.check_call(["git", "add", "history_count.json"])
         subprocess.check_call(["git", "add", "history_changes.json"])
         subprocess.check_call(["git", "add", "history_count.png"])
+        subprocess.check_call(["git", "add", "rss.xml"])
         subprocess.check_call(["git", "add", "README.md"])
         subprocess.check_call(["git", "commit", "-a", "-m", "Update data files"])
 

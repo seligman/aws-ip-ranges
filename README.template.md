@@ -22,3 +22,6 @@ address space AWS is in control of.
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
 {top10_changes}
+
+
+![RSS Icon](rss-icon.png)[RSS Feed](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml)
