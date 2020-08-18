@@ -10,18 +10,18 @@ address space AWS is in control of.
 
 ![History of AWS](history_count.png)
 
-# Last 10 updates:
+# Last 15 updates:
 
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
 {changes}
 
 
-# 10 largest changes to date:
+# 15 largest changes to date:
 
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
 {top10_changes}
 
 
-![RSS Icon](rss-icon.png)[RSS Feed](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml)
+[![RSS Icon](rss-icon.png)RSS Feed](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml)

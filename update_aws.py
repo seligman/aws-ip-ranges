@@ -38,7 +38,8 @@ if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
         subprocess.check_call(["git", "add", "ip-ranges.json"])
         subprocess.check_call(["git", "commit", "-a", "-m", f"ip-ranges from {time.strftime('%Y-%m-%d %H:%M:%S')}"])
 
-# Now, build up our cache of history
+# Now, build up our cache of history, use a couple of helper functions
+# to make loading and saving them easier
 changed = False
 def load_cache(filename):
     if os.path.isfile(filename):
@@ -164,16 +165,20 @@ if changed or force:
             ))
         last_count = item[4]
 
-    history = [x[1] for x in all_history[-10:]][::-1]
-    top_history = [x[1] for x in sorted(all_history)[-10:]][::-1]
+    history = [x[1] for x in all_history[-15:]][::-1]
+    # Note that when we sort the top items we take the absolute value of the change
+    # to show the big removals as well as the big adds.  All the other data is added
+    # to the sort key to make it a stable sort for the cases where two changes
+    # were the same size.
+    top_history = [x[1] for x in sorted(all_history, key=lambda y:(abs(y[0]), y))[-15:]][::-1]
 
+    # Drop in the tables into the markdown document
     md = md.replace("{changes}", "\n".join(history))
     md = md.replace("{top10_changes}", "\n".join(top_history))
     with open("README.md", "wt") as f:
         f.write(md)
 
-    # Create an RSS feed, do it by hand just to 
-    # make things easy
+    # Create an RSS feed, do it by hand just to make things easy
     with open("rss.xml", "wt") as f:
         base_url = "https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html"
 
@@ -184,7 +189,7 @@ if changed or force:
         f.write(f'<link>{base_url}</link>')
         f.write("<description>Changes to AWS's IP Ranges</description>")
 
-        for cur in all_history[-10:]:
+        for cur in all_history[-20:]:
             f.write('<item>')
             f.write(f'<title>AWS IP Ranges update for {cur[2]}</title>')
             f.write(f'<link>{base_url}#{cur[2].replace(" ", "").replace("-", "")}</link>')
@@ -207,7 +212,7 @@ if changed or force:
         f.write('</rss>')
 
     if not force:
-        # Commit the cache file, and the .png file
+        # Commit all of the files that were changed
         subprocess.check_call(["git", "add", "history_count.json"])
         subprocess.check_call(["git", "add", "history_changes.json"])
         subprocess.check_call(["git", "add", "history_count.png"])
