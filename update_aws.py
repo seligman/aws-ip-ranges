@@ -180,36 +180,36 @@ if changed or force:
 
     # Create an RSS feed, do it by hand just to make things easy
     with open("rss.xml", "wt") as f:
-        base_url = "https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html"
+        base_url = "https://github.com/seligman/aws-ip-ranges"
 
-        f.write('<?xml version="1.0" encoding="UTF-8" ?>')
-        f.write('<rss version="2.0">')
-        f.write('<channel>')
-        f.write('<title>AWS IP Ranges Updates</title>')
-        f.write(f'<link>{base_url}</link>')
-        f.write("<description>Changes to AWS's IP Ranges</description>")
+        f.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
+        f.write('<rss version="2.0">\n')
+        f.write('  <channel>\n')
+        f.write('    <title>AWS IP Ranges Updates</title>\n')
+        f.write(f'    <link>{base_url}</link>\n')
+        f.write("    <description>Changes to AWS's IP Ranges</description>\n")
 
         for cur in all_history[-20:]:
-            f.write('<item>')
-            f.write(f'<title>AWS IP Ranges update for {cur[2]}</title>')
-            f.write(f'<link>{base_url}#{cur[2].replace(" ", "").replace("-", "")}</link>')
-            f.write('<description><![CDATA[')
+            f.write('    <item>\n')
+            f.write(f'      <title>AWS IP Ranges update for {cur[2]}</title>\n')
+            f.write(f'      <link>{base_url}#{cur[2].replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
+            f.write('      <description><![CDATA[\n')
             if len(cur[4]) == 0:
-                f.write("No changes to IPs")
+                f.write("No changes to IPs\n")
             else:
-                f.write(f"Changed by {cur[3]}<br><br>")
+                f.write(f"Changed by {cur[3]}<br><br>\n")
                 for cur_range in cur[4]:
                     if cur_range.startswith("+"):
-                        f.write(f"Added {cur_range[1:]}<br>")
+                        f.write(f"Added {cur_range[1:]}<br>\n")
                     elif cur_range.startswith("-"):
-                        f.write(f"Removed {cur_range[1:]}<br>")
+                        f.write(f"Removed {cur_range[1:]}<br>\n")
                     else:
-                        f.write(f"{cur_range}<br>")
-            f.write(']]></description>')
-            f.write('</item>')
+                        f.write(f"{cur_range}<br>\n")
+            f.write(']]></description>\n')
+            f.write('    </item>\n')
 
-        f.write('</channel>')
-        f.write('</rss>')
+        f.write('  </channel>\n')
+        f.write('</rss>\n')
 
     if not force:
         # Commit all of the files that were changed
