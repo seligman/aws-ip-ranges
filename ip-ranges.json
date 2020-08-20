@@ -1,6 +1,6 @@
 {
-  "syncToken": "1597893075",
-  "createDate": "2020-08-20-03-11-15",
+  "syncToken": "1597945873",
+  "createDate": "2020-08-20-17-51-13",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -1437,12 +1437,6 @@
       "network_border_group": "us-east-2"
     },
     {
-      "ip_prefix": "52.219.156.0/23",
-      "region": "ap-south-1",
-      "service": "AMAZON",
-      "network_border_group": "ap-south-1"
-    },
-    {
       "ip_prefix": "69.235.128.0/18",
       "region": "cn-northwest-1",
       "service": "AMAZON",
@@ -2323,12 +2317,6 @@
       "region": "us-west-1",
       "service": "AMAZON",
       "network_border_group": "us-west-1"
-    },
-    {
-      "ip_prefix": "52.219.158.0/23",
-      "region": "ap-south-1",
-      "service": "AMAZON",
-      "network_border_group": "ap-south-1"
     },
     {
       "ip_prefix": "54.240.212.0/22",
@@ -7929,6 +7917,12 @@
       "network_border_group": "eu-north-1"
     },
     {
+      "ip_prefix": "52.219.156.0/22",
+      "region": "ap-south-1",
+      "service": "AMAZON",
+      "network_border_group": "ap-south-1"
+    },
+    {
       "ip_prefix": "54.222.57.0/24",
       "region": "cn-north-1",
       "service": "AMAZON",
@@ -11223,12 +11217,6 @@
       "network_border_group": "ap-northeast-1"
     },
     {
-      "ip_prefix": "52.219.156.0/23",
-      "region": "ap-south-1",
-      "service": "S3",
-      "network_border_group": "ap-south-1"
-    },
-    {
       "ip_prefix": "3.5.208.0/22",
       "region": "ap-south-1",
       "service": "S3",
@@ -11263,12 +11251,6 @@
       "region": "ap-southeast-2",
       "service": "S3",
       "network_border_group": "ap-southeast-2"
-    },
-    {
-      "ip_prefix": "52.219.158.0/23",
-      "region": "ap-south-1",
-      "service": "S3",
-      "network_border_group": "ap-south-1"
     },
     {
       "ip_prefix": "52.218.0.0/17",
@@ -11533,6 +11515,12 @@
       "region": "eu-west-3",
       "service": "S3",
       "network_border_group": "eu-west-3"
+    },
+    {
+      "ip_prefix": "52.219.156.0/22",
+      "region": "ap-south-1",
+      "service": "S3",
+      "network_border_group": "ap-south-1"
     },
     {
       "ip_prefix": "52.219.44.0/22",
