@@ -1,6 +1,6 @@
 {
-  "syncToken": "1599675075",
-  "createDate": "2020-09-09-18-11-15",
+  "syncToken": "1599688276",
+  "createDate": "2020-09-09-21-51-16",
   "prefixes": [
     {
       "ip_prefix": "35.180.0.0/16",
@@ -16321,12 +16321,6 @@
       "region": "GLOBAL",
       "service": "CLOUDFRONT",
       "network_border_group": "GLOBAL"
-    },
-    {
-      "ip_prefix": "34.232.163.208/29",
-      "region": "us-east-1",
-      "service": "CLOUDFRONT",
-      "network_border_group": "us-east-1"
     },
     {
       "ip_prefix": "99.77.128.0/18",
