@@ -1,6 +1,6 @@
 {
-  "syncToken": "1599789074",
-  "createDate": "2020-09-11-01-51-14",
+  "syncToken": "1600098077",
+  "createDate": "2020-09-14-15-41-17",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -17208,6 +17208,12 @@
       "ip_prefix": "3.34.89.196/30",
       "region": "ap-northeast-2",
       "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ip_prefix": "3.35.130.128/25",
+      "region": "ap-northeast-2",
+      "service": "CLOUDFRONT",
       "network_border_group": "ap-northeast-2"
     },
     {
