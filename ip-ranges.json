@@ -1,6 +1,6 @@
 {
-  "syncToken": "1600191676",
-  "createDate": "2020-09-15-17-41-16",
+  "syncToken": "1600195276",
+  "createDate": "2020-09-15-18-41-16",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -16947,9 +16947,33 @@
       "network_border_group": "us-gov-east-1"
     },
     {
+      "ip_prefix": "18.252.56.0/23",
+      "region": "us-gov-east-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "us-gov-east-1"
+    },
+    {
+      "ip_prefix": "18.253.186.0/24",
+      "region": "us-gov-east-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "us-gov-east-1"
+    },
+    {
+      "ip_prefix": "15.200.141.0/25",
+      "region": "us-gov-west-1",
+      "service": "API_GATEWAY",
+      "network_border_group": "us-gov-west-1"
+    },
+    {
       "ip_prefix": "15.200.28.80/30",
       "region": "us-gov-west-1",
       "service": "EC2_INSTANCE_CONNECT",
+      "network_border_group": "us-gov-west-1"
+    },
+    {
+      "ip_prefix": "160.1.128.0/24",
+      "region": "us-gov-west-1",
+      "service": "API_GATEWAY",
       "network_border_group": "us-gov-west-1"
     },
     {
