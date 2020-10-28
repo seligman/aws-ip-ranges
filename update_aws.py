@@ -165,7 +165,7 @@ if changed or force:
             ))
         last_count = item[4]
 
-    history = [x[1] for x in all_history[-15:]][::-1]
+    history = [x[1] for x in all_history if x[0] > 0][:-16:-1]
     # Note that when we sort the top items we take the absolute value of the change
     # to show the big removals as well as the big adds.  All the other data is added
     # to the sort key to make it a stable sort for the cases where two changes

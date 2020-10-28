@@ -12,6 +12,8 @@ address space AWS is in control of.
 
 # Last 15 updates:
 
+(Changes that do not impact the counts are not shown)
+
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
 {changes}
