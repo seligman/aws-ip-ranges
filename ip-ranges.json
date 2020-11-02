@@ -1,6 +1,6 @@
 {
-  "syncToken": "1604290870",
-  "createDate": "2020-11-02-04-21-10",
+  "syncToken": "1604356870",
+  "createDate": "2020-11-02-22-41-10",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -21605,6 +21605,12 @@
       "network_border_group": "ap-east-1"
     },
     {
+      "ipv6_prefix": "2400:7fc0:500::/40",
+      "region": "cn-north-1",
+      "service": "AMAZON",
+      "network_border_group": "cn-north-1"
+    },
+    {
       "ipv6_prefix": "2a05:d079:4000::/40",
       "region": "eu-central-1",
       "service": "AMAZON",
@@ -21825,6 +21831,12 @@
       "region": "ap-southeast-3",
       "service": "AMAZON",
       "network_border_group": "ap-southeast-3"
+    },
+    {
+      "ipv6_prefix": "2404:c2c0:500::/40",
+      "region": "cn-northwest-1",
+      "service": "AMAZON",
+      "network_border_group": "cn-northwest-1"
     },
     {
       "ipv6_prefix": "2406:daf8:8000::/40",
@@ -25145,6 +25157,12 @@
       "network_border_group": "GLOBAL"
     },
     {
+      "ipv6_prefix": "2400:7fc0:500::/40",
+      "region": "cn-north-1",
+      "service": "CLOUDFRONT",
+      "network_border_group": "cn-north-1"
+    },
+    {
       "ipv6_prefix": "2600:9000:4000::/36",
       "region": "GLOBAL",
       "service": "CLOUDFRONT",
@@ -25155,6 +25173,12 @@
       "region": "GLOBAL",
       "service": "CLOUDFRONT",
       "network_border_group": "GLOBAL"
+    },
+    {
+      "ipv6_prefix": "2404:c2c0:500::/40",
+      "region": "cn-northwest-1",
+      "service": "CLOUDFRONT",
+      "network_border_group": "cn-northwest-1"
     },
     {
       "ipv6_prefix": "2600:9000:f000::/36",
