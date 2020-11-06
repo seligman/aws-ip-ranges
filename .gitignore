@@ -1,3 +1,8 @@
-*pyc
-.vscode/
+# Python artifacts
+*.py[cod]
+*$py.class
 __pycache__/
+pythonenv*/
+
+# VS Code
+.vscode/
