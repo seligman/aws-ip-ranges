@@ -1,6 +1,6 @@
 {
-  "syncToken": "1605023470",
-  "createDate": "2020-11-10-15-51-10",
+  "syncToken": "1605129070",
+  "createDate": "2020-11-11-21-11-10",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -12951,10 +12951,22 @@
       "network_border_group": "ap-northeast-2"
     },
     {
+      "ip_prefix": "76.223.102.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "52.95.182.0/23",
       "region": "ap-northeast-3",
       "service": "S3",
       "network_border_group": "ap-northeast-3"
+    },
+    {
+      "ip_prefix": "76.223.96.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "108.175.56.0/22",
@@ -12997,6 +13009,12 @@
       "region": "us-west-1",
       "service": "S3",
       "network_border_group": "us-west-1"
+    },
+    {
+      "ip_prefix": "13.248.230.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "52.95.174.0/24",
@@ -13101,10 +13119,22 @@
       "network_border_group": "ca-central-1"
     },
     {
+      "ip_prefix": "13.248.231.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "54.231.0.0/17",
       "region": "us-east-1",
       "service": "S3",
       "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "76.223.104.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "52.92.40.0/21",
@@ -13143,6 +13173,12 @@
       "network_border_group": "af-south-1"
     },
     {
+      "ip_prefix": "76.223.99.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "52.95.156.0/24",
       "region": "eu-west-3",
       "service": "S3",
@@ -13167,6 +13203,12 @@
       "network_border_group": "us-gov-east-1"
     },
     {
+      "ip_prefix": "13.248.225.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "3.5.164.0/22",
       "region": "ap-southeast-2",
       "service": "S3",
@@ -13183,6 +13225,12 @@
       "region": "ap-northeast-3",
       "service": "S3",
       "network_border_group": "ap-northeast-3"
+    },
+    {
+      "ip_prefix": "13.248.229.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "52.95.158.0/23",
@@ -13221,10 +13269,22 @@
       "network_border_group": "ap-east-1"
     },
     {
+      "ip_prefix": "76.223.97.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "3.5.76.0/22",
       "region": "us-west-2",
       "service": "S3",
       "network_border_group": "us-west-2"
+    },
+    {
+      "ip_prefix": "13.248.228.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "52.95.172.0/23",
@@ -13293,6 +13353,12 @@
       "network_border_group": "ap-southeast-3"
     },
     {
+      "ip_prefix": "13.248.224.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "52.95.175.0/24",
       "region": "af-south-1",
       "service": "S3",
@@ -13305,6 +13371,18 @@
       "network_border_group": "ap-southeast-1"
     },
     {
+      "ip_prefix": "76.223.95.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
+      "ip_prefix": "13.248.227.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "3.5.248.0/22",
       "region": "eu-south-1",
       "service": "S3",
@@ -13315,6 +13393,12 @@
       "region": "sa-east-1",
       "service": "S3",
       "network_border_group": "sa-east-1"
+    },
+    {
+      "ip_prefix": "76.223.101.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "52.219.160.0/23",
@@ -13371,6 +13455,12 @@
       "network_border_group": "us-gov-west-1"
     },
     {
+      "ip_prefix": "76.223.100.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "52.95.142.0/23",
       "region": "us-gov-west-1",
       "service": "S3",
@@ -13425,6 +13515,12 @@
       "network_border_group": "eu-west-3"
     },
     {
+      "ip_prefix": "76.223.103.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "3.5.80.0/21",
       "region": "us-west-2",
       "service": "S3",
@@ -13435,6 +13531,12 @@
       "region": "ap-south-1",
       "service": "S3",
       "network_border_group": "ap-south-1"
+    },
+    {
+      "ip_prefix": "76.223.98.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "52.219.44.0/22",
@@ -13477,6 +13579,12 @@
       "region": "eu-central-1",
       "service": "S3",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "13.248.232.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "52.95.163.0/24",
@@ -13545,6 +13653,12 @@
       "network_border_group": "ap-northeast-3"
     },
     {
+      "ip_prefix": "13.248.226.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "52.82.164.0/22",
       "region": "cn-northwest-1",
       "service": "S3",
@@ -13567,6 +13681,12 @@
       "region": "us-west-2",
       "service": "S3",
       "network_border_group": "us-west-2"
+    },
+    {
+      "ip_prefix": "13.248.233.0/24",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "3.5.134.0/23",
@@ -23717,6 +23837,12 @@
       "network_border_group": "cn-northwest-1"
     },
     {
+      "ipv6_prefix": "2600:9000:a310::/48",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ipv6_prefix": "2a05:d07a:c000::/40",
       "region": "eu-west-2",
       "service": "S3",
@@ -23775,6 +23901,12 @@
       "region": "eu-west-3",
       "service": "S3",
       "network_border_group": "eu-west-3"
+    },
+    {
+      "ipv6_prefix": "2600:9000:a211::/48",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ipv6_prefix": "2600:1ff8:c000::/40",
@@ -23921,10 +24053,22 @@
       "network_border_group": "ap-northeast-2"
     },
     {
+      "ipv6_prefix": "2600:9000:a104::/48",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ipv6_prefix": "2600:1ff0:6000::/40",
       "region": "us-east-2",
       "service": "S3",
       "network_border_group": "us-east-2"
+    },
+    {
+      "ipv6_prefix": "2600:9000:a311::/48",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ipv6_prefix": "2600:1fa0:8000::/40",
@@ -24227,6 +24371,12 @@
       "network_border_group": "cn-north-1"
     },
     {
+      "ipv6_prefix": "2600:9000:a210::/48",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ipv6_prefix": "2406:daa0:9000::/40",
       "region": "ap-southeast-3",
       "service": "S3",
@@ -24321,6 +24471,12 @@
       "region": "eu-west-1",
       "service": "S3",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ipv6_prefix": "2600:9000:a105::/48",
+      "region": "GLOBAL",
+      "service": "S3",
+      "network_border_group": "GLOBAL"
     },
     {
       "ipv6_prefix": "2406:daa0:c000::/40",
