@@ -1,6 +1,6 @@
 {
-  "syncToken": "1605538270",
-  "createDate": "2020-11-16-14-51-10",
+  "syncToken": "1605546670",
+  "createDate": "2020-11-16-17-11-10",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -18822,6 +18822,12 @@
       "ip_prefix": "18.252.4.0/30",
       "region": "us-gov-east-1",
       "service": "EC2_INSTANCE_CONNECT",
+      "network_border_group": "us-gov-east-1"
+    },
+    {
+      "ip_prefix": "18.252.4.16/29",
+      "region": "us-gov-east-1",
+      "service": "CODEBUILD",
       "network_border_group": "us-gov-east-1"
     },
     {
