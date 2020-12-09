@@ -10,22 +10,33 @@ import matplotlib.pyplot as plt
 from requests import get
 from netaddr import IPSet, IPNetwork
 
+started = datetime.utcnow()
+def log_step(value):
+    # Simple helper to show how long everything takes
+    print(f"{(datetime.utcnow() - started).total_seconds():8.4f}: {value}", flush=True)
+
 force = False
 if len(sys.argv) > 1 and sys.argv[1] == "force":
+    log_step("Force flag in effect")
     force = True
 
 # First off, see if the live file has changed
+log_step("Getting AWS's IP ranges file")
 ip_ranges = get("https://ip-ranges.amazonaws.com/ip-ranges.json").content
+log_step("Importing old data")
 with open("ip-ranges.json") as f:
     ip_ranges_old = json.load(f)
+log_step("Decoding current data")
 ip_ranges_cur = json.loads(ip_ranges)
+log_step("Initial load done, checking for changes")
 if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
     # Ok, the live file has change, write out a bit-for-bit copy
     # to our local copy
-    print("Updating ip-ranges.json...")
+    log_step("Updating ip-ranges.json")
     with open("ip-ranges.json", "wb") as f:
         f.write(ip_ranges)
     
+    log_step("Parsing date from IP ranges")
     # Crack out the date from the data file
     time = datetime(*[int(x) for x in ip_ranges_cur['createDate'][:19].split("-")])
     # Turn that into the format git expects
@@ -35,7 +46,9 @@ if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
     os.environ['GIT_AUTHOR_DATE'] = git_time
     # Commit the change to ip-ranges.json to git
     if not force:
+        log_step("Staging IP ranges file")
         subprocess.check_call(["git", "add", "ip-ranges.json"])
+        log_step("Commit IP ranges file")
         subprocess.check_call(["git", "commit", "-a", "-m", f"ip-ranges from {time.strftime('%Y-%m-%d %H:%M:%S')}"])
 
 # Now, build up our cache of history, use a couple of helper functions
@@ -55,9 +68,11 @@ def save_cache(filename, data):
         f.write(",\n".join([f'"{x}":{json.dumps(data[x], separators=(",", ":"))}' for x in sorted(cache, key=lambda y:cache[y][0])]))
         f.write("\n}\n")
 
+log_step("Load some stats from history")
 cache = load_cache("history_count.json")
 changes = load_cache("history_changes.json")
 
+log_step("Look for all historical git objects")
 # Pull out all of the history items for this file:
 cmd = "git rev-list --all --objects -- ip-ranges.json"
 history = subprocess.check_output(cmd.split(' ')).decode("utf8")
@@ -67,7 +82,7 @@ for row in history.split("\n"):
         # If there's a history item we haven't parsed, pull
         # the data and parse it
         if row[0] not in cache:
-            print(f"Loading {row[0]}...")
+            log_step(f"Loading {row[0]}")
             cmd = "git cat-file -p " + row[0]
             data = subprocess.check_output(cmd.split(' '))
             data = json.loads(data)
@@ -86,6 +101,7 @@ for row in history.split("\n"):
 last_key = None
 for key in sorted(cache, key=lambda y:cache[y][0]):
     if key not in changes:
+        log_step(f"Loading addresses from {key}")
         changed = True
         if last_key is None:
             changes[key] = {"added": [], "removed": []}
@@ -106,6 +122,7 @@ for key in sorted(cache, key=lambda y:cache[y][0]):
     last_key = key
 
 if changed or force:
+    log_step("Saving cache files")
     # Something changed, go ahead and write things out
     save_cache("history_count.json", cache)
     save_cache("history_changes.json", changes)
@@ -113,6 +130,7 @@ if changed or force:
     # Pull in the days in the history, using the largest
     # value for the day when there are multiple entries for
     # one day
+    log_step("Summarize the history")
     values = {}
     for value in cache.values():
         time_str = value[0][:10]
@@ -124,6 +142,7 @@ if changed or force:
 
     # And create two lists, one of days, and one as 
     # the percent values to chart
+    log_step("Organize the summary")
     keys = sorted(values)
     dates = [values[x][0] for x in keys]
     values = [values[x][1] * 100.0 for x in keys]
@@ -131,17 +150,18 @@ if changed or force:
     # And also make a sorted list for the information dump
     in_order = [cache[x]+[x] for x in sorted(cache, key=lambda y:cache[y][0])]
 
-    print("Charting data...")
+    log_step("Charting data")
     # Chart everything out
     plt.figure(figsize=(9, 5))
     plt.title("History of percentage of AWS ownership of IPv4 space")
     plt.plot(dates, values)
     plt.savefig("history_count.png", bbox_inches='tight')
 
-    print("Filling out template")
+    log_step("Filling out template")
     with open("README.template.md", "rt") as f:
         md = f.read()
     
+    log_step("Creating items for tables")
     all_history = []
     last_count = None
     for item in in_order:
@@ -165,19 +185,24 @@ if changed or force:
             ))
         last_count = item[4]
 
+    log_step("Getting history")
     history = [x[1] for x in all_history if x[0] > 0][:-16:-1]
     # Note that when we sort the top items we take the absolute value of the change
     # to show the big removals as well as the big adds.  All the other data is added
     # to the sort key to make it a stable sort for the cases where two changes
     # were the same size.
+    log_step("Getting overall top items")
     top_history = [x[1] for x in sorted(all_history, key=lambda y:(abs(y[0]), y))[-15:]][::-1]
 
+    log_step("Creating the tables")
     # Drop in the tables into the markdown document
     md = md.replace("{changes}", "\n".join(history))
     md = md.replace("{top10_changes}", "\n".join(top_history))
+    log_step("Writing out the new README")
     with open("README.md", "wt") as f:
         f.write(md)
 
+    log_step("Creating an RSS feed")
     # Create an RSS feed, do it by hand just to make things easy
     with open("rss.xml", "wt") as f:
         base_url = "https://github.com/seligman/aws-ip-ranges"
@@ -189,6 +214,7 @@ if changed or force:
         f.write(f'    <link>{base_url}</link>\n')
         f.write("    <description>Changes to AWS's IP Ranges</description>\n")
 
+        log_step("Filling out the RSS feed")
         for cur in all_history[-20:]:
             f.write('    <item>\n')
             f.write(f'      <title>AWS IP Ranges update for {cur[2]}</title>\n')
@@ -211,14 +237,21 @@ if changed or force:
         f.write('  </channel>\n')
         f.write('</rss>\n')
 
+    log_step("Done with most work")
     if not force:
+        log_step("Staging files for git changes")
         # Commit all of the files that were changed
         subprocess.check_call(["git", "add", "history_count.json"])
         subprocess.check_call(["git", "add", "history_changes.json"])
         subprocess.check_call(["git", "add", "history_count.png"])
         subprocess.check_call(["git", "add", "rss.xml"])
         subprocess.check_call(["git", "add", "README.md"])
+
+        log_step("Creating git commit")
         subprocess.check_call(["git", "commit", "-a", "-m", "Update data files"])
 
         # Push the results
+        log_step("Pushing changes")
         subprocess.check_call(["git", "push"])
+
+log_step("All done")
