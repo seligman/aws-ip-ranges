@@ -1,6 +1,6 @@
 {
-  "syncToken": "1607991078",
-  "createDate": "2020-12-15-00-11-18",
+  "syncToken": "1607993477",
+  "createDate": "2020-12-15-00-51-17",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -19398,6 +19398,30 @@
       "ip_prefix": "3.113.218.76/30",
       "region": "ap-northeast-1",
       "service": "AMAZON_APPFLOW",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "35.72.36.140/31",
+      "region": "ap-northeast-1",
+      "service": "KINESIS_VIDEO_STREAMS",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "35.72.36.142/31",
+      "region": "ap-northeast-1",
+      "service": "KINESIS_VIDEO_STREAMS",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "35.72.36.144/30",
+      "region": "ap-northeast-1",
+      "service": "KINESIS_VIDEO_STREAMS",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "35.72.36.148/30",
+      "region": "ap-northeast-1",
+      "service": "KINESIS_VIDEO_STREAMS",
       "network_border_group": "ap-northeast-1"
     },
     {
