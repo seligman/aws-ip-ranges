@@ -8,7 +8,7 @@ This repository tracks changes to that file, and based off a trigger on the SNS 
 automatically produces this chart showing how what percentage of the Internet's IPv4 
 address space AWS is in control of.
 
-![History of AWS](history_count.png)
+![History of AWS](history_count.svg)
 
 # Last 15 updates:
 

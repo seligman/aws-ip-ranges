@@ -152,10 +152,15 @@ if changed or force:
 
     log_step("Charting data")
     # Chart everything out
+    plt.rcParams.update({
+        "axes.facecolor":    (0.8, 0.8, 0.8, 0.75),  # green with alpha = 50%
+        "savefig.facecolor": (0.7, 0.7, 0.7, 0.75),  # blue  with alpha = 20%
+    })
+
     plt.figure(figsize=(9, 5))
     plt.title("History of percentage of AWS ownership of IPv4 space")
     plt.plot(dates, values)
-    plt.savefig("history_count.png", bbox_inches='tight')
+    plt.savefig("history_count.svg", bbox_inches='tight')
 
     log_step("Filling out template")
     with open("README.template.md", "rt") as f:
@@ -243,7 +248,7 @@ if changed or force:
         # Commit all of the files that were changed
         subprocess.check_call(["git", "add", "history_count.json"])
         subprocess.check_call(["git", "add", "history_changes.json"])
-        subprocess.check_call(["git", "add", "history_count.png"])
+        subprocess.check_call(["git", "add", "history_count.svg"])
         subprocess.check_call(["git", "add", "rss.xml"])
         subprocess.check_call(["git", "add", "README.md"])
 
