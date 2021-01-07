@@ -153,8 +153,8 @@ if changed or force:
     log_step("Charting data")
     # Chart everything out
     plt.rcParams.update({
-        "axes.facecolor":    (0.8, 0.8, 0.8, 0.75),  # green with alpha = 50%
-        "savefig.facecolor": (0.7, 0.7, 0.7, 0.75),  # blue  with alpha = 20%
+        "axes.facecolor":    (0.9, 0.9, 0.9, 1),
+        "savefig.facecolor": (0.7, 0.7, 0.7, 1),
     })
 
     plt.figure(figsize=(9, 5))
