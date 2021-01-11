@@ -1,6 +1,6 @@
 {
-  "syncToken": "1610147658",
-  "createDate": "2021-01-08-23-14-18",
+  "syncToken": "1610363661",
+  "createDate": "2021-01-11-11-14-21",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -20967,6 +20967,12 @@
       "network_border_group": "eu-west-1"
     },
     {
+      "ip_prefix": "3.251.106.128/25",
+      "region": "eu-west-1",
+      "service": "AMAZON",
+      "network_border_group": "eu-west-1"
+    },
+    {
       "ip_prefix": "3.251.56.0/24",
       "region": "eu-west-1",
       "service": "API_GATEWAY",
@@ -22182,6 +22188,12 @@
       "ip_prefix": "44.242.161.8/31",
       "region": "us-west-2",
       "service": "KINESIS_VIDEO_STREAMS",
+      "network_border_group": "us-west-2"
+    },
+    {
+      "ip_prefix": "44.242.184.128/25",
+      "region": "us-west-2",
+      "service": "AMAZON",
       "network_border_group": "us-west-2"
     },
     {
