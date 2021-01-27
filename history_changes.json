@@ -1024,5 +1024,6 @@
 "dfef77f19f7fae908c70b18b690c0a5a1f5beea9":{"added":["15.230.16.0/32"],"removed":[]},
 "f2fe3972f5e4926fb3536c1ec0b3b5e76c3b72c5":{"added":["150.222.113.0/24"],"removed":[]},
 "e2df5c827ab0b4eb8485e96993cc8d0c301d9c6e":{"added":[],"removed":[]},
-"20d8bad16e1816bb4a3467945ec3ad9a635fade7":{"added":[],"removed":[]}
+"20d8bad16e1816bb4a3467945ec3ad9a635fade7":{"added":[],"removed":[]},
+"f86fc8b32c365922f2ecdeb8473cfac2b3185d26":{"added":[],"removed":["150.222.15.128/29","150.222.15.136/30"]}
 }
