@@ -1,6 +1,6 @@
 {
-  "syncToken": "1616787850",
-  "createDate": "2021-03-26-19-44-10",
+  "syncToken": "1616789050",
+  "createDate": "2021-03-26-20-04-10",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -23757,6 +23757,12 @@
       "network_border_group": "eu-west-2"
     },
     {
+      "ip_prefix": "18.168.133.0/24",
+      "region": "eu-west-2",
+      "service": "API_GATEWAY",
+      "network_border_group": "eu-west-2"
+    },
+    {
       "ip_prefix": "18.168.37.160/28",
       "region": "eu-west-2",
       "service": "S3",
@@ -23851,6 +23857,12 @@
       "region": "eu-west-2",
       "service": "CLOUDFRONT",
       "network_border_group": "eu-west-2"
+    },
+    {
+      "ip_prefix": "13.36.155.0/24",
+      "region": "eu-west-3",
+      "service": "API_GATEWAY",
+      "network_border_group": "eu-west-3"
     },
     {
       "ip_prefix": "13.36.84.48/28",
