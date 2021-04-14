@@ -1,6 +1,6 @@
 {
-  "syncToken": "1618418052",
-  "createDate": "2021-04-14-16-34-12",
+  "syncToken": "1618421054",
+  "createDate": "2021-04-14-17-24-14",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -22956,6 +22956,12 @@
       "ip_prefix": "35.73.115.0/28",
       "region": "ap-northeast-1",
       "service": "S3",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "35.73.115.128/25",
+      "region": "ap-northeast-1",
+      "service": "API_GATEWAY",
       "network_border_group": "ap-northeast-1"
     },
     {
