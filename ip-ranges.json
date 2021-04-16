@@ -1,6 +1,6 @@
 {
-  "syncToken": "1618539853",
-  "createDate": "2021-04-16-02-24-13",
+  "syncToken": "1618546453",
+  "createDate": "2021-04-16-04-14-13",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -23700,6 +23700,12 @@
       "ip_prefix": "3.98.24.16/28",
       "region": "ca-central-1",
       "service": "S3",
+      "network_border_group": "ca-central-1"
+    },
+    {
+      "ip_prefix": "3.98.86.0/23",
+      "region": "ca-central-1",
+      "service": "API_GATEWAY",
       "network_border_group": "ca-central-1"
     },
     {
