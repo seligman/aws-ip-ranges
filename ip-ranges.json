@@ -1,6 +1,6 @@
 {
-  "syncToken": "1620824052",
-  "createDate": "2021-05-12-12-54-12",
+  "syncToken": "1620836653",
+  "createDate": "2021-05-12-16-24-13",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -23508,6 +23508,18 @@
       "ip_prefix": "13.244.35.192/26",
       "region": "af-south-1",
       "service": "AMAZON",
+      "network_border_group": "af-south-1"
+    },
+    {
+      "ip_prefix": "13.245.93.140/30",
+      "region": "af-south-1",
+      "service": "EBS",
+      "network_border_group": "af-south-1"
+    },
+    {
+      "ip_prefix": "13.245.93.160/29",
+      "region": "af-south-1",
+      "service": "EBS",
       "network_border_group": "af-south-1"
     },
     {
