@@ -1,6 +1,6 @@
 {
-  "syncToken": "1620912252",
-  "createDate": "2021-05-13-13-24-12",
+  "syncToken": "1620919451",
+  "createDate": "2021-05-13-15-24-11",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -23211,6 +23211,12 @@
       "network_border_group": "cn-north-1"
     },
     {
+      "ip_prefix": "140.179.58.88/29",
+      "region": "cn-north-1",
+      "service": "EBS",
+      "network_border_group": "cn-north-1"
+    },
+    {
       "ip_prefix": "52.80.197.0/25",
       "region": "cn-north-1",
       "service": "ROUTE53_HEALTHCHECKS",
@@ -23361,6 +23367,18 @@
       "network_border_group": "cn-northwest-1"
     },
     {
+      "ip_prefix": "68.79.2.244/30",
+      "region": "cn-northwest-1",
+      "service": "EBS",
+      "network_border_group": "cn-northwest-1"
+    },
+    {
+      "ip_prefix": "68.79.2.248/29",
+      "region": "cn-northwest-1",
+      "service": "EBS",
+      "network_border_group": "cn-northwest-1"
+    },
+    {
       "ip_prefix": "69.230.219.0/24",
       "region": "cn-northwest-1",
       "service": "API_GATEWAY",
@@ -23370,6 +23388,18 @@
       "ip_prefix": "18.252.126.0/25",
       "region": "us-gov-east-1",
       "service": "AMAZON",
+      "network_border_group": "us-gov-east-1"
+    },
+    {
+      "ip_prefix": "18.252.145.156/30",
+      "region": "us-gov-east-1",
+      "service": "EBS",
+      "network_border_group": "us-gov-east-1"
+    },
+    {
+      "ip_prefix": "18.252.145.160/29",
+      "region": "us-gov-east-1",
+      "service": "EBS",
       "network_border_group": "us-gov-east-1"
     },
     {
@@ -23442,6 +23472,18 @@
       "ip_prefix": "3.32.190.0/25",
       "region": "us-gov-west-1",
       "service": "AMAZON",
+      "network_border_group": "us-gov-west-1"
+    },
+    {
+      "ip_prefix": "3.32.190.244/30",
+      "region": "us-gov-west-1",
+      "service": "EBS",
+      "network_border_group": "us-gov-west-1"
+    },
+    {
+      "ip_prefix": "3.32.190.248/29",
+      "region": "us-gov-west-1",
+      "service": "EBS",
       "network_border_group": "us-gov-west-1"
     },
     {
