@@ -1,6 +1,6 @@
 {
-  "syncToken": "1621241652",
-  "createDate": "2021-05-17-08-54-12",
+  "syncToken": "1621275853",
+  "createDate": "2021-05-17-18-24-13",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -11673,6 +11673,12 @@
       "network_border_group": "us-west-2-den-1"
     },
     {
+      "ip_prefix": "15.181.96.0/20",
+      "region": "us-east-1",
+      "service": "AMAZON",
+      "network_border_group": "us-east-1-mci-1"
+    },
+    {
       "ip_prefix": "15.221.3.0/24",
       "region": "eu-central-1",
       "service": "AMAZON",
@@ -15421,6 +15427,12 @@
       "region": "ap-east-1",
       "service": "AMAZON",
       "network_border_group": "ap-east-1"
+    },
+    {
+      "ip_prefix": "15.181.246.0/24",
+      "region": "us-east-1",
+      "service": "AMAZON",
+      "network_border_group": "us-east-1-mci-1"
     },
     {
       "ip_prefix": "15.230.56.96/31",
@@ -21039,6 +21051,12 @@
       "network_border_group": "us-west-2-den-1"
     },
     {
+      "ip_prefix": "15.181.96.0/20",
+      "region": "us-east-1",
+      "service": "EC2",
+      "network_border_group": "us-east-1-mci-1"
+    },
+    {
       "ip_prefix": "99.150.112.0/21",
       "region": "ap-south-2",
       "service": "EC2",
@@ -21919,6 +21937,12 @@
       "region": "ap-east-1",
       "service": "EC2",
       "network_border_group": "ap-east-1"
+    },
+    {
+      "ip_prefix": "15.181.246.0/24",
+      "region": "us-east-1",
+      "service": "EC2",
+      "network_border_group": "us-east-1-mci-1"
     },
     {
       "ip_prefix": "52.95.251.0/24",
