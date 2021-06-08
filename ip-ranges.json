@@ -1,6 +1,6 @@
 {
-  "syncToken": "1623120251",
-  "createDate": "2021-06-08-02-44-11",
+  "syncToken": "1623172454",
+  "createDate": "2021-06-08-17-14-14",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -24957,6 +24957,12 @@
       "network_border_group": "ap-northeast-3"
     },
     {
+      "ip_prefix": "15.152.24.64/26",
+      "region": "ap-northeast-3",
+      "service": "AMAZON",
+      "network_border_group": "ap-northeast-3"
+    },
+    {
       "ip_prefix": "15.152.8.192/26",
       "region": "ap-northeast-3",
       "service": "AMAZON",
@@ -27396,6 +27402,12 @@
       "ip_prefix": "35.80.92.0/22",
       "region": "us-west-2",
       "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "us-west-2"
+    },
+    {
+      "ip_prefix": "35.82.136.192/29",
+      "region": "us-west-2",
+      "service": "CODEBUILD",
       "network_border_group": "us-west-2"
     },
     {
@@ -33251,6 +33263,18 @@
       "network_border_group": "ap-east-1"
     },
     {
+      "ipv6_prefix": "2406:da14:7ff:f800::/56",
+      "region": "ap-northeast-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ipv6_prefix": "2406:da14:fff:f800::/56",
+      "region": "ap-northeast-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
       "ipv6_prefix": "2406:da70:4000:100::/56",
       "region": "ap-northeast-1",
       "service": "AMAZON",
@@ -33347,6 +33371,18 @@
       "network_border_group": "ap-south-1"
     },
     {
+      "ipv6_prefix": "2406:da18:7ff:f800::/56",
+      "region": "ap-southeast-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "ap-southeast-1"
+    },
+    {
+      "ipv6_prefix": "2406:da18:fff:f800::/56",
+      "region": "ap-southeast-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "ap-southeast-1"
+    },
+    {
       "ipv6_prefix": "2406:da70:8000:100::/56",
       "region": "ap-southeast-1",
       "service": "AMAZON",
@@ -33375,6 +33411,18 @@
       "region": "ap-southeast-1",
       "service": "AMAZON",
       "network_border_group": "ap-southeast-1"
+    },
+    {
+      "ipv6_prefix": "2406:da1c:7ff:f800::/56",
+      "region": "ap-southeast-2",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "ap-southeast-2"
+    },
+    {
+      "ipv6_prefix": "2406:da1c:fff:f800::/56",
+      "region": "ap-southeast-2",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "ap-southeast-2"
     },
     {
       "ipv6_prefix": "2406:da70:c000:100::/56",
@@ -33515,6 +33563,18 @@
       "network_border_group": "eu-south-1"
     },
     {
+      "ipv6_prefix": "2a05:d018:7ff:f800::/56",
+      "region": "eu-west-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "eu-west-1"
+    },
+    {
+      "ipv6_prefix": "2a05:d018:fff:f800::/56",
+      "region": "eu-west-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "eu-west-1"
+    },
+    {
       "ipv6_prefix": "2a05:d038:8000:100::/56",
       "region": "eu-west-1",
       "service": "AMAZON",
@@ -33629,6 +33689,18 @@
       "network_border_group": "me-south-1"
     },
     {
+      "ipv6_prefix": "2600:1f1e:7ff:f800::/56",
+      "region": "sa-east-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "sa-east-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f1e:fff:f800::/56",
+      "region": "sa-east-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "sa-east-1"
+    },
+    {
       "ipv6_prefix": "2600:1f70:e000:100::/56",
       "region": "sa-east-1",
       "service": "AMAZON",
@@ -33651,6 +33723,18 @@
       "region": "sa-east-1",
       "service": "AMAZON",
       "network_border_group": "sa-east-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f18:3fff:f800::/56",
+      "region": "us-east-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f18:7fff:f800::/56",
+      "region": "us-east-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "us-east-1"
     },
     {
       "ipv6_prefix": "2600:1f70:8000::/56",
@@ -33689,6 +33773,18 @@
       "network_border_group": "us-east-2"
     },
     {
+      "ipv6_prefix": "2600:1f1c:7ff:f800::/56",
+      "region": "us-west-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "us-west-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f1c:fff:f800::/56",
+      "region": "us-west-1",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "us-west-1"
+    },
+    {
       "ipv6_prefix": "2600:1f70:c000:100::/56",
       "region": "us-west-1",
       "service": "AMAZON",
@@ -33717,6 +33813,18 @@
       "region": "us-west-1",
       "service": "AMAZON",
       "network_border_group": "us-west-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f14:7ff:f800::/56",
+      "region": "us-west-2",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "us-west-2"
+    },
+    {
+      "ipv6_prefix": "2600:1f14:fff:f800::/56",
+      "region": "us-west-2",
+      "service": "ROUTE53_HEALTHCHECKS",
+      "network_border_group": "us-west-2"
     },
     {
       "ipv6_prefix": "2600:1f70:4000:100::/56",
