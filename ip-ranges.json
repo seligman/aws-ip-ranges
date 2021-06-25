@@ -1,6 +1,6 @@
 {
-  "syncToken": "1624632255",
-  "createDate": "2021-06-25-14-44-15",
+  "syncToken": "1624635853",
+  "createDate": "2021-06-25-15-44-13",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -25050,6 +25050,12 @@
       "ip_prefix": "140.179.79.192/27",
       "region": "cn-north-1",
       "service": "CLOUD9",
+      "network_border_group": "cn-north-1"
+    },
+    {
+      "ip_prefix": "140.179.79.244/30",
+      "region": "cn-north-1",
+      "service": "EBS",
       "network_border_group": "cn-north-1"
     },
     {
