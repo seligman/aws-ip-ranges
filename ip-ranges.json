@@ -1,6 +1,6 @@
 {
-  "syncToken": "1624655655",
-  "createDate": "2021-06-25-21-14-15",
+  "syncToken": "1624659253",
+  "createDate": "2021-06-25-22-14-13",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -25959,6 +25959,12 @@
       "network_border_group": "ap-northeast-2"
     },
     {
+      "ip_prefix": "3.36.245.204/30",
+      "region": "ap-northeast-2",
+      "service": "EBS",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
       "ip_prefix": "52.78.247.128/26",
       "region": "ap-northeast-2",
       "service": "CLOUDFRONT",
@@ -26610,6 +26616,12 @@
       "ip_prefix": "3.97.49.128/25",
       "region": "ca-central-1",
       "service": "API_GATEWAY",
+      "network_border_group": "ca-central-1"
+    },
+    {
+      "ip_prefix": "3.98.171.92/30",
+      "region": "ca-central-1",
+      "service": "EBS",
       "network_border_group": "ca-central-1"
     },
     {
@@ -27630,6 +27642,12 @@
       "ip_prefix": "15.228.107.16/28",
       "region": "sa-east-1",
       "service": "S3",
+      "network_border_group": "sa-east-1"
+    },
+    {
+      "ip_prefix": "15.228.126.48/30",
+      "region": "sa-east-1",
+      "service": "EBS",
       "network_border_group": "sa-east-1"
     },
     {
