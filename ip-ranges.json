@@ -1,6 +1,6 @@
 {
-  "syncToken": "1624659253",
-  "createDate": "2021-06-25-22-14-13",
+  "syncToken": "1624662854",
+  "createDate": "2021-06-25-23-14-14",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -25996,6 +25996,12 @@
     },
     {
       "ip_prefix": "13.208.228.128/29",
+      "region": "ap-northeast-3",
+      "service": "EBS",
+      "network_border_group": "ap-northeast-3"
+    },
+    {
+      "ip_prefix": "13.208.228.136/30",
       "region": "ap-northeast-3",
       "service": "EBS",
       "network_border_group": "ap-northeast-3"
