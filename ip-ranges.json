@@ -1,6 +1,6 @@
 {
-  "syncToken": "1624985055",
-  "createDate": "2021-06-29-16-44-15",
+  "syncToken": "1625003055",
+  "createDate": "2021-06-29-21-44-15",
   "prefixes": [
     {
       "ip_prefix": "3.5.140.0/22",
@@ -31200,6 +31200,12 @@
       "ip_prefix": "3.101.164.0/24",
       "region": "us-west-1",
       "service": "ROUTE53_RESOLVER",
+      "network_border_group": "us-west-1"
+    },
+    {
+      "ip_prefix": "3.101.176.0/24",
+      "region": "us-west-1",
+      "service": "API_GATEWAY",
       "network_border_group": "us-west-1"
     },
     {
