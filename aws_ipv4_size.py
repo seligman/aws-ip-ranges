@@ -12,9 +12,12 @@ def parse_aws(ip_ranges=None):
         # thought it was a fun fact.
         ip_ranges = get("https://ip-ranges.amazonaws.com/ip-ranges.json").json()
 
-    # Merge everything from AWS into one IPSet.
-    # This ignores IPv6, but so does everyone else.
-    aws = IPSet([IPNetwork(x["ip_prefix"]) for x in ip_ranges["prefixes"]])
+    if isinstance(ip_ranges, IPSet):
+        aws = ip_ranges
+    else:
+        # Merge everything from AWS into one IPSet.
+        # This ignores IPv6, but so does everyone else.
+        aws = IPSet([IPNetwork(x["ip_prefix"]) for x in ip_ranges["prefixes"]])
 
     # These are all of the IPv4 addresses, there are 2^32 of them.
     # IPSet used here just because I like the symmetry of it all.
