@@ -8,7 +8,7 @@ This repository tracks changes to that file, and based off a trigger on the SNS 
 automatically produces this chart showing how what percentage of the Internet's IPv4 
 address space AWS is in control of.
 
-For comparison's sake, as of 2021-08-05, Microsoft's Azure has 20350416 IPs, or 0.55%, and Google Cloud has 9092864 IPs, or 0.25%.
+For comparision's sake, as of 2021-08-05, Microsoft's Azure has 20350416 IPs, or 0.55%, and Google Cloud has 9092864 IPs, or 0.25%.
 
 ![History of AWS](history_count.svg)
 
@@ -18,6 +18,7 @@ For comparison's sake, as of 2021-08-05, Microsoft's Azure has 20350416 IPs, or 
 
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
+| 2021-08-06 04:21:17 | 1.61044 | 59622755 | +32 | +13.34.56.128/27 |
 | 2021-08-05 18:21:13 | 1.61044 | 59622723 | +1048576 | +43.192.0.0/12 |
 | 2021-08-05 13:51:13 | 1.58212 | 58574147 | +2 | +15.230.0.12/31 |
 | 2021-08-04 21:11:16 | 1.58212 | 58574145 | +65536 | +15.191.0.0/16 |
@@ -32,7 +33,6 @@ For comparison's sake, as of 2021-08-05, Microsoft's Azure has 20350416 IPs, or 
 | 2021-07-29 20:31:15 | 1.56966 | 58113024 | +1856 | +15.197.8.0/22, +52.219.142.0/23, +15.197.3.0/24, ... |
 | 2021-07-23 16:44:13 | 1.56961 | 58111168 | +256 | +15.177.92.0/24 |
 | 2021-07-22 21:44:14 | 1.56961 | 58110912 | +16 | +69.107.7.80/28 |
-| 2021-07-22 18:14:13 | 1.56961 | 58110896 | +8 | +69.107.7.72/29 |
 
 
 # 15 largest changes to date:
