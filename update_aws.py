@@ -166,6 +166,14 @@ if changed or force:
     with open("README.template.md", "rt") as f:
         md = f.read()
     
+    log_step("Getting comparision data")
+    others = get("https://raw.githubusercontent.com/seligman/cloud_sizes/master/data/summary.json").json()
+    not_private_size = 3702258432
+    compare = f"For comparision's sake, as of {others['_'][:10]}, "
+    compare += f"Microsoft's Azure has {others['azure'][0]} IPs, or {others['azure'][0]/not_private_size*100:0.2f}%, and "
+    compare += f"Google Cloud has {others['google'][0]} IPs, or {others['google'][0]/not_private_size*100:0.2f}%."
+    md = md.replace("{compare}", compare)
+
     log_step("Creating items for tables")
     all_history = []
     last_count = None
