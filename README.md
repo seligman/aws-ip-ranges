@@ -8,7 +8,7 @@ This repository tracks changes to that file, and based off a trigger on the SNS 
 automatically produces this chart showing how what percentage of the Internet's IPv4 
 address space AWS is in control of.
 
-For comparision's sake, as of 2021-08-18, Microsoft's Azure has 20350416 IPs, or 0.55%, and Google Cloud has 9092864 IPs, or 0.25%.
+[Comparing other providers](https://github.com/seligman/cloud_sizes), as of 2021-08-18, Microsoft's Azure has 20350416 IPs, or 0.55%, and Google Cloud has 9092864 IPs, or 0.25%.
 
 ![History of AWS](history_count.svg)
 

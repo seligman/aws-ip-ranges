@@ -173,7 +173,7 @@ if changed or force:
     log_step("Getting comparision data")
     others = get("https://raw.githubusercontent.com/seligman/cloud_sizes/master/data/summary.json").json()
     not_private_size = 3702258432
-    compare = f"For comparision's sake, as of {others['_'][:10]}, "
+    compare = f"[Comparing other providers](https://github.com/seligman/cloud_sizes), as of {others['_'][:10]}, "
     compare += f"Microsoft's Azure has {others['azure'][0]} IPs, or {others['azure'][0]/not_private_size*100:0.2f}%, and "
     compare += f"Google Cloud has {others['google'][0]} IPs, or {others['google'][0]/not_private_size*100:0.2f}%."
     md = md.replace("{compare}", compare)
