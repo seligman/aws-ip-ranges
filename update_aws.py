@@ -50,6 +50,10 @@ if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
         subprocess.check_call(["git", "add", "ip-ranges.json"])
         log_step("Commit IP ranges file")
         subprocess.check_call(["git", "commit", "-a", "-m", f"ip-ranges from {time.strftime('%Y-%m-%d %H:%M:%S')}"])
+else:
+    if not force:
+        # Nothing changed, just call it quits
+        exit(0)
 
 # Now, build up our cache of history, use a couple of helper functions
 # to make loading and saving them easier
