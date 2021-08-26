@@ -6,7 +6,8 @@ can read more about the file [here](https://docs.aws.amazon.com/general/latest/g
 
 This repository tracks changes to that file, and based off a trigger on the SNS topic 
 automatically produces this chart showing how what percentage of the Internet's IPv4 
-address space AWS is in control of.
+address space AWS is in control of.  Here's an 
+[animation of the history](https://youtu.be/Su25yl7eol8) of the AWS's IP usage.
 
 {compare}
 
