@@ -9,7 +9,7 @@ automatically produces this chart showing how what percentage of the Internet's 
 address space AWS is in control of.  Here's an 
 [animation of the history](https://youtu.be/Su25yl7eol8) of the AWS's IP usage.
 
-[Comparing other providers](https://github.com/seligman/cloud_sizes), as of 2021-10-19, Microsoft's Azure has 20921644 IPs, or 0.57%, and Google Cloud has 9108480 IPs, or 0.25%.
+[Comparing other providers](https://github.com/seligman/cloud_sizes), as of 2021-10-20, Microsoft's Azure has 21177676 IPs, or 0.57%, and Google Cloud has 9108480 IPs, or 0.25%.
 
 ![History of AWS](history_count.svg)
 
@@ -19,6 +19,7 @@ address space AWS is in control of.  Here's an
 
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
+| 2021-10-20 05:03:14 | 1.76201 | 65234243 | +64 | +13.34.8.64/26 |
 | 2021-10-18 05:33:14 | 1.76201 | 65234179 | +256 | +15.230.201.0/24 |
 | 2021-10-18 04:33:16 | 1.76200 | 65233923 | +256 | +15.230.91.0/24 |
 | 2021-10-15 04:53:15 | 1.76200 | 65233667 | +256 | +15.230.90.0/24 |
@@ -33,7 +34,6 @@ address space AWS is in control of.  Here's an
 | 2021-10-06 01:33:16 | 1.76005 | 65161461 | +256 | +15.230.165.0/24 |
 | 2021-10-05 08:03:13 | 1.76004 | 65161205 | +4 | +15.230.133.20/31, +15.230.133.28/31 |
 | 2021-10-04 23:03:14 | 1.76004 | 65161201 | +64 | +13.34.61.64/26 |
-| 2021-10-01 16:33:13 | 1.76004 | 65161137 | +192 | +13.34.60.128/25, +13.34.61.0/26 |
 
 
 # 15 largest changes to date:
