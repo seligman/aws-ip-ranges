@@ -5,14 +5,6 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
-      <title>AWS IP Ranges update for 2021-11-04 11:23:17</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20211104112317</link>
-      <description><![CDATA[
-Changed by +4<br><br>
-Added 15.230.202.0/30<br>
-]]></description>
-    </item>
-    <item>
       <title>AWS IP Ranges update for 2021-11-04 20:23:17</title>
       <link>https://github.com/seligman/aws-ip-ranges#20211104202317</link>
       <description><![CDATA[
@@ -261,6 +253,58 @@ Added 52.46.191.22/31<br>
 Added 52.46.191.24/31<br>
 Added 52.46.191.46/31<br>
 Added 52.46.191.48/31<br>
+]]></description>
+    </item>
+    <item>
+      <title>AWS IP Ranges update for 2021-11-16 22:53:15</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20211116225315</link>
+      <description><![CDATA[
+Changed by +158<br><br>
+Added 43.224.76.136/29<br>
+Added 52.46.188.224/29<br>
+Added 52.46.189.240/29<br>
+Added 52.46.190.8/29<br>
+Added 43.224.76.168/30<br>
+Added 43.224.77.192/30<br>
+Added 52.46.188.36/30<br>
+Added 52.46.188.40/30<br>
+Added 52.46.188.60/30<br>
+Added 52.46.188.64/30<br>
+Added 52.46.188.84/30<br>
+Added 52.46.188.88/30<br>
+Added 52.46.188.156/30<br>
+Added 52.46.188.160/30<br>
+Added 52.46.189.36/30<br>
+Added 52.46.189.40/30<br>
+Added 52.46.189.84/30<br>
+Added 52.46.189.88/30<br>
+Added 52.46.189.156/30<br>
+Added 52.46.189.160/30<br>
+Added 52.46.190.92/30<br>
+Added 52.46.191.52/30<br>
+Added 52.46.191.88/30<br>
+Added 52.46.191.108/30<br>
+Added 52.46.191.180/30<br>
+Added 52.46.191.216/30<br>
+Added 43.224.79.50/31<br>
+Added 43.224.79.52/31<br>
+Added 43.224.79.70/31<br>
+Added 43.224.79.72/31<br>
+Added 43.224.79.138/31<br>
+Added 43.224.79.140/31<br>
+Added 43.224.79.212/31<br>
+Added 52.46.190.214/31<br>
+Added 52.46.190.216/31<br>
+Added 52.46.190.254/31<br>
+Added 52.46.191.0/31<br>
+Added 52.46.191.10/31<br>
+Added 52.46.191.12/31<br>
+Added 52.46.191.142/31<br>
+Added 52.46.191.144/31<br>
+Added 52.46.191.214/31<br>
+Added 52.46.191.220/31<br>
+Added 52.46.191.238/31<br>
+Added 52.46.191.240/31<br>
 ]]></description>
     </item>
   </channel>
