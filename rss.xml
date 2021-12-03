@@ -5,50 +5,6 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
-      <title>AWS IP Ranges update for 2021-11-18 10:13:13</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20211118101313</link>
-      <description><![CDATA[
-Changed by +162<br><br>
-Added 52.46.189.128/28<br>
-Added 43.224.76.112/29<br>
-Added 43.224.77.80/29<br>
-Added 52.46.188.24/29<br>
-Added 52.46.188.240/29<br>
-Added 52.46.190.0/29<br>
-Added 52.46.190.56/29<br>
-Added 43.224.77.76/30<br>
-Added 52.46.188.76/30<br>
-Added 52.46.188.80/30<br>
-Added 52.46.188.172/30<br>
-Added 52.46.188.176/30<br>
-Added 52.46.188.204/30<br>
-Added 52.46.188.208/30<br>
-Added 52.46.188.248/30<br>
-Added 52.46.189.44/30<br>
-Added 52.46.189.48/30<br>
-Added 52.46.189.92/30<br>
-Added 52.46.189.96/30<br>
-Added 52.46.191.60/30<br>
-Added 52.46.191.64/30<br>
-Added 52.46.191.84/30<br>
-Added 52.46.191.104/30<br>
-Added 52.46.191.132/30<br>
-Added 52.46.191.156/30<br>
-Added 52.46.191.172/30<br>
-Added 43.224.79.26/31<br>
-Added 43.224.79.28/31<br>
-Added 43.224.79.130/31<br>
-Added 52.46.190.230/31<br>
-Added 52.46.190.232/31<br>
-Added 52.46.191.2/31<br>
-Added 52.46.191.4/31<br>
-Added 52.46.191.68/31<br>
-Added 52.46.191.136/31<br>
-Added 52.46.191.226/31<br>
-Added 52.46.191.228/31<br>
-]]></description>
-    </item>
-    <item>
       <title>AWS IP Ranges update for 2021-11-18 10:43:17</title>
       <link>https://github.com/seligman/aws-ip-ranges#20211118104317</link>
       <description><![CDATA[
@@ -246,6 +202,15 @@ Added 43.224.79.36/31<br>
       <description><![CDATA[
 Changed by +256<br><br>
 Added 15.230.174.0/24<br>
+]]></description>
+    </item>
+    <item>
+      <title>AWS IP Ranges update for 2021-12-03 21:03:16</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20211203210316</link>
+      <description><![CDATA[
+Changed by +512<br><br>
+Added 3.4.7.0/24<br>
+Added 71.137.4.0/24<br>
 ]]></description>
     </item>
   </channel>
