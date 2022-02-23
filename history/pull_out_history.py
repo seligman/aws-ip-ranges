@@ -6,11 +6,8 @@ import json
 from datetime import datetime
 import os
 
-"""
-YEAR=2015 ; find ${YEAR} -type f | sort | tar --owner=0 --group=0 -T - -cvzf ${YEAR}.tar.gz
-"""
-
 seen = set()
+years = set()
 
 cmd = "git rev-list --all --objects -- ../ip-ranges.json"
 history = subprocess.check_output(cmd.split(' ')).decode("utf8")
@@ -31,8 +28,15 @@ for row in history.split("\n"):
                 break
             else:
                 dn = time.strftime("%Y")
+                years.add(dn)
                 if not os.path.isdir(dn):
                     os.mkdir(dn)
                 with open(os.path.join(dn, time.strftime("%Y-%m-%d-%H-%M-%S.json")), "wb") as f:
                     f.write(data)
                 print(", created file for " + time.strftime("%Y-%m-%d %H:%M:%S"), flush=True)
+
+for year in sorted(years)[:-1]:
+    print(f"Compressing {year}")
+    cmd = f"find {year} -type f | sort | tar --owner=0 --group=0 -T - -cvzf {year}.tar.gz ; rm -rf {year}"
+    print("$ " + cmd)
+    subprocess.check_call(cmd, shell=True)
