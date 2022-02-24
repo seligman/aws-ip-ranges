@@ -5,13 +5,6 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
-      <title>AWS IP Ranges update for 2022-02-08 15:53:20</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20220208155320</link>
-      <description><![CDATA[
-No changes to IPs
-]]></description>
-    </item>
-    <item>
       <title>AWS IP Ranges update for 2022-02-09 14:53:25</title>
       <link>https://github.com/seligman/aws-ip-ranges#20220209145325</link>
       <description><![CDATA[
@@ -175,6 +168,51 @@ Changed by +128<br><br>
 Added 13.34.66.64/26<br>
 Added 13.34.21.160/27<br>
 Added 13.34.21.192/27<br>
+]]></description>
+    </item>
+    <item>
+      <title>AWS IP Ranges update for 2022-02-24 00:23:21</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20220224002321</link>
+      <description><![CDATA[
+Changed by -38<br><br>
+Removed 150.222.240.131/32<br>
+Removed 150.222.240.135/32<br>
+Removed 150.222.240.137/32<br>
+Removed 150.222.240.161/32<br>
+Removed 150.222.240.207/32<br>
+Removed 150.222.240.237/32<br>
+Removed 150.222.240.245/32<br>
+Removed 150.222.240.247/32<br>
+Removed 150.222.240.249/32<br>
+Removed 150.222.240.251/32<br>
+Removed 150.222.242.97/32<br>
+Removed 150.222.242.99/32<br>
+Removed 150.222.242.227/32<br>
+Removed 150.222.242.229/32<br>
+Removed 150.222.242.231/32<br>
+Removed 150.222.242.233/32<br>
+Removed 150.222.243.9/32<br>
+Removed 150.222.243.11/32<br>
+Removed 150.222.243.13/32<br>
+Removed 150.222.243.15/32<br>
+Removed 150.222.243.17/32<br>
+Removed 150.222.243.19/32<br>
+Removed 150.222.243.33/32<br>
+Removed 150.222.243.35/32<br>
+Removed 150.222.243.37/32<br>
+Removed 150.222.243.39/32<br>
+Removed 150.222.243.41/32<br>
+Removed 150.222.243.43/32<br>
+Removed 150.222.243.45/32<br>
+Removed 150.222.243.47/32<br>
+Removed 150.222.243.51/32<br>
+Removed 150.222.243.53/32<br>
+Removed 150.222.243.55/32<br>
+Removed 150.222.243.57/32<br>
+Removed 150.222.243.59/32<br>
+Removed 150.222.243.177/32<br>
+Removed 150.222.244.35/32<br>
+Removed 150.222.244.37/32<br>
 ]]></description>
     </item>
   </channel>
