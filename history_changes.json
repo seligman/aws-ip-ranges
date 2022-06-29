@@ -1994,5 +1994,6 @@
 "0078a0c4230116ef16e74cae2a44a4155b6eaf68":{"added":["43.218.0.0/16"],"removed":[]},
 "d684060b0d448797d3612159afc8ec1dd8257dac":{"added":[],"removed":["71.137.8.0/22"]},
 "fc5aeee8a94c69e65f5fa921718d3d7dd68d9fca":{"added":[],"removed":[]},
-"ef5efd0ad65c5ca7f8c8126b047af87176ef0c9d":{"added":["15.230.225.0/24"],"removed":[]}
+"ef5efd0ad65c5ca7f8c8126b047af87176ef0c9d":{"added":["15.230.225.0/24"],"removed":[]},
+"576b2de44e169558acdde6fbc741edf0e5155248":{"added":["15.230.241.0/24"],"removed":["15.230.225.0/24"]}
 }
