@@ -273,6 +273,20 @@ if changed or force:
                         f.write(f"{cur_range}<br>\n")
             f.write(']]></description>\n')
             f.write('    </item>\n')
+        
+        # Also log the newest region, so feed readers will show it
+        regions = [(value, key) for key, value in firsts.items()]
+        regions.sort()
+        for seen_at, region in regions[-2:]:
+            seen_at = seen_at[:19]
+            f.write('    <item>\n')
+            f.write(f'      <title>AWS {region} Region Detected</title>\n')
+            f.write(f'      <link>{base_url}#{(region + seen_at).replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
+            f.write('      <description><![CDATA[\n')
+            seen_at = datetime(*[int(x) for x in seen_at.split("-")])
+            f.write(f"AWS Region {region} detected at {seen_at.strftime('%Y-%m-%d %H:%M:%S')}<br>\n")
+            f.write(']]></description>\n')
+            f.write('    </item>\n')
 
         f.write('  </channel>\n')
         f.write('</rss>\n')
