@@ -20,6 +20,14 @@ if len(sys.argv) > 1 and sys.argv[1] == "force":
     log_step("Force flag in effect")
     force = True
 
+# Load the old firsts file, if it exists
+if os.path.isfile("first_seens.json"):
+    with open("first_seens.json") as f:
+        firsts = json.load(f)
+else:
+    firsts = {}
+firsts_changed = False
+
 # First off, see if the live file has changed
 log_step("Getting AWS's IP ranges file")
 ip_ranges = get("https://ip-ranges.amazonaws.com/ip-ranges.json").content
@@ -28,6 +36,18 @@ with open("ip-ranges.json") as f:
     ip_ranges_old = json.load(f)
 log_step("Decoding current data")
 ip_ranges_cur = json.loads(ip_ranges)
+
+log_step("Note any new regions")
+all_regions = set(x['region'] for x in ip_ranges_cur['prefixes'])
+for region in all_regions:
+    if region not in firsts:
+        firsts[region] = ip_ranges_cur['createDate']
+        firsts_changed = True
+if firsts_changed:
+    with open("first_seens.json", "wt") as f:
+        json.dump(firsts, f, indent=4, sort_keys=True)
+        f.write("\n")
+
 log_step("Initial load done, checking for changes")
 if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
     # Ok, the live file has change, write out a bit-for-bit copy
@@ -48,6 +68,9 @@ if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
     if not force:
         log_step("Staging IP ranges file")
         subprocess.check_call(["git", "add", "ip-ranges.json"])
+        if firsts_changed:
+            log_step("Staging firsts data file")
+            subprocess.check_call(["git", "add", "first_seens.json"])
         log_step("Commit IP ranges file")
         subprocess.check_call(["git", "commit", "-a", "-m", f"ip-ranges from {time.strftime('%Y-%m-%d %H:%M:%S')}"])
 else:
