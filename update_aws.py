@@ -75,6 +75,7 @@ if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
         subprocess.check_call(["git", "commit", "-a", "-m", f"ip-ranges from {time.strftime('%Y-%m-%d %H:%M:%S')}"])
 else:
     if not force:
+        log_step("No changes, all done")
         # Nothing changed, just call it quits
         exit(0)
 
