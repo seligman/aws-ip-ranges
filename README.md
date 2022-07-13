@@ -12,7 +12,7 @@ address space AWS is in control of.  Here's an
 
 [![@aws_ip_changes on twitter](https://img.shields.io/twitter/url/https/twitter.com/aws_ip_changes.svg?style=social&label=%40aws_ip_changes)](https://twitter.com/aws_ip_changes) for updates as they happen.
 
-[Comparing other providers](https://github.com/seligman/cloud_sizes), as of 2022-07-12, Microsoft's Azure has 26435995 IPs, or 0.71%, and Google Cloud has 10522368 IPs, or 0.28%.
+[Comparing other providers](https://github.com/seligman/cloud_sizes), as of 2022-07-13, Microsoft's Azure has 27003843 IPs, or 0.73%, and Google Cloud has 10522368 IPs, or 0.28%.
 
 ![History of AWS](history_count.svg)
 
@@ -22,6 +22,7 @@ address space AWS is in control of.  Here's an
 
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
+| 2022-07-13 07:23:05 | 1.79941 | 66618676 | +256 | +15.230.246.0/24 |
 | 2022-07-12 10:13:09 | 1.79940 | 66618420 | +64 | +13.34.77.224/27, +13.34.78.0/27 |
 | 2022-07-12 03:23:05 | 1.79940 | 66618356 | +256 | +15.230.245.0/24 |
 | 2022-07-11 20:23:05 | 1.79939 | 66618100 | +256 | +15.230.180.0/24 |
@@ -36,7 +37,6 @@ address space AWS is in control of.  Here's an
 | 2022-06-29 22:23:05 | 1.79936 | 66616948 | +256 | +15.230.225.0/24 |
 | 2022-06-28 16:13:07 | 1.79938 | 66617716 | +65536 | +43.218.0.0/16 |
 | 2022-06-28 01:23:05 | 1.79761 | 66552180 | +256 | +15.230.240.0/24 |
-| 2022-06-24 00:33:05 | 1.79760 | 66551924 | +64 | +13.34.77.64/26 |
 
 
 # 15 largest changes to date:
