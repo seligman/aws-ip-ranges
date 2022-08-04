@@ -37,12 +37,14 @@ with open("ip-ranges.json") as f:
 log_step("Decoding current data")
 ip_ranges_cur = json.loads(ip_ranges)
 
-log_step("Note any new regions")
+log_step("Note any new regions and services")
 all_regions = set(x['region'] for x in ip_ranges_cur['prefixes'])
-for region in all_regions:
-    if region not in firsts:
-        firsts[region] = ip_ranges_cur['createDate']
+all_services = set(x['service'] for x in ip_ranges_cur['prefixes'])
+for value in all_regions | all_services:
+    if value not in firsts:
+        firsts[value] = ip_ranges_cur['createDate']
         firsts_changed = True
+
 if firsts_changed:
     with open("first_seens.json", "wt") as f:
         json.dump(firsts, f, indent=4, sort_keys=True)
@@ -278,16 +280,26 @@ if changed or force:
         # Also log the newest region, so feed readers will show it
         regions = [(value, key) for key, value in firsts.items()]
         regions.sort()
-        for seen_at, region in regions[-2:]:
+        for seen_at, value in regions[-2:]:
             seen_at = seen_at[:19]
-            f.write('    <item>\n')
-            f.write(f'      <title>AWS {region} Region Detected</title>\n')
-            f.write(f'      <link>{base_url}#{(region + seen_at).replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
-            f.write('      <description><![CDATA[\n')
-            seen_at = datetime(*[int(x) for x in seen_at.split("-")])
-            f.write(f"AWS Region {region} detected at {seen_at.strftime('%Y-%m-%d %H:%M:%S')}<br>\n")
-            f.write(']]></description>\n')
-            f.write('    </item>\n')
+            if value in all_regions:
+                f.write('    <item>\n')
+                f.write(f'      <title>AWS {value} Region Detected</title>\n')
+                f.write(f'      <link>{base_url}#{(value + seen_at).replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
+                f.write('      <description><![CDATA[\n')
+                seen_at = datetime(*[int(x) for x in seen_at.split("-")])
+                f.write(f"AWS Region {value} detected at {seen_at.strftime('%Y-%m-%d %H:%M:%S')}<br>\n")
+                f.write(']]></description>\n')
+                f.write('    </item>\n')
+            elif value in all_services:
+                f.write('    <item>\n')
+                f.write(f'      <title>AWS {value} Service Detected</title>\n')
+                f.write(f'      <link>{base_url}#{(value + seen_at).replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
+                f.write('      <description><![CDATA[\n')
+                seen_at = datetime(*[int(x) for x in seen_at.split("-")])
+                f.write(f"AWS Service {value} detected at {seen_at.strftime('%Y-%m-%d %H:%M:%S')}<br>\n")
+                f.write(']]></description>\n')
+                f.write('    </item>\n')
 
         f.write('  </channel>\n')
         f.write('</rss>\n')

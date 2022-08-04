@@ -24,7 +24,8 @@ def main():
 
     for data in get_history():
         regions = set(x['region'] for x in data['prefixes'])
-        for region in regions:
+        services = set(x['service'] for x in data['prefixes'])
+        for region in regions | services:
             firsts[region] = min(firsts.get(region, data['createDate']), data['createDate'])
 
     with open("first_seens.json", "wt") as f:
