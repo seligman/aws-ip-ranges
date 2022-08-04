@@ -10,9 +10,10 @@ automatically produces this chart showing how what percentage of the Internet's 
 address space AWS is in control of.  Here's an 
 [animation of the history](https://youtu.be/Su25yl7eol8) of the AWS's IP usage.
 
-[![@aws_ip_changes on twitter](https://img.shields.io/twitter/url/https/twitter.com/aws_ip_changes.svg?style=social&label=%40aws_ip_changes)](https://twitter.com/aws_ip_changes) for updates as they happen.
+For updates as they happen, follow [![@aws_ip_changes on twitter](https://img.shields.io/twitter/url/https/twitter.com/aws_ip_changes.svg?style=social&label=%40aws_ip_changes)](https://twitter.com/aws_ip_changes)
+or add the [![RSS Icon](rss-icon.png)RSS Feed](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml) to your reader.
 
-[Comparing other providers](https://github.com/seligman/cloud_sizes), as of 2022-08-03, Microsoft's Azure has 26998917 IPs, or 0.73%, and Google Cloud has 10565888 IPs, or 0.29%.
+[Comparing other providers](https://github.com/seligman/cloud_sizes), as of 2022-08-04, Microsoft's Azure has 26998917 IPs, or 0.73%, and Google Cloud has 10565888 IPs, or 0.29%.
 
 ![History of AWS](history_count.svg)
 
@@ -58,6 +59,3 @@ address space AWS is in control of.  Here's an
 | 2021-08-05 18:21:13 | 1.61044 | 59622723 | +1048576 | +43.192.0.0/12 |
 | 2020-10-22 18:31:17 | 1.47052 | 54442529 | +1048576 | +3.64.0.0/12 |
 | 2020-09-28 13:51:16 | 1.42963 | 52928471 | +1048576 | +35.80.0.0/12 |
-
-
-[![RSS Icon](rss-icon.png)RSS Feed](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml)
