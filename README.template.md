@@ -10,12 +10,13 @@ automatically produces this chart showing how what percentage of the Internet's 
 address space AWS is in control of.  Here's an 
 [animation of the history](https://youtu.be/Su25yl7eol8) of the AWS's IP usage.
 
-For updates as they happen, follow [![@aws_ip_changes on twitter](https://img.shields.io/twitter/url/https/twitter.com/aws_ip_changes.svg?style=social&label=%40aws_ip_changes)](https://twitter.com/aws_ip_changes)
-or add the [![RSS Icon](rss-icon.png)RSS Feed](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml) to your reader.
+To get updates as they happen:
 
-{compare}
+[![@aws_ip_changes on twitter](https://shields.io/badge/-%40aws__ip__changes-black?logo=twitter&style=flat)](https://twitter.com/aws_ip_changes) [![RSS Icon](https://shields.io/badge/-RSS%20Feed-black?logo=rss&style=flat)](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml)
 
 ![History of AWS](history_count.svg)
+
+{compare}
 
 # Last 15 updates:
 

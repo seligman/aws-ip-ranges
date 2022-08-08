@@ -10,6 +10,18 @@ import matplotlib.pyplot as plt
 from requests import get
 from netaddr import IPSet, IPNetwork
 
+def comma_dec(number, dec=0):
+    number += 0.5 / pow(10, dec)
+    s = '%d' % number
+    groups = []
+    while s and s[-1].isdigit():
+        groups.append(s[-3:])
+        s = s[:-3]
+    ret = s + ','.join(reversed(groups))
+    if dec > 0:
+        ret += (".%0" + str(dec) + "d") % (int((number - int(number)) * pow(10, dec)), )
+    return ret
+
 started = datetime.utcnow()
 def log_step(value):
     # Simple helper to show how long everything takes
@@ -199,9 +211,11 @@ if changed or force:
     log_step("Getting comparision data")
     others = get("https://raw.githubusercontent.com/seligman/cloud_sizes/master/data/summary.json").json()
     not_private_size = 3702258432
-    compare = f"[Comparing other providers](https://github.com/seligman/cloud_sizes), as of {others['_'][:10]}, "
-    compare += f"Microsoft's Azure has {others['azure'][0]} IPs, or {others['azure'][0]/not_private_size*100:0.2f}%, and "
-    compare += f"Google Cloud has {others['google'][0]} IPs, or {others['google'][0]/not_private_size*100:0.2f}%."
+    compare = f"[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of {others['_'][:10]}:\n\n"
+    compare += "| | IPs | Percent |\n| --- | ---: | ---: |\n"
+    compare += f"| Amazon AWS | {comma_dec(in_order[-1][4])} | {in_order[-1][1]*100:0.4f}% |\n"
+    compare += f"| Microsoft Azure | {comma_dec(others['azure'][0])} | {others['azure'][0]/not_private_size*100:0.4f}% |\n"
+    compare += f"| Google Cloud | {comma_dec(others['google'][0])} | {others['google'][0]/not_private_size*100:0.4f}% |\n"
     md = md.replace("{compare}", compare)
 
     log_step("Creating items for tables")
@@ -219,7 +233,7 @@ if changed or force:
                 diff, 
                 f"| {item[0]} |" + 
                 f" {item[1]*100.0:.5f} |" + 
-                f" {item[4]} |" + 
+                f" {comma_dec(item[4])} |" + 
                 f" {'+' if diff > 0 else ''}{diff} |" + 
                 f" {', '.join(cidrs)} |",
                 item[0],
