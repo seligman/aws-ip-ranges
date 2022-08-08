@@ -10,7 +10,13 @@ import matplotlib.pyplot as plt
 from requests import get
 from netaddr import IPSet, IPNetwork
 
-def comma_dec(number, dec=0):
+def comma_dec(number, dec=0, show_positive=False):
+    start = ""
+    if number < 0:
+        start = "-"
+        number = -number
+    elif show_positive:
+        start = "+"
     number += 0.5 / pow(10, dec)
     s = '%d' % number
     groups = []
@@ -20,7 +26,7 @@ def comma_dec(number, dec=0):
     ret = s + ','.join(reversed(groups))
     if dec > 0:
         ret += (".%0" + str(dec) + "d") % (int((number - int(number)) * pow(10, dec)), )
-    return ret
+    return start + ret
 
 started = datetime.utcnow()
 def log_step(value):
@@ -231,11 +237,11 @@ if changed or force:
                 cidrs = all_cidrs
             all_history.append((
                 diff, 
-                f"| {item[0]} |" + 
+                f"| {item[0].replace(' ', '&nbsp;').replace('-', '&#8209;')} |" + 
                 f" {item[1]*100.0:.5f} |" + 
                 f" {comma_dec(item[4])} |" + 
-                f" {'+' if diff > 0 else ''}{diff} |" + 
-                f" {', '.join(cidrs)} |",
+                f" {comma_dec(diff, show_positive=True)} |" + 
+                f" {', '.join(cidrs).replace(' ', '&nbsp;')} |",
                 item[0],
                 f"{'+' if diff > 0 else ''}{diff}",
                 all_cidrs,
