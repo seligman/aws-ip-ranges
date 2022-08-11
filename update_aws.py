@@ -260,7 +260,7 @@ if changed or force:
         if msg is not None:
             all_history.append((
                 1,
-                f"| {seen_at.replace(' ', '&nbsp;').replace('-', '&#8209;')}<td colspan=4>{msg}",
+                f"| {seen_at.replace(' ', '&nbsp;').replace('-', '&#8209;')} <td colspan=4> {msg} |",
                 seen_at,
                 "+0",
                 [],
