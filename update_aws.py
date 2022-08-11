@@ -248,6 +248,25 @@ if changed or force:
             ))
         last_count = item[4]
 
+    rss_history = all_history[:]
+
+    for key, value in firsts.items():
+        seen_at = datetime(*[int(x) for x in value.split("-")]).strftime("%Y-%m-%d %H:%M:%S")
+        msg = None
+        if key in all_regions:
+            msg = f"Region {key} first seen"
+        elif key in all_services:
+            msg = f"Service {key} first seen"
+        if msg is not None:
+            all_history.append((
+                1,
+                f"| {seen_at.replace(' ', '&nbsp;').replace('-', '&#8209;')}<td colspan=4>{msg}",
+                seen_at,
+                "+0",
+                [],
+            ))
+    all_history.sort(key=lambda x:x[2])
+
     log_step("Getting history")
     history = [x[1] for x in all_history if x[0] > 0][:-16:-1]
     # Note that when we sort the top items we take the absolute value of the change
@@ -278,7 +297,7 @@ if changed or force:
         f.write("    <description>Changes to AWS's IP Ranges</description>\n")
 
         log_step("Filling out the RSS feed")
-        for cur in all_history[-20:]:
+        for cur in rss_history[-20:]:
             f.write('    <item>\n')
             f.write(f'      <title>AWS IP Ranges update for {cur[2]}</title>\n')
             f.write(f'      <link>{base_url}#{cur[2].replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
