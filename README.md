@@ -16,7 +16,7 @@ To get updates as they happen:
 
 ![History of AWS](history_count.svg)
 
-[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2022-08-10:
+[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2022-08-11:
 
 | | IPs | Percent |
 | --- | ---: | ---: |
@@ -45,7 +45,7 @@ To get updates as they happen:
 | 2022&#8209;08&#8209;03&nbsp;01:13:07 | 1.80175 | 66,705,332 | +8 | +142.4.160.152/29 |
 | 2022&#8209;08&#8209;02&nbsp;22:33:05 | 1.80175 | 66,705,324 | +8 | +142.4.160.144/29 |
 | 2022&#8209;08&#8209;02&nbsp;21:53:06 | 1.80175 | 66,705,316 | +2,048 | +15.220.112.0/21 |
-| 2022&#8209;08&#8209;02&nbsp;20:53:05 <td colspan=4> Region ap-southeast-6 first seen |
+| 2022&#8209;08&#8209;02&nbsp;20:53:05 | | | | Region ap-southeast-6 |
 
 
 # 15 largest changes to date:

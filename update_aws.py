@@ -254,13 +254,13 @@ if changed or force:
         seen_at = datetime(*[int(x) for x in value.split("-")]).strftime("%Y-%m-%d %H:%M:%S")
         msg = None
         if key in all_regions:
-            msg = f"Region {key} first seen"
+            msg = f"Region {key}"
         elif key in all_services:
-            msg = f"Service {key} first seen"
+            msg = f"Service {key}"
         if msg is not None:
             all_history.append((
                 1,
-                f"| {seen_at.replace(' ', '&nbsp;').replace('-', '&#8209;')} <td colspan=4> {msg} |",
+                f"| {seen_at.replace(' ', '&nbsp;').replace('-', '&#8209;')} | | | | {msg} |",
                 seen_at,
                 "+0",
                 [],
