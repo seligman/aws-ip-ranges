@@ -12,7 +12,7 @@ address space AWS is in control of.  Here's an
 
 To get updates as they happen:
 
-[![@aws_ip_changes on twitter](https://shields.io/badge/-%40aws__ip__changes-black?logo=twitter&style=flat)](https://twitter.com/aws_ip_changes) [![RSS Icon](https://shields.io/badge/-RSS%20Feed-black?logo=rss&style=flat)](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml)
+[![@aws_ip_changes on twitter](images/twitter_badge.svg)](https://twitter.com/aws_ip_changes) [![RSS Icon](images/rss_badge.svg)](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml)
 
 ![History of AWS](history_count.svg)
 
