@@ -219,9 +219,9 @@ if changed or force:
     not_private_size = 3702258432
     compare = f"[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of {others['_'][:10]}:\n\n"
     compare += "| | IPs | Percent |\n| --- | ---: | ---: |\n"
-    compare += f"| Amazon AWS | {comma_dec(in_order[-1][4])} | {in_order[-1][1]*100:0.4f}% |\n"
-    compare += f"| Microsoft Azure | {comma_dec(others['azure'][0])} | {others['azure'][0]/not_private_size*100:0.4f}% |\n"
-    compare += f"| Google Cloud | {comma_dec(others['google'][0])} | {others['google'][0]/not_private_size*100:0.4f}% |\n"
+    compare += f"| Amazon AWS | {comma_dec(in_order[-1][4])} | {in_order[-1][1]*100:0.4f} |\n"
+    compare += f"| Microsoft Azure | {comma_dec(others['azure'][0])} | {others['azure'][0]/not_private_size*100:0.4f} |\n"
+    compare += f"| Google Cloud | {comma_dec(others['google'][0])} | {others['google'][0]/not_private_size*100:0.4f} |\n"
     md = md.replace("{compare}", compare)
 
     log_step("Creating items for tables")
