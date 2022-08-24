@@ -20,7 +20,7 @@ To get updates as they happen:
 
 | | IPs | Percent |
 | --- | ---: | ---: |
-| Amazon AWS | 66,736,513 | 1.8026 |
+| Amazon AWS | 66,730,881 | 1.8024 |
 | Microsoft Azure | 27,229,133 | 0.7355 |
 | Google Cloud | 10,565,888 | 0.2854 |
 
