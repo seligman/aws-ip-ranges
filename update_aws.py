@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 
-import json
-import os
-import sys
-import subprocess
-import aws_ipv4_size
-from datetime import datetime
-import matplotlib.pyplot as plt
-from requests import get
+from datetime import datetime, timedelta
 from netaddr import IPSet, IPNetwork
+from requests import get
+import aws_ipv4_size
+import json
+import matplotlib.pyplot as plt
+import os
+import subprocess
+import sys
 
 def comma_dec(number, dec=0, show_positive=False):
     start = ""
@@ -237,11 +237,13 @@ if changed or force:
                 cidrs = all_cidrs
             all_history.append((
                 diff, 
-                f"| {item[0].replace(' ', '&nbsp;').replace('-', '&#8209;')} |" + 
-                f" {item[1]*100.0:.5f} |" + 
-                f" {comma_dec(item[4])} |" + 
-                f" {comma_dec(diff, show_positive=True)} |" + 
-                f" {', '.join(cidrs).replace(' ', '&nbsp;')} |",
+                (
+                    f"| {item[0].replace(' ', '&nbsp;').replace('-', '&#8209;')} |" + 
+                    f" {item[1]*100.0:.5f} |" + 
+                    f" {comma_dec(item[4])} |" + 
+                    f" {comma_dec(diff, show_positive=True)} |" + 
+                    f" {', '.join(cidrs).replace(' ', '&nbsp;')} |"
+                ),
                 item[0],
                 f"{'+' if diff > 0 else ''}{diff}",
                 all_cidrs,
@@ -268,7 +270,7 @@ if changed or force:
     all_history.sort(key=lambda x:x[2])
 
     log_step("Getting history")
-    history = [x[1] for x in all_history if x[0] > 0][:-16:-1]
+    history = [x[1] for x in all_history if abs(x[0]) > 0][:-16:-1]
     # Note that when we sort the top items we take the absolute value of the change
     # to show the big removals as well as the big adds.  All the other data is added
     # to the sort key to make it a stable sort for the cases where two changes
@@ -316,10 +318,11 @@ if changed or force:
             f.write(']]></description>\n')
             f.write('    </item>\n')
         
-        # Also log the newest region, so feed readers will show it
+        # Also log the newest regions and services, so feed readers will show it
+        bail_at = datetime.utcnow() - timedelta(days=30)
         regions = [(value, key) for key, value in firsts.items()]
-        regions.sort()
-        for seen_at, value in regions[-2:]:
+        regions.sort(reverse=True)
+        for seen_at, value in regions:
             seen_at = seen_at[:19]
             if value in all_regions:
                 f.write('    <item>\n')
@@ -339,6 +342,8 @@ if changed or force:
                 f.write(f"AWS Service {value} detected at {seen_at.strftime('%Y-%m-%d %H:%M:%S')}<br>\n")
                 f.write(']]></description>\n')
                 f.write('    </item>\n')
+            if seen_at < bail_at:
+                break
 
         f.write('  </channel>\n')
         f.write('</rss>\n')
