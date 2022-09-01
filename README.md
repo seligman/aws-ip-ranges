@@ -3,7 +3,7 @@
 AWS provides a data file showing the current IP ranges their
 services use, called [ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json).
 You can read more about the file [here](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html).
-If you want to look up an AWS IP address, you can search for its presence in ip-ranges.json using [this tool](https://seligman.github.io/aws-ip-ranges/).
+If you want to look up an IP address, you can see if it's from any of the cloud providers using [this tool](https://seligman.github.io/aws-ip-ranges/).
 
 This repository tracks changes to that file, and based off a trigger on the SNS topic 
 automatically produces this chart showing how what percentage of the Internet's IPv4 
@@ -20,7 +20,7 @@ To get updates as they happen:
 
 | | IPs | Percent |
 | --- | ---: | ---: |
-| Amazon AWS | 74,339,157 | 2.0079 |
+| Amazon AWS | 74,341,205 | 2.0080 |
 | Microsoft Azure | 27,688,425 | 0.7479 |
 | Google Cloud | 10,632,448 | 0.2872 |
 
@@ -31,6 +31,7 @@ To get updates as they happen:
 
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
+| 2022&#8209;09&#8209;01&nbsp;20:43:09 | 2.00800 | 74,341,205 | +2,048 | +15.220.168.0/21 |
 | 2022&#8209;09&#8209;01&nbsp;19:23:06 | 2.00794 | 74,339,157 | +1,088 | +15.220.148.0/22,&nbsp;+13.34.81.0/26 |
 | 2022&#8209;09&#8209;01&nbsp;06:23:10 | 2.00791 | 74,338,069 | +64 | +13.34.80.192/26 |
 | 2022&#8209;09&#8209;01&nbsp;02:43:08 | 2.00791 | 74,338,005 | +524,352 | +16.26.0.0/15,&nbsp;+16.48.0.0/15,&nbsp;+16.164.0.0/15,&nbsp;... |
@@ -45,7 +46,6 @@ To get updates as they happen:
 | 2022&#8209;08&#8209;30&nbsp;22:43:07 | 1.80257 | 66,735,693 | +8 | +142.4.160.160/29 |
 | 2022&#8209;08&#8209;29&nbsp;21:13:06 | 1.80257 | 66,735,685 | +393,216 | +13.204.0.0/14,&nbsp;+13.202.0.0/15 |
 | 2022&#8209;08&#8209;29&nbsp;14:23:08 | 1.79195 | 66,342,469 | +131,072 | +13.200.0.0/15 |
-| 2022&#8209;08&#8209;26&nbsp;23:43:08 | 1.78841 | 66,211,397 | +256 | +15.230.253.0/24 |
 
 
 # 15 largest changes to date:
