@@ -185,14 +185,16 @@ if changed or force:
         time = datetime.strptime(time_str, "%Y-%m-%d")
         if time_str in values:
             values[time_str][1] = max(values[time_str][1], value[1])
+            values[time_str][2] = max(values[time_str][2], value[4])
         else:
-            values[time_str] = [time, value[1]]
+            values[time_str] = [time, value[1], value[4]]
 
     # And create two lists, one of days, and one as 
     # the percent values to chart
     log_step("Organize the summary")
     keys = sorted(values)
     dates = [values[x][0] for x in keys]
+    counts = [values[x][2] for x in keys]
     values = [values[x][1] * 100.0 for x in keys]
 
     # And also make a sorted list for the information dump
@@ -207,7 +209,41 @@ if changed or force:
 
     plt.figure(figsize=(9, 5))
     plt.title("History of percentage of AWS ownership of IPv4 space")
+    temp = min(dates)
+    temp = datetime(temp.year, 1, 1)
+    while temp < max(dates):
+        plt.axvline(temp, color=(0.8, 0.8, 0.8))
+        temp = datetime(temp.year + 1, 1, 1)
+    temp = 0
+    while temp < max(values):
+        plt.axhline(temp, color=(0.8, 0.8, 0.8))
+        temp += 0.25
     plt.plot(dates, values)
+    pad = timedelta(seconds=(max(dates) - min(dates)).total_seconds() * 0.025)
+    plt.xlim(min(dates), max(dates) + pad)
+    pad = (max(values) - min(values)) * 0.1
+    plt.ylim(0, max(values) + pad)
+
+    last_label = min(dates)
+    mid_point = min(dates) + timedelta(seconds=(max(dates) - min(dates)).total_seconds() / 2)
+    for i in range(1, len(values)):
+        diff = counts[i] - counts[i-1]
+        days = (dates[i] - dates[i-1]).total_seconds() / 86400
+        if abs(diff) > 1500000 and days < 4:
+            if ((dates[i] - last_label).total_seconds() / 86400) > 90:
+                last_label = dates[i]
+                if diff > 0:
+                    sign = "+"
+                else:
+                    diff *= -1
+                    sign = "-"
+                label = f'{dates[i].strftime("%Y-%m-%d")}\n{sign}{diff/1000000:.2f}m '
+                if dates[i] < mid_point:
+                    plt.text(dates[i], values[i], "\n" + label, va="top")
+                else:
+                    plt.text(dates[i], values[i], label, ha="right")
+
+    # plt.text(max(dates), max(values), "1234-12-12\n+4m", ha="right")
     plt.savefig("history_count.svg", bbox_inches='tight')
 
     log_step("Filling out template")
@@ -219,9 +255,9 @@ if changed or force:
     not_private_size = 3702258432
     compare = f"[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of {others['_'][:10]}:\n\n"
     compare += "| | IPs | Percent |\n| --- | ---: | ---: |\n"
-    compare += f"| Amazon AWS | {comma_dec(in_order[-1][4])} | {in_order[-1][1]*100:0.4f} |\n"
-    compare += f"| Microsoft Azure | {comma_dec(others['azure'][0])} | {others['azure'][0]/not_private_size*100:0.4f} |\n"
-    compare += f"| Google Cloud | {comma_dec(others['google'][0])} | {others['google'][0]/not_private_size*100:0.4f} |\n"
+    compare += f"| Amazon AWS | {comma_dec(in_order[-1][4])} | {in_order[-1][1]*100:0.5f} |\n"
+    compare += f"| Microsoft Azure | {comma_dec(others['azure'][0])} | {others['azure'][0]/not_private_size*100:0.5f} |\n"
+    compare += f"| Google Cloud | {comma_dec(others['google'][0])} | {others['google'][0]/not_private_size*100:0.5f} |\n"
     md = md.replace("{compare}", compare)
 
     log_step("Creating items for tables")
