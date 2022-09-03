@@ -194,6 +194,18 @@ if changed or force:
     log_step("Organize the summary")
     keys = sorted(values)
 
+    # Add any missing dates, so it's more obvious when changes happened in the past
+    cur, end = values[min(keys)][0], values[max(keys)][0]
+    last = cur.strftime("%Y-%m-%d")
+    while cur <= end:
+        cur_day = cur.strftime("%Y-%m-%d")
+        if cur_day not in values:
+            temp = values[last]
+            values[cur_day] = [cur, temp[1], temp[2]]
+        last = cur_day
+        cur += timedelta(days=1)
+    keys = sorted(values)
+
     # Limit the range of data shown in the chart
     max_years = 8
     if (values[keys[-1]][0] - values[keys[0]][0]) > timedelta(days=365.25*max_years):
@@ -235,31 +247,57 @@ if changed or force:
     pad = timedelta(seconds=(max(dates) - min(dates)).total_seconds() * 0.025)
     plt.xlim(min(dates), max(dates) + pad)
     # And pad the top of the chart to leave room for event labels
-    pad = (max(values) - min(values)) * 0.1
+    pad = (max(values) - min(values)) * 0.15
     plt.ylim(0, max(values) + pad)
 
-    # Run through and add labels for big changes
-    last_label = min(dates)
-    mid_point = min(dates) + timedelta(seconds=(max(dates) - min(dates)).total_seconds() / 2)
-    for i in range(1, len(values)):
+    # Find all the candidates for annotations
+    targets = []
+    # Start at an offset to give plenty of room for the first annotation
+    for i in range(200, len(values)):
         diff = counts[i] - counts[i-1]
         days = (dates[i] - dates[i-1]).total_seconds() / 86400
-        # If more than 1.5m IPs were added/removed and we have data for the past few days
+        # If more than 1.5m IPs were added / removed and we have data for the past few days
         if abs(diff) > 1500000 and days < 4:
-            # And if we haven't shown a label in a few months
-            if ((dates[i] - last_label).total_seconds() / 86400) > 90:
-                last_label = dates[i]
-                if diff > 0:
-                    sign = "+"
-                else:
-                    diff *= -1
-                    sign = "-"
-                label = f'{dates[i].strftime("%Y-%m-%d")}\n {sign}{diff/1000000:.2f}m '
-                # Show the label below the line till abou the halfway point
-                if dates[i] < mid_point:
-                    plt.text(dates[i], values[i], "\n" + label, va="top")
-                else:
-                    plt.text(dates[i], values[i], label, ha="right")
+            targets.append({
+                'target': 0 if diff > 0 else 1,
+                'diff': diff,
+                'i': i,
+                'date': dates[i],
+                'value': values[i],
+            })
+
+    # Limit the annotations to only show one every so often
+    picked = []
+    targets.sort(key=lambda x: (-abs(x['diff']), x['i']))
+    for cur in targets:
+        use = True
+        for other in picked:
+            if other['target'] == cur['target']:
+                if abs((other['date'] - cur['date']).total_seconds() / 86400) <= 270:
+                    use = False
+                    break
+        if use:
+            picked.append(cur)
+    picked.sort(key=lambda x: x['i'])
+
+    # Draw out the picked labels
+    for cur in picked:
+        label = f'{cur["date"].strftime("%Y-%m-%d")}\n {"+-"[cur["target"]]}{abs(cur["diff"])/1000000:.2f}m '
+        args = {
+            'text': label,
+            'xy': [cur['date'], cur['value']], 
+            'xytext': [cur['date'], cur['value']], 
+            'bbox': {"boxstyle": "round", "fc":"0.8"},
+            'arrowprops': {"arrowstyle": "-"},
+            'fontsize': 'small',
+        }
+        if cur['target'] == 0:
+            args['xytext'][0] -= timedelta(days=400)
+            args['xytext'][1] += 0.05
+        else:
+            args['xytext'][0] += timedelta(days=50)
+            args['xytext'][1] -= 0.3
+        plt.annotate(**args)
 
     plt.savefig("history_count.svg", bbox_inches='tight')
 
