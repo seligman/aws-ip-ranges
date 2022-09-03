@@ -193,6 +193,16 @@ if changed or force:
     # the percent values to chart
     log_step("Organize the summary")
     keys = sorted(values)
+
+    # Limit the range of data shown in the chart
+    max_years = 8
+    if (values[keys[-1]][0] - values[keys[0]][0]) > timedelta(days=365.25*max_years):
+        for i in range(len(keys)):
+            if (values[keys[-1]][0] - values[keys[i]][0]) <= timedelta(days=365.25*max_years):
+                keys = keys[i:]
+                break
+
+    # Simplify the data for charting
     dates = [values[x][0] for x in keys]
     counts = [values[x][2] for x in keys]
     values = [values[x][1] * 100.0 for x in keys]
@@ -209,27 +219,34 @@ if changed or force:
 
     plt.figure(figsize=(9, 5))
     plt.title("History of percentage of AWS ownership of IPv4 space")
+    # Draw the axis lines for precise control over where they show up
     temp = min(dates)
     temp = datetime(temp.year, 1, 1)
     while temp < max(dates):
-        plt.axvline(temp, color=(0.8, 0.8, 0.8))
+        plt.axvline(temp, color=(0.8, 0.8, 0.8), linewidth=1)
         temp = datetime(temp.year + 1, 1, 1)
     temp = 0
     while temp < max(values):
-        plt.axhline(temp, color=(0.8, 0.8, 0.8))
+        plt.axhline(temp, color=(0.8, 0.8, 0.8), linewidth=1)
         temp += 0.25
-    plt.plot(dates, values)
+    # Draw the plot itself
+    plt.plot(dates, values, linewidth=2)
+    # Add some padding to the x axis to suggest future dates
     pad = timedelta(seconds=(max(dates) - min(dates)).total_seconds() * 0.025)
     plt.xlim(min(dates), max(dates) + pad)
+    # And pad the top of the chart to leave room for event labels
     pad = (max(values) - min(values)) * 0.1
     plt.ylim(0, max(values) + pad)
 
+    # Run through and add labels for big changes
     last_label = min(dates)
     mid_point = min(dates) + timedelta(seconds=(max(dates) - min(dates)).total_seconds() / 2)
     for i in range(1, len(values)):
         diff = counts[i] - counts[i-1]
         days = (dates[i] - dates[i-1]).total_seconds() / 86400
+        # If more than 1.5m IPs were added/removed and we have data for the past few days
         if abs(diff) > 1500000 and days < 4:
+            # And if we haven't shown a label in a few months
             if ((dates[i] - last_label).total_seconds() / 86400) > 90:
                 last_label = dates[i]
                 if diff > 0:
@@ -237,13 +254,13 @@ if changed or force:
                 else:
                     diff *= -1
                     sign = "-"
-                label = f'{dates[i].strftime("%Y-%m-%d")}\n{sign}{diff/1000000:.2f}m '
+                label = f'{dates[i].strftime("%Y-%m-%d")}\n {sign}{diff/1000000:.2f}m '
+                # Show the label below the line till abou the halfway point
                 if dates[i] < mid_point:
                     plt.text(dates[i], values[i], "\n" + label, va="top")
                 else:
                     plt.text(dates[i], values[i], label, ha="right")
 
-    # plt.text(max(dates), max(values), "1234-12-12\n+4m", ha="right")
     plt.savefig("history_count.svg", bbox_inches='tight')
 
     log_step("Filling out template")
