@@ -28,10 +28,41 @@ def comma_dec(number, dec=0, show_positive=False):
         ret += (".%0" + str(dec) + "d") % (int((number - int(number)) * pow(10, dec)), )
     return start + ret
 
-started = datetime.utcnow()
+_started = datetime.utcnow()
 def log_step(value):
     # Simple helper to show how long everything takes
-    print(f"{(datetime.utcnow() - started).total_seconds():8.4f}: {value}", flush=True)
+    print(f"{(datetime.utcnow() - _started).total_seconds():8.4f}: {value}", flush=True)
+
+class Cache:
+    def __init__(self, filename, sort_keys=None):
+        self.sort_keys = sort_keys
+        self.filename = filename
+        self.data = {}
+        if os.path.isfile(filename):
+            with open(filename) as f:
+                self.data = json.load(f)
+    def get_sorted(self):
+        temp = [(x, json.dumps(y, separators=(",", ":"))) for x,y in self.data.items()]
+        temp.sort(key=lambda x: x[1])
+        return temp
+    def save(self):
+        with open(self.filename, "w", encoding="utf-8", newline="") as f:
+            # We're doing this manually to make the file a bit smaller
+            # Do this in order of the update just so it's easier to view
+            f.write("{\n")
+            if self.sort_keys is None:
+                temp = self.get_sorted()
+            else:
+                temp = self.sort_keys.get_sorted()
+                temp = [(x, json.dumps(self.data[x], separators=(",", ":"))) for x,_ in temp]
+            f.write(",\n".join(f"{json.dumps(x)}:{y}" for x,y in temp))
+            f.write("\n}\n")
+    def __contains__(self, key): return key in self.data
+    def __getitem__(self, key): return self.data[key]
+    def __setitem__(self, key, value): self.data[key] = value
+    def __iter__(self): return self.data.__iter__()
+    def items(self): return self.data.items()
+    def values(self): return self.data.values()
 
 force = False
 if len(sys.argv) > 1 and sys.argv[1] == "force":
@@ -39,11 +70,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "force":
     force = True
 
 # Load the old firsts file, if it exists
-if os.path.isfile("first_seens.json"):
-    with open("first_seens.json") as f:
-        firsts = json.load(f)
-else:
-    firsts = {}
+firsts = Cache("first_seens.json")
 firsts_changed = False
 
 # First off, see if the live file has changed
@@ -64,9 +91,7 @@ for value in all_regions | all_services:
         firsts_changed = True
 
 if firsts_changed:
-    with open("first_seens.json", "wt") as f:
-        json.dump(firsts, f, indent=4, sort_keys=True)
-        f.write("\n")
+    firsts.save()
 
 log_step("Initial load done, checking for changes")
 if ip_ranges_cur['createDate'] != ip_ranges_old['createDate']:
@@ -102,23 +127,10 @@ else:
 # Now, build up our cache of history, use a couple of helper functions
 # to make loading and saving them easier
 changed = False
-def load_cache(filename):
-    if os.path.isfile(filename):
-        with open(filename) as f:
-            return json.load(f)
-    else:
-        return {}
-def save_cache(filename, data):
-    with open(filename, "w") as f:
-        # We're doing this manually to make the file a bit smaller
-        # Do this in order of the update just so it's easier to view
-        f.write("{\n")
-        f.write(",\n".join([f'"{x}":{json.dumps(data[x], separators=(",", ":"))}' for x in sorted(cache, key=lambda y:cache[y][0])]))
-        f.write("\n}\n")
 
 log_step("Load some stats from history")
-cache = load_cache("history_count.json")
-changes = load_cache("history_changes.json")
+cache = Cache("history_count.json")
+changes = Cache("history_changes.json", sort_keys=cache)
 
 log_step("Look for all historical git objects")
 # Pull out all of the history items for this file:
@@ -172,8 +184,8 @@ for key in sorted(cache, key=lambda y:cache[y][0]):
 if changed or force:
     log_step("Saving cache files")
     # Something changed, go ahead and write things out
-    save_cache("history_count.json", cache)
-    save_cache("history_changes.json", changes)
+    cache.save()
+    changes.save()
 
     # Pull in the days in the history, using the largest
     # value for the day when there are multiple entries for
@@ -379,7 +391,7 @@ if changed or force:
 
     log_step("Creating an RSS feed")
     # Create an RSS feed, do it by hand just to make things easy
-    with open("rss.xml", "wt") as f:
+    with open("rss.xml", "wt", encoding="utf-8", newline="") as f:
         base_url = "https://github.com/seligman/aws-ip-ranges"
 
         f.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
