@@ -6,7 +6,9 @@ from requests import get
 import aws_ipv4_size
 import json
 import matplotlib.pyplot as plt
+import matplotlib
 import os
+import re
 import subprocess
 import sys
 
@@ -311,7 +313,15 @@ if changed or force:
             args['xytext'][1] -= 0.3
         plt.annotate(**args)
 
+    # Ensure the IDs in the SVG have a consistent value
+    matplotlib.rcParams['svg.hashsalt'] = "0"
     plt.savefig("history_count.svg", bbox_inches='tight')
+    # Normalize the SVG to prevent churn if it fundamentally hasn't changed
+    with open("history_count.svg", "rt", newline="", encoding="utf-8") as f:
+        temp = f.read()
+    temp = re.sub("<metadata>.*</metadata>", "", temp, flags=re.DOTALL)
+    with open("history_count.svg", "wt", newline="", encoding="utf-8") as f:
+        f.write(temp)
 
     log_step("Filling out template")
     with open("README.template.md", "rt") as f:
