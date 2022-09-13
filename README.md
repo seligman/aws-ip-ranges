@@ -3,7 +3,7 @@
 AWS provides a data file showing the current IP ranges their
 services use, called [ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json).
 You can read more about the file [here](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html).
-If you want to look up an IP address, you can see if it's from any of the cloud providers using [this tool](https://seligman.github.io/aws-ip-ranges/).
+If you want to look up an IP address, you can see if it's from any of the cloud providers using [this tool](https://seligman.github.io/cloud-ips/).
 
 This repository tracks changes to that file, and based off a trigger on the SNS topic 
 automatically produces this chart showing how what percentage of the Internet's IPv4 
