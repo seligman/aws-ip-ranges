@@ -267,18 +267,44 @@ if changed or force:
     # Find all the candidates for annotations
     targets = []
     # Start at an offset to give plenty of room for the first annotation
-    for i in range(200, len(values)):
-        diff = counts[i] - counts[i-1]
-        days = (dates[i] - dates[i-1]).total_seconds() / 86400
-        # If more than 1.5m IPs were added / removed and we have data for the past few days
-        if abs(diff) > 1500000 and days < 4:
-            targets.append({
-                'target': 0 if diff > 0 else 1,
-                'diff': diff,
-                'i': i,
-                'date': dates[i],
-                'value': values[i],
-            })
+    last_val = 0
+    last_day = None
+    for i, (day, perc_ipv4, value) in enumerate(zip(dates, values, counts)):
+        # Only look at changes of more than 100k
+        diff = value - last_val
+        if i > 0 and abs(diff) >= 100000:
+            if (day - last_day) < timedelta(days=2):
+                targets.append({
+                    'target': 0 if diff > 0 else 1,
+                    'diff': diff,
+                    'i': i,
+                    'date': day,
+                    'run': 1,
+                    'perc_ipv4': perc_ipv4,
+                })
+        last_val = value
+        last_day = day
+
+    # Merge events that span two or more days
+    last_val = None
+    for value in targets:
+        if last_val is not None:
+            if last_val['i'] + 1 == value['i']:
+                if (last_val['diff'] > 0) == (value['diff'] > 0):
+                    value['diff'] += last_val['diff']
+                    value['run'] += last_val['run']
+                    last_val['merged'] = True
+        last_val = value
+
+    # Remove any elements that were merged into the following days
+    targets = [x for x in targets if 'merged' not in x]
+
+    # Only keep 6 months and on, to give ourselves plenty of padding at the start
+    start_at = dates[0] + timedelta(days=180)
+    targets = [x for x in targets if x['date'] >= start_at]
+
+    # Drop any change below 1.5m IPs added / removed
+    targets = [x for x in targets if abs(x['diff']) >= 1500000]
 
     # Limit the annotations to only show one every so often
     picked = []
@@ -296,11 +322,12 @@ if changed or force:
 
     # Draw out the picked labels
     for cur in picked:
-        label = f'{cur["date"].strftime("%Y-%m-%d")}\n {"+-"[cur["target"]]}{abs(cur["diff"])/1000000:.2f}m '
+        label = f'{cur["date"].strftime("%Y-%m-%d")}'
+        label += f'\n {"+-"[cur["target"]]}{abs(cur["diff"])/1000000:.2f}m '
         args = {
             'text': label,
-            'xy': [cur['date'], cur['value']], 
-            'xytext': [cur['date'], cur['value']], 
+            'xy': [cur['date'], cur['perc_ipv4']], 
+            'xytext': [cur['date'], cur['perc_ipv4']], 
             'bbox': {"boxstyle": "round", "fc":"0.8"},
             'arrowprops': {"arrowstyle": "-"},
             'fontsize': 'small',
