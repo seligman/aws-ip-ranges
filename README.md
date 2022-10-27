@@ -16,7 +16,7 @@ To get updates as they happen:
 
 ![History of AWS](history_count.svg)
 
-[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2022-10-26:
+[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2022-10-27:
 
 | | IPs | Percent |
 | --- | ---: | ---: |
