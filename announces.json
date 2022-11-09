@@ -198,7 +198,7 @@
     },
     {
         "region": "eu-central-2",
-        "appeared_ip_ranges": "2021-01-26"
+        "appeared_ip_ranges": "2021-01-26",
         "announced": "2022-11-08",
         "days_to_announce": 651,
         "announce_url": "https://aws.amazon.com/blogs/aws/a-new-aws-region-opens-in-switzerland/"
