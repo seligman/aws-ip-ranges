@@ -194,7 +194,10 @@
     },
     {
         "region": "eu-south-2",
-        "appeared_ip_ranges": "2021-01-07"
+        "appeared_ip_ranges": "2021-01-07",
+        "announced": "2022-11-15",
+        "days_to_announce": 677,
+        "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-region-in-spain/"
     },
     {
         "region": "eu-central-2",
