@@ -183,7 +183,10 @@
     },
     {
         "region": "ap-south-2",
-        "appeared_ip_ranges": "2020-11-18"
+        "appeared_ip_ranges": "2020-11-18",
+        "announced": "2022-11-21",
+        "days_to_announce": 733,
+        "announce_url": "https://aws.amazon.com/blogs/aws/now-open-the-30th-aws-region-asia-pacific-hyderabad-region-in-india/"
     },
     {
         "region": "me-central-1",
