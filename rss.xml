@@ -5,14 +5,6 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
-      <title>AWS IP Ranges update for 2022-12-16 18:53:08</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20221216185308</link>
-      <description><![CDATA[
-Changed by +2<br><br>
-Added 3.33.49.198/31<br>
-]]></description>
-    </item>
-    <item>
       <title>AWS IP Ranges update for 2022-12-16 19:53:07</title>
       <link>https://github.com/seligman/aws-ip-ranges#20221216195307</link>
       <description><![CDATA[
@@ -348,6 +340,15 @@ No changes to IPs
       <description><![CDATA[
 Changed by +512<br><br>
 Added 96.0.100.0/23<br>
+]]></description>
+    </item>
+    <item>
+      <title>AWS IP Ranges update for 2023-01-03 22:03:08</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20230103220308</link>
+      <description><![CDATA[
+Changed by +128<br><br>
+Added 13.34.81.0/26<br>
+Added 13.34.85.192/26<br>
 ]]></description>
     </item>
     <item>
