@@ -212,6 +212,9 @@
     {
         "region": "ap-southeast-4",
         "appeared_ip_ranges": "2021-05-10"
+        "announced": "2023-01-23",
+        "days_to_announce": 623,
+        "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-melbourne-region-in-australia/"
     },
     {
         "region": "il-central-1",
