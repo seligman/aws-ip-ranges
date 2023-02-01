@@ -1,5 +1,6 @@
 # AWS Regions
 
+This file is generated from the [source data](announces.json), which is manually updated as new regions show up in ip-ranges.json, and when regions are publicly announced.
 | Region | ip-ranges.json | Announced | Days |
 | :--- | :--- | :--- | ---: |
 | ap-northeast-1 | 2015-11-03 | [2011-03-02](https://aws.amazon.com/about-aws/whats-new/2011/03/02/announcing-asia-pacific-tokyo-region/) | -1,707 |
