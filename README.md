@@ -5,10 +5,12 @@ services use, called [ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.
 You can read more about the file [here](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html).
 If you want to look up an IP address, you can see if it's from any of the cloud providers using [this tool](https://cloud-ips.s3-us-west-2.amazonaws.com/index.html).
 
-This repository tracks changes to that file, and based off a trigger on the SNS topic 
-automatically produces this chart showing how what percentage of the Internet's IPv4 
-address space AWS is in control of.  Here's an 
-[animation of the history](https://youtu.be/Su25yl7eol8) of the AWS's IP usage.
+This repository tracks changes to that file, and based off a trigger on the SNS 
+topic automatically produces this chart showing how what percentage of the 
+Internet's IPv4 address space AWS is in control of.  Here's some 
+more [information about when different regions](announces.md) came 
+online, and here's an [animation of the history](https://youtu.be/Su25yl7eol8) 
+of the AWS's IP usage.
 
 To get updates as they happen:
 
