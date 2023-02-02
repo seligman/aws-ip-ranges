@@ -14,7 +14,7 @@ of the AWS's IP usage.
 
 To get updates as they happen:
 
-[![@aws_ip_changes on twitter](images/twitter_badge.svg)](https://twitter.com/aws_ip_changes) [![RSS Icon](images/rss_badge.svg)](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml)
+[![RSS Icon](images/rss_badge.svg)](https://raw.githubusercontent.com/seligman/aws-ip-ranges/master/rss.xml)
 
 ![History of AWS](history_count.svg)
 
