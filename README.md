@@ -18,12 +18,12 @@ To get updates as they happen:
 
 ![History of AWS](history_count.svg)
 
-[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2023-05-16:
+[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2023-05-17:
 
 | | IPs | Percent |
 | --- | ---: | ---: |
-| Amazon AWS | 72,587,477 | 1.96063 |
-| Microsoft Azure | 38,637,197 | 1.04361 |
+| Amazon AWS | 72,586,709 | 1.96061 |
+| Microsoft Azure | 38,220,209 | 1.03235 |
 | Google Cloud | 11,914,240 | 0.32181 |
 
 
@@ -33,6 +33,7 @@ To get updates as they happen:
 
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
+| 2023&#8209;05&#8209;17&nbsp;06:23:09 | 1.96061 | 72,586,709 | -768 | -3.33.40.0/23,&nbsp;-3.33.42.0/24 |
 | 2023&#8209;05&#8209;16&nbsp;12:03:10 | 1.96063 | 72,587,477 | +64 | +13.34.96.64/26 |
 | 2023&#8209;05&#8209;16&nbsp;03:03:08 | 1.96063 | 72,587,413 | +256 | +3.33.42.0/24 |
 | 2023&#8209;05&#8209;15&nbsp;20:53:09 | 1.96062 | 72,587,157 | +256 | +3.33.41.0/24 |
@@ -47,7 +48,6 @@ To get updates as they happen:
 | 2023&#8209;05&#8209;09&nbsp;18:33:07 | 1.92519 | 71,275,541 | +16 | +142.4.161.184/29,&nbsp;+142.4.161.192/29 |
 | 2023&#8209;05&#8209;09&nbsp;13:13:09 | | | | Service MEDIA_PACKAGE_V2 |
 | 2023&#8209;05&#8209;05&nbsp;09:13:10 | 1.92519 | 71,275,525 | +64 | +13.34.88.0/26 |
-| 2023&#8209;05&#8209;04&nbsp;23:43:09 | 1.92519 | 71,275,461 | +48 | +142.4.161.144/28,&nbsp;+142.4.161.160/28,&nbsp;+142.4.161.136/29,&nbsp;... |
 
 
 # 15 largest changes to date:
