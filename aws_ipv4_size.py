@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-from requests import get
 from netaddr import IPSet, IPNetwork
+from urllib.request import urlopen
+import json
 
 def parse_aws(ip_ranges=None):
     if ip_ranges is None:
@@ -10,7 +11,7 @@ def parse_aws(ip_ranges=None):
         # almost 1/2 a chance of being 13, 43, or 59, and the seconds 
         # has almost 1/2 a chance of being 4, 10, or 11.  Well, I 
         # thought it was a fun fact.
-        ip_ranges = get("https://ip-ranges.amazonaws.com/ip-ranges.json").json()
+        ip_ranges = json.loads(urlopen("https://ip-ranges.amazonaws.com/ip-ranges.json").read())
 
     if isinstance(ip_ranges, IPSet):
         aws = ip_ranges

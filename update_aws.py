@@ -2,7 +2,7 @@
 
 from datetime import datetime, timedelta
 from netaddr import IPSet, IPNetwork
-from requests import get
+from urllib.request import urlopen
 import aws_ipv4_size
 import json
 import matplotlib.pyplot as plt
@@ -77,7 +77,7 @@ firsts_changed = False
 
 # First off, see if the live file has changed
 log_step("Getting AWS's IP ranges file")
-ip_ranges = get("https://ip-ranges.amazonaws.com/ip-ranges.json").content
+ip_ranges = urlopen("https://ip-ranges.amazonaws.com/ip-ranges.json").read()
 log_step("Importing old data")
 with open("ip-ranges.json") as f:
     ip_ranges_old = json.load(f)
@@ -355,7 +355,7 @@ if changed or force:
         md = f.read()
     
     log_step("Getting comparision data")
-    others = get("https://raw.githubusercontent.com/seligman/cloud_sizes/master/data/summary.json").json()
+    others = json.loads(urlopen("https://raw.githubusercontent.com/seligman/cloud_sizes/master/data/summary.json").read())
     not_private_size = 3702258432
     compare = f"[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of {others['_'][:10]}:\n\n"
     compare += "| | IPs | Percent |\n| --- | ---: | ---: |\n"
