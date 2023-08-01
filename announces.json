@@ -218,7 +218,14 @@
     },
     {
         "region": "il-central-1",
-        "appeared_ip_ranges": "2022-02-03"
+        "appeared_ip_ranges": "2022-02-03",
+        "announced": "2023-08-01",
+        "days_to_announce": 544,
+        "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-israel-tel-aviv-region/"
+    },
+    {
+        "region": "ap-southeast-5",
+        "appeared_ip_ranges": "2023-07-14"
     },
     {
         "region": "ap-southeast-6",

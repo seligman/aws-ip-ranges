@@ -34,6 +34,7 @@ This file is generated from the [source data](announces.json), which is manually
 | eu-south-2 | 2021-01-07 | [2022-11-15](https://aws.amazon.com/blogs/aws/now-open-aws-region-in-spain/) | 677 |
 | eu-central-2 | 2021-01-26 | [2022-11-08](https://aws.amazon.com/blogs/aws/a-new-aws-region-opens-in-switzerland/) | 651 |
 | ap-southeast-4 | 2021-05-10 | [2023-01-23](https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-melbourne-region-in-australia/) | 623 |
-| il-central-1 | 2022-02-03 |  |  |
+| il-central-1 | 2022-02-03 | [2023-08-01](https://aws.amazon.com/blogs/aws/now-open-aws-israel-tel-aviv-region/) | 544 |
+| ap-southeast-5 | 2023-07-14 |  |  |
 | ap-southeast-6 | 2022-08-02 |  |  |
 | ca-west-1 | 2022-09-08 |  |  |
