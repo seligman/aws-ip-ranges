@@ -11,6 +11,8 @@ import os
 import re
 import subprocess
 import sys
+if sys.version_info >= (3, 11): from datetime import UTC
+else: import datetime as datetime_fix; UTC=datetime_fix.timezone.utc
 
 def comma_dec(number, dec=0, show_positive=False):
     start = ""
@@ -30,10 +32,10 @@ def comma_dec(number, dec=0, show_positive=False):
         ret += (".%0" + str(dec) + "d") % (int((number - int(number)) * pow(10, dec)), )
     return start + ret
 
-_started = datetime.utcnow()
+_started = datetime.now(UTC).replace(tzinfo=None)
 def log_step(value):
     # Simple helper to show how long everything takes
-    print(f"{(datetime.utcnow() - _started).total_seconds():8.4f}: {value}", flush=True)
+    print(f"{(datetime.now(UTC).replace(tzinfo=None) - _started).total_seconds():8.4f}: {value}", flush=True)
 
 class Cache:
     def __init__(self, filename, sort_keys=None):
@@ -459,7 +461,7 @@ if changed or force:
             f.write('    </item>\n')
         
         # Also log the newest regions and services, so feed readers will show it
-        bail_at = datetime.utcnow() - timedelta(days=30)
+        bail_at = datetime.now(UTC).replace(tzinfo=None) - timedelta(days=30)
         regions = [(value, key) for key, value in firsts.items()]
         regions.sort(reverse=True)
         for seen_at, value in regions:
