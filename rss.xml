@@ -5,13 +5,6 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
-      <title>AWS IP Ranges update for 2023-12-05 15:43:07</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20231205154307</link>
-      <description><![CDATA[
-No changes to IPs
-]]></description>
-    </item>
-    <item>
       <title>AWS IP Ranges update for 2023-12-06 16:43:07</title>
       <link>https://github.com/seligman/aws-ip-ranges#20231206164307</link>
       <description><![CDATA[
@@ -308,6 +301,105 @@ Added 99.82.178.148/31<br>
 Added 99.82.178.218/31<br>
 Added 99.82.179.108/31<br>
 Added 99.82.179.182/31<br>
+]]></description>
+    </item>
+    <item>
+      <title>AWS IP Ranges update for 2023-12-19 22:13:09</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20231219221309</link>
+      <description><![CDATA[
+Changed by -3292<br><br>
+Removed 99.83.88.0/22<br>
+Removed 151.148.8.0/22<br>
+Removed 99.83.92.0/24<br>
+Removed 151.148.12.0/24<br>
+Removed 151.148.15.0/24<br>
+Removed 99.83.93.0/25<br>
+Removed 151.148.13.0/27<br>
+Removed 151.148.14.224/27<br>
+Removed 99.83.93.128/28<br>
+Removed 151.148.14.208/28<br>
+Removed 99.83.93.160/29<br>
+Removed 99.83.93.176/29<br>
+Removed 99.83.93.200/29<br>
+Removed 99.83.93.216/29<br>
+Removed 99.83.93.248/29<br>
+Removed 151.148.13.32/29<br>
+Removed 151.148.14.200/29<br>
+Removed 99.83.93.144/30<br>
+Removed 99.83.93.156/30<br>
+Removed 99.83.93.172/30<br>
+Removed 99.83.93.184/30<br>
+Removed 99.83.93.192/30<br>
+Removed 99.83.93.208/30<br>
+Removed 99.83.93.228/30<br>
+Removed 99.83.93.240/30<br>
+Removed 99.83.94.8/30<br>
+Removed 99.83.94.48/30<br>
+Removed 99.83.94.72/30<br>
+Removed 99.83.95.80/30<br>
+Removed 151.148.13.56/30<br>
+Removed 151.148.13.68/30<br>
+Removed 151.148.13.72/30<br>
+Removed 151.148.13.80/30<br>
+Removed 151.148.13.92/30<br>
+Removed 151.148.13.96/30<br>
+Removed 151.148.13.108/30<br>
+Removed 151.148.13.116/30<br>
+Removed 151.148.13.128/30<br>
+Removed 151.148.13.164/30<br>
+Removed 151.148.13.184/30<br>
+Removed 99.83.93.150/31<br>
+Removed 99.83.93.154/31<br>
+Removed 99.83.93.168/31<br>
+Removed 99.83.93.188/31<br>
+Removed 99.83.93.198/31<br>
+Removed 99.83.93.214/31<br>
+Removed 99.83.93.224/31<br>
+Removed 99.83.93.236/31<br>
+Removed 99.83.94.0/31<br>
+Removed 99.83.94.4/31<br>
+Removed 99.83.94.12/31<br>
+Removed 99.83.94.18/31<br>
+Removed 99.83.94.28/31<br>
+Removed 99.83.94.32/31<br>
+Removed 99.83.94.52/31<br>
+Removed 99.83.94.60/31<br>
+Removed 99.83.94.80/31<br>
+Removed 99.83.94.90/31<br>
+Removed 99.83.94.112/31<br>
+Removed 99.83.94.218/31<br>
+Removed 99.83.94.220/31<br>
+Removed 99.83.95.18/31<br>
+Removed 99.83.95.170/31<br>
+Removed 99.83.95.190/31<br>
+Removed 151.148.13.42/31<br>
+Removed 151.148.13.44/31<br>
+Removed 151.148.13.48/31<br>
+Removed 151.148.13.60/31<br>
+Removed 151.148.13.66/31<br>
+Removed 151.148.13.76/31<br>
+Removed 151.148.13.84/31<br>
+Removed 151.148.13.90/31<br>
+Removed 151.148.13.102/31<br>
+Removed 151.148.13.104/31<br>
+Removed 151.148.13.114/31<br>
+Removed 151.148.13.120/31<br>
+Removed 151.148.13.126/31<br>
+Removed 151.148.13.132/31<br>
+Removed 151.148.13.148/31<br>
+Removed 151.148.13.152/31<br>
+Removed 151.148.13.156/31<br>
+Removed 151.148.13.162/31<br>
+Removed 151.148.13.168/31<br>
+Removed 151.148.13.174/31<br>
+Removed 151.148.13.182/31<br>
+Removed 151.148.13.188/31<br>
+Removed 151.148.13.194/31<br>
+Removed 151.148.13.202/31<br>
+Removed 151.148.13.204/31<br>
+Removed 151.148.13.210/31<br>
+Removed 151.148.13.214/31<br>
+Removed 151.148.14.198/31<br>
 ]]></description>
     </item>
     <item>
