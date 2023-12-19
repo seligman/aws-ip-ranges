@@ -5,14 +5,6 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
-      <title>AWS IP Ranges update for 2023-12-04 11:43:10</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20231204114310</link>
-      <description><![CDATA[
-Changed by +256<br><br>
-Added 136.18.33.0/24<br>
-]]></description>
-    </item>
-    <item>
       <title>AWS IP Ranges update for 2023-12-05 15:43:07</title>
       <link>https://github.com/seligman/aws-ip-ranges#20231205154307</link>
       <description><![CDATA[
@@ -233,6 +225,89 @@ Removed 99.82.178.148/31<br>
 Removed 99.82.178.218/31<br>
 Removed 99.82.179.108/31<br>
 Removed 99.82.179.182/31<br>
+]]></description>
+    </item>
+    <item>
+      <title>AWS IP Ranges update for 2023-12-19 20:13:07</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20231219201307</link>
+      <description><![CDATA[
+Changed by +1192<br><br>
+Added 52.95.219.0/24<br>
+Added 99.82.176.0/24<br>
+Added 52.95.218.128/25<br>
+Added 99.82.177.0/25<br>
+Added 52.95.218.64/26<br>
+Added 99.82.177.128/26<br>
+Added 52.95.218.32/27<br>
+Added 99.82.177.192/27<br>
+Added 52.95.218.16/28<br>
+Added 52.95.217.168/29<br>
+Added 52.95.217.216/29<br>
+Added 52.95.217.224/29<br>
+Added 52.95.217.248/29<br>
+Added 99.82.177.224/29<br>
+Added 99.82.177.240/29<br>
+Added 99.82.178.72/29<br>
+Added 52.95.216.60/30<br>
+Added 52.95.217.212/30<br>
+Added 52.95.217.236/30<br>
+Added 52.95.217.240/30<br>
+Added 52.95.218.0/30<br>
+Added 52.95.218.8/30<br>
+Added 99.82.177.232/30<br>
+Added 99.82.177.248/30<br>
+Added 99.82.178.4/30<br>
+Added 99.82.178.24/30<br>
+Added 99.82.178.36/30<br>
+Added 99.82.178.44/30<br>
+Added 99.82.178.60/30<br>
+Added 99.82.178.68/30<br>
+Added 99.82.178.96/30<br>
+Added 99.82.178.116/30<br>
+Added 99.82.178.120/30<br>
+Added 99.82.178.188/30<br>
+Added 99.82.179.4/30<br>
+Added 99.82.179.128/30<br>
+Added 52.95.216.134/31<br>
+Added 52.95.216.154/31<br>
+Added 52.95.216.170/31<br>
+Added 52.95.217.126/31<br>
+Added 52.95.217.128/31<br>
+Added 52.95.217.132/31<br>
+Added 52.95.217.146/31<br>
+Added 52.95.217.178/31<br>
+Added 52.95.217.182/31<br>
+Added 52.95.217.184/31<br>
+Added 52.95.217.190/31<br>
+Added 52.95.217.192/31<br>
+Added 52.95.217.198/31<br>
+Added 52.95.217.206/31<br>
+Added 52.95.217.234/31<br>
+Added 52.95.217.244/31<br>
+Added 52.95.218.4/31<br>
+Added 52.95.218.12/31<br>
+Added 99.82.177.238/31<br>
+Added 99.82.177.252/31<br>
+Added 99.82.178.2/31<br>
+Added 99.82.178.8/31<br>
+Added 99.82.178.12/31<br>
+Added 99.82.178.18/31<br>
+Added 99.82.178.28/31<br>
+Added 99.82.178.40/31<br>
+Added 99.82.178.50/31<br>
+Added 99.82.178.54/31<br>
+Added 99.82.178.80/31<br>
+Added 99.82.178.86/31<br>
+Added 99.82.178.94/31<br>
+Added 99.82.178.106/31<br>
+Added 99.82.178.114/31<br>
+Added 99.82.178.128/31<br>
+Added 99.82.178.136/31<br>
+Added 99.82.178.144/31<br>
+Added 99.82.178.148/31<br>
+Added 99.82.178.218/31<br>
+Added 99.82.179.108/31<br>
+Added 99.82.179.182/31<br>
 ]]></description>
     </item>
     <item>
