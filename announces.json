@@ -233,6 +233,9 @@
     },
     {
         "region": "ca-west-1",
-        "appeared_ip_ranges": "2022-09-08"
+        "appeared_ip_ranges": "2022-09-08",
+        "announced": "2023-12-20",
+        "days_to_announce": 468,
+        "announce_url": "https://aws.amazon.com/blogs/aws/the-aws-canada-west-calgary-region-is-now-available/"
     }
 ]

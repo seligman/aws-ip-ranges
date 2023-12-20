@@ -37,4 +37,4 @@ This file is generated from the [source data](announces.json), which is manually
 | il-central-1 | 2022-02-03 | [2023-08-01](https://aws.amazon.com/blogs/aws/now-open-aws-israel-tel-aviv-region/) | 544 |
 | ap-southeast-5 | 2023-07-14 |  |  |
 | ap-southeast-6 | 2022-08-02 |  |  |
-| ca-west-1 | 2022-09-08 |  |  |
+| ca-west-1 | 2022-09-08 | [2023-12-20](https://aws.amazon.com/blogs/aws/the-aws-canada-west-calgary-region-is-now-available/) | 468 |
