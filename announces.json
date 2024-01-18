@@ -1,23 +1,80 @@
 [
     {
-        "region": "ap-northeast-1",
+        "region": "us-east-1",
         "appeared_ip_ranges": "2015-11-03",
-        "announced": "2011-03-02",
-        "days_to_announce": -1707,
-        "announce_url": "https://aws.amazon.com/about-aws/whats-new/2011/03/02/announcing-asia-pacific-tokyo-region/",
-        "name": "Asia Pacific (Tokyo)"
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,107",
+        "announced": "2006-08-25",
+        "days_to_announce": -3357,
+        "announce_url": "https://aws.amazon.com/blogs/aws/amazon_ec2_beta/",
+        "name": "US East (N. Virginia)"
+    },
+    {
+        "region": "eu-west-1",
+        "appeared_ip_ranges": "2015-11-03",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,132",
+        "announced": "2008-12-10",
+        "days_to_announce": -2519,
+        "announce_url": "https://aws.amazon.com/about-aws/whats-new/2008/12/10/amazon-ec2-crosses-the-atlantic/",
+        "name": "Europe (Ireland)"
+    },
+    {
+        "region": "us-west-1",
+        "appeared_ip_ranges": "2015-11-03",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,17",
+        "announced": "2009-12-03",
+        "days_to_announce": -2161,
+        "announce_url": "https://aws.amazon.com/about-aws/whats-new/2009/12/03/aws-launches-the-northern-california-region/",
+        "name": "US West (N. California)"
     },
     {
         "region": "ap-southeast-1",
         "appeared_ip_ranges": "2015-11-03",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,57",
         "announced": "2010-04-29",
         "days_to_announce": -2014,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2010/04/29/announcing-asia-pacific-singapore-region/",
         "name": "Asia Pacific (Singapore)"
     },
     {
+        "region": "ap-northeast-1",
+        "appeared_ip_ranges": "2015-11-03",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,32",
+        "announced": "2011-03-02",
+        "days_to_announce": -1707,
+        "announce_url": "https://aws.amazon.com/about-aws/whats-new/2011/03/02/announcing-asia-pacific-tokyo-region/",
+        "name": "Asia Pacific (Tokyo)"
+    },
+    {
+        "region": "us-gov-west-1",
+        "appeared_ip_ranges": "2015-11-03",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,417",
+        "announced": "2011-08-16",
+        "days_to_announce": -1540,
+        "announce_url": "https://aws.amazon.com/blogs/aws/new-aws-govcloud-us-region/",
+        "name": "AWS GovCloud (US-West)"
+    },
+    {
+        "region": "us-west-2",
+        "appeared_ip_ranges": "2015-11-03",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,122",
+        "announced": "2011-11-08",
+        "days_to_announce": -1456,
+        "announce_url": "https://aws.amazon.com/about-aws/whats-new/2011/11/08/Announcing-new-us-west-oregon-region/",
+        "name": "US West (Oregon)"
+    },
+    {
+        "region": "sa-east-1",
+        "appeared_ip_ranges": "2015-11-03",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,102",
+        "announced": "2011-12-14",
+        "days_to_announce": -1420,
+        "announce_url": "https://aws.amazon.com/about-aws/whats-new/2011/12/14/announcing-the-south-america-sao-paulo-region/",
+        "name": "South America (Sao Paulo)"
+    },
+    {
         "region": "ap-southeast-2",
         "appeared_ip_ranges": "2015-11-03",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,12",
         "announced": "2012-11-12",
         "days_to_announce": -1086,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2012/11/12/announcing-the-aws-asia-pacific-sydney-region/",
@@ -26,6 +83,7 @@
     {
         "region": "cn-north-1",
         "appeared_ip_ranges": "2015-11-03",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,497",
         "announced": "2013-12-18",
         "days_to_announce": -685,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2013/12/18/announcing-the-aws-china-beijing-region/",
@@ -34,62 +92,16 @@
     {
         "region": "eu-central-1",
         "appeared_ip_ranges": "2015-11-03",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,82",
         "announced": "2014-10-23",
         "days_to_announce": -376,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2014/10/23/announcing-the-aws-eu-frankfurt-region/",
         "name": "Europe (Frankfurt)"
     },
     {
-        "region": "eu-west-1",
-        "appeared_ip_ranges": "2015-11-03",
-        "announced": "2008-12-10",
-        "days_to_announce": -2519,
-        "announce_url": "https://aws.amazon.com/about-aws/whats-new/2008/12/10/amazon-ec2-crosses-the-atlantic/",
-        "name": "Europe (Ireland)"
-    },
-    {
-        "region": "sa-east-1",
-        "appeared_ip_ranges": "2015-11-03",
-        "announced": "2011-12-14",
-        "days_to_announce": -1420,
-        "announce_url": "https://aws.amazon.com/about-aws/whats-new/2011/12/14/announcing-the-south-america-sao-paulo-region/",
-        "name": "South America (Sao Paulo)"
-    },
-    {
-        "region": "us-east-1",
-        "appeared_ip_ranges": "2015-11-03",
-        "announced": "2006-08-25",
-        "days_to_announce": -3357,
-        "announce_url": "https://aws.amazon.com/blogs/aws/amazon_ec2_beta/",
-        "name": "US East (N. Virginia)"
-    },
-    {
-        "region": "us-gov-west-1",
-        "appeared_ip_ranges": "2015-11-03",
-        "announced": "2011-08-16",
-        "days_to_announce": -1540,
-        "announce_url": "https://aws.amazon.com/blogs/aws/new-aws-govcloud-us-region/",
-        "name": "AWS GovCloud (US-West)"
-    },
-    {
-        "region": "us-west-1",
-        "appeared_ip_ranges": "2015-11-03",
-        "announced": "2009-12-03",
-        "days_to_announce": -2161,
-        "announce_url": "https://aws.amazon.com/about-aws/whats-new/2009/12/03/aws-launches-the-northern-california-region/",
-        "name": "US West (N. California)"
-    },
-    {
-        "region": "us-west-2",
-        "appeared_ip_ranges": "2015-11-03",
-        "announced": "2011-11-08",
-        "days_to_announce": -1456,
-        "announce_url": "https://aws.amazon.com/about-aws/whats-new/2011/11/08/Announcing-new-us-west-oregon-region/",
-        "name": "US West (Oregon)"
-    },
-    {
         "region": "ap-northeast-2",
         "appeared_ip_ranges": "2016-04-22",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,37",
         "announced": "2016-01-06",
         "days_to_announce": -107,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2016/01/announcing-asia-pacific-seoul-region/",
@@ -98,6 +110,7 @@
     {
         "region": "ap-south-1",
         "appeared_ip_ranges": "2016-06-23",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,47",
         "announced": "2016-06-27",
         "days_to_announce": 4,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2016/06/announcing-the-aws-asia-pacific-mumbai-region/",
@@ -106,6 +119,7 @@
     {
         "region": "us-east-2",
         "appeared_ip_ranges": "2016-08-22",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,27",
         "announced": "2016-10-17",
         "days_to_announce": 56,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2016/10/announcing-the-aws-us-east-ohio-region/",
@@ -114,6 +128,7 @@
     {
         "region": "ca-central-1",
         "appeared_ip_ranges": "2016-10-11",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,177",
         "announced": "2016-12-08",
         "days_to_announce": 58,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2016/12/announcing-the-aws-canada-central-region/",
@@ -122,6 +137,7 @@
     {
         "region": "eu-west-2",
         "appeared_ip_ranges": "2016-10-31",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,167",
         "announced": "2016-12-13",
         "days_to_announce": 43,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2016/12/announcing-the-aws-europe-london-region/",
@@ -130,6 +146,7 @@
     {
         "region": "cn-northwest-1",
         "appeared_ip_ranges": "2017-06-29",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,502",
         "announced": "2017-12-11",
         "days_to_announce": 165,
         "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-china-ningxia-region/",
@@ -138,6 +155,7 @@
     {
         "region": "eu-west-3",
         "appeared_ip_ranges": "2017-06-29",
+        "commit": "62192af43e2b1f1d290bdd1c56ca96f800746a88,357",
         "announced": "2017-12-18",
         "days_to_announce": 172,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2017/12/announcing-the-aws-eu-paris-region/",
@@ -146,6 +164,7 @@
     {
         "region": "eu-north-1",
         "appeared_ip_ranges": "2017-09-25",
+        "commit": "320da8a2ae1568a934200613850b3cf83ed605e0,797",
         "announced": "2018-12-12",
         "days_to_announce": 443,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2018/12/announcing-the-aws-europe-stockholm-region/",
@@ -154,6 +173,7 @@
     {
         "region": "us-gov-east-1",
         "appeared_ip_ranges": "2017-10-11",
+        "commit": "09e75b86541b904207b345137e8b19b6184e7e78,1292",
         "announced": "2018-11-12",
         "days_to_announce": 397,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2018/11/announcing-the-new-aws-govcloud-us-east-region/",
@@ -162,6 +182,7 @@
     {
         "region": "ap-northeast-3",
         "appeared_ip_ranges": "2018-03-01",
+        "commit": "539de19179c1f624de7849db0e9542abbe0cd99b,67",
         "announced": "2018-02-13",
         "days_to_announce": -16,
         "announce_url": "https://aws.amazon.com/jp/about-aws/whats-new/2018/02/announcing-the-aws-osaka-local-region/",
@@ -170,6 +191,7 @@
     {
         "region": "me-south-1",
         "appeared_ip_ranges": "2018-06-08",
+        "commit": "7bf375cd42e86237c0b176544666344ac589321c,1052",
         "announced": "2019-07-29",
         "days_to_announce": 416,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2019/07/announcing-the-new-aws-middle-east--bahrain--region-/",
@@ -178,6 +200,7 @@
     {
         "region": "af-south-1",
         "appeared_ip_ranges": "2019-04-08",
+        "commit": "7691aaf3a742ef10ea48c6c89d0e50d2308f26db,1692",
         "announced": "2020-04-22",
         "days_to_announce": 380,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2020/04/announcing-aws-africa-cape-town-region/",
@@ -186,6 +209,7 @@
     {
         "region": "ap-east-1",
         "appeared_ip_ranges": "2019-04-25",
+        "commit": "d98b9852f6f0a3887131ea7bc05d797f31b9eae7,687",
         "announced": "2019-04-24",
         "days_to_announce": -1,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2019/04/announcing-the-aws-asia-pacific-hong-kong-region/",
@@ -194,6 +218,7 @@
     {
         "region": "eu-south-1",
         "appeared_ip_ranges": "2020-04-20",
+        "commit": "302e01aba29b39f6cde9f359c3ea180d53626208,115",
         "announced": "2020-04-27",
         "days_to_announce": 7,
         "announce_url": "https://aws.amazon.com/about-aws/whats-new/2020/04/announcing-the-new-aws-europe-milan-region/",
@@ -202,6 +227,7 @@
     {
         "region": "ap-southeast-3",
         "appeared_ip_ranges": "2020-06-18",
+        "commit": "caac0a6e9a27882d0b662b3c834f5c7c5861cdff,1513",
         "announced": "2021-12-13",
         "days_to_announce": 543,
         "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-jakarta-region/",
@@ -210,6 +236,7 @@
     {
         "region": "ap-south-2",
         "appeared_ip_ranges": "2020-11-18",
+        "commit": "2451a9b5fb35d11b82013b649ac4619713599154,2119",
         "announced": "2022-11-21",
         "days_to_announce": 733,
         "announce_url": "https://aws.amazon.com/blogs/aws/now-open-the-30th-aws-region-asia-pacific-hyderabad-region-in-india/",
@@ -218,6 +245,7 @@
     {
         "region": "me-central-1",
         "appeared_ip_ranges": "2020-12-17",
+        "commit": "29dbd2b5a7c68c55a3261409e4e3ef940b48284f,3937",
         "announced": "2022-08-29",
         "days_to_announce": 620,
         "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-region-in-the-united-arab-emirates-uae/",
@@ -226,6 +254,7 @@
     {
         "region": "eu-south-2",
         "appeared_ip_ranges": "2021-01-07",
+        "commit": "598ba43008830593fbcf497fb4111a56eb2833f7,781",
         "announced": "2022-11-15",
         "days_to_announce": 677,
         "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-region-in-spain/",
@@ -234,6 +263,7 @@
     {
         "region": "eu-central-2",
         "appeared_ip_ranges": "2021-01-26",
+        "commit": "9f2a1e0c240faac3091c4e543eab10e2d6333f6b,1333",
         "announced": "2022-11-08",
         "days_to_announce": 651,
         "announce_url": "https://aws.amazon.com/blogs/aws/a-new-aws-region-opens-in-switzerland/",
@@ -242,6 +272,7 @@
     {
         "region": "ap-southeast-4",
         "appeared_ip_ranges": "2021-05-10",
+        "commit": "0114285c92ea38e01361f4d179834df2c3f502cf,13",
         "announced": "2023-01-23",
         "days_to_announce": 623,
         "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-melbourne-region-in-australia/",
@@ -250,25 +281,34 @@
     {
         "region": "il-central-1",
         "appeared_ip_ranges": "2022-02-03",
+        "commit": "439a2ba453178a4de3bf8271e82a0a30e355131a,889",
         "announced": "2023-08-01",
         "days_to_announce": 544,
         "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-israel-tel-aviv-region/",
         "name": "Israel (Tel Aviv)"
     },
     {
-        "region": "ap-southeast-5",
-        "appeared_ip_ranges": "2023-07-14"
-    },
-    {
         "region": "ap-southeast-6",
-        "appeared_ip_ranges": "2022-08-02"
+        "appeared_ip_ranges": "2022-08-02",
+        "commit": "3461b64bfe43ffe778641b743a7746edf5720ed8,21607"
     },
     {
         "region": "ca-west-1",
         "appeared_ip_ranges": "2022-09-08",
+        "commit": "c7033f0104a780124ea5791865ea7b9a68c5cd4b,763",
         "announced": "2023-12-20",
         "days_to_announce": 468,
         "announce_url": "https://aws.amazon.com/blogs/aws/the-aws-canada-west-calgary-region-is-now-available/",
         "name": "Canada West (Calgary)"
+    },
+    {
+        "region": "ap-southeast-5",
+        "appeared_ip_ranges": "2023-07-21",
+        "commit": "689fc5838a0a6bafecee8d9a4490422d7593036e,379"
+    },
+    {
+        "region": "eusc-de-east-1",
+        "appeared_ip_ranges": "2023-11-20",
+        "commit": "23590e18c52ca531a533028259c8f029b2d36e3c,13555"
     }
 ]
