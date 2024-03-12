@@ -5,33 +5,6 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
-      <title>AWS IP Ranges update for 2024-02-29 22:33:07</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20240229223307</link>
-      <description><![CDATA[
-Changed by -2496<br><br>
-Removed 3.2.32.0/24<br>
-Removed 3.2.35.0/24<br>
-Removed 3.2.41.0/24<br>
-Removed 3.2.33.128/25<br>
-Removed 3.2.34.128/25<br>
-Removed 3.2.36.0/25<br>
-Removed 3.2.37.128/25<br>
-Removed 3.2.38.128/25<br>
-Removed 3.2.39.0/25<br>
-Removed 3.2.40.0/25<br>
-Removed 3.2.42.0/25<br>
-Removed 3.2.43.0/25<br>
-Removed 3.2.47.0/25<br>
-Removed 3.2.33.64/26<br>
-Removed 3.2.34.0/26<br>
-Removed 3.2.37.0/26<br>
-Removed 3.2.38.0/26<br>
-Removed 3.2.39.128/26<br>
-Removed 3.2.42.192/26<br>
-Removed 3.2.47.192/26<br>
-]]></description>
-    </item>
-    <item>
       <title>AWS IP Ranges update for 2024-03-01 07:03:07</title>
       <link>https://github.com/seligman/aws-ip-ranges#20240301070307</link>
       <description><![CDATA[
@@ -207,6 +180,39 @@ Added 182.24.0.0/14<br>
       <description><![CDATA[
 Changed by -262144<br><br>
 Removed 43.208.0.0/14<br>
+]]></description>
+    </item>
+    <item>
+      <title>AWS IP Ranges update for 2024-03-12 10:53:07</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20240312105307</link>
+      <description><![CDATA[
+Changed by +86<br><br>
+Added 13.34.14.72/29<br>
+Added 13.34.14.104/29<br>
+Added 13.34.24.8/29<br>
+Added 13.34.24.40/29<br>
+Added 13.34.6.132/30<br>
+Added 13.34.6.136/30<br>
+Added 13.34.6.164/30<br>
+Added 13.34.6.168/30<br>
+Added 13.34.14.68/30<br>
+Added 13.34.14.100/30<br>
+Added 13.34.24.4/30<br>
+Added 13.34.24.36/30<br>
+Added 13.34.6.130/31<br>
+Added 13.34.6.142/31<br>
+Added 13.34.6.162/31<br>
+Added 13.34.6.174/31<br>
+Added 13.34.14.66/31<br>
+Added 13.34.14.98/31<br>
+Added 13.34.24.2/31<br>
+Added 13.34.24.34/31<br>
+Added 13.34.6.129/32<br>
+Added 13.34.6.161/32<br>
+Added 13.34.14.65/32<br>
+Added 13.34.14.97/32<br>
+Added 13.34.24.1/32<br>
+Added 13.34.24.33/32<br>
 ]]></description>
     </item>
     <item>
