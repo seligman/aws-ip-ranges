@@ -3063,5 +3063,6 @@
 "6ce89d2021a30543fb9fb664b41939e12494bdb2":{"added":["147.106.192.0/18"],"removed":[]},
 "09b02165815aad55bcdec6177476fe420fefecbf":{"added":[],"removed":["147.106.192.0/18"]},
 "a5320f4dc3fd8aa4a40fa2fa8523ae529a2d2002":{"added":["13.34.123.128/26"],"removed":[]},
-"8558847edd54a851319b46acd4aada54c0c1c72b":{"added":["13.34.123.192/26"],"removed":[]}
+"8558847edd54a851319b46acd4aada54c0c1c72b":{"added":["13.34.123.192/26"],"removed":[]},
+"6e0873a4aab4495cc63353ba4e6c653920305abb":{"added":["151.148.19.0/24"],"removed":[]}
 }
