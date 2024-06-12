@@ -18,11 +18,11 @@ To get updates as they happen:
 
 ![History of AWS](history_count.svg)
 
-[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2024-06-11:
+[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2024-06-12:
 
 | | IPs | Percent |
 | --- | ---: | ---: |
-| Amazon AWS | 79,084,416 | 2.13611 |
+| Amazon AWS | 79,084,480 | 2.13611 |
 | Microsoft Azure | 41,740,008 | 1.12742 |
 | Google Cloud | 13,061,376 | 0.35279 |
 
@@ -33,6 +33,7 @@ To get updates as they happen:
 
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
+| 2024&#8209;06&#8209;12&nbsp;13:23:07 | 2.13611 | 79,084,480 | +64 | +13.34.127.0/26 |
 | 2024&#8209;06&#8209;11&nbsp;20:53:10 | 2.13611 | 79,084,416 | +40,192 | +52.223.192.0/18,&nbsp;+99.181.64.0/18,&nbsp;+192.16.64.0/21,&nbsp;... |
 | 2024&#8209;06&#8209;11&nbsp;19:03:09 | 2.13503 | 79,044,224 | +32,768 | +52.129.128.0/17 |
 | 2024&#8209;06&#8209;11&nbsp;17:23:09 | | | | Service IVS_REALTIME |
@@ -47,7 +48,6 @@ To get updates as they happen:
 | 2024&#8209;06&#8209;06&nbsp;16:43:09 | 2.13161 | 78,917,696 | +64 | +13.34.125.192/26 |
 | 2024&#8209;06&#8209;05&nbsp;23:33:09 | 2.13161 | 78,917,632 | +256 | +193.57.170.0/24 |
 | 2024&#8209;06&#8209;05&nbsp;19:53:10 | 2.13160 | 78,917,376 | +256 | +173.82.255.0/24 |
-| 2024&#8209;06&#8209;05&nbsp;18:53:09 | 2.13159 | 78,917,120 | -256 | -173.82.255.0/24 |
 
 
 # 15 largest changes to date:
