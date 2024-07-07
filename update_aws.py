@@ -429,66 +429,77 @@ if changed or force:
         f.write(md)
 
     log_step("Creating an RSS feed")
-    # Create an RSS feed, do it by hand just to make things easy
-    with open("rss.xml", "wt", encoding="utf-8", newline="") as f:
-        base_url = "https://github.com/seligman/aws-ip-ranges"
+    # Create two RSS feeds, one with only big changes it in
+    for opts in [{"fn": "rss.xml"}, {"fn": "rss_big_changes.xml", "big_changes": True}]:
+        with open(opts['fn'], "wt", encoding="utf-8", newline="") as f:
+            base_url = "https://github.com/seligman/aws-ip-ranges"
 
-        f.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
-        f.write('<rss version="2.0">\n')
-        f.write('  <channel>\n')
-        f.write('    <title>AWS IP Ranges Updates</title>\n')
-        f.write(f'    <link>{base_url}</link>\n')
-        f.write("    <description>Changes to AWS's IP Ranges</description>\n")
+            f.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
+            f.write('<rss version="2.0">\n')
+            f.write('  <channel>\n')
+            f.write('    <title>AWS IP Ranges Updates</title>\n')
+            f.write(f'    <link>{base_url}</link>\n')
+            f.write("    <description>Changes to AWS's IP Ranges</description>\n")
 
-        log_step("Filling out the RSS feed")
-        for cur in rss_history[-20:]:
-            f.write('    <item>\n')
-            f.write(f'      <title>AWS IP Ranges update for {cur[2]}</title>\n')
-            f.write(f'      <link>{base_url}#{cur[2].replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
-            f.write('      <description><![CDATA[\n')
-            if len(cur[4]) == 0:
-                f.write("No changes to IPs\n")
-            else:
-                f.write(f"Changed by {cur[3]}<br><br>\n")
-                for cur_range in cur[4]:
-                    if cur_range.startswith("+"):
-                        f.write(f"Added {cur_range[1:]}<br>\n")
-                    elif cur_range.startswith("-"):
-                        f.write(f"Removed {cur_range[1:]}<br>\n")
+            bail = 20
+            log_step("Filling out the RSS feed")
+            for cur in rss_history[::-1]:
+                show_item = True
+                if opts.get("big_changes", False):
+                    if abs(cur[3]) <= 5000:
+                        show_item = False
+                
+                if show_item:
+                    f.write('    <item>\n')
+                    f.write(f'      <title>AWS IP Ranges update for {cur[2]}</title>\n')
+                    f.write(f'      <link>{base_url}#{cur[2].replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
+                    f.write('      <description><![CDATA[\n')
+                    if len(cur[4]) == 0:
+                        f.write("No changes to IPs\n")
                     else:
-                        f.write(f"{cur_range}<br>\n")
-            f.write(']]></description>\n')
-            f.write('    </item>\n')
-        
-        # Also log the newest regions and services, so feed readers will show it
-        bail_at = datetime.now(UTC).replace(tzinfo=None) - timedelta(days=30)
-        regions = [(value, key) for key, value in firsts.items()]
-        regions.sort(reverse=True)
-        for seen_at, value in regions:
-            seen_at = seen_at[:19]
-            if value in all_regions:
-                f.write('    <item>\n')
-                f.write(f'      <title>AWS {value} Region Detected</title>\n')
-                f.write(f'      <link>{base_url}#{(value + seen_at).replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
-                f.write('      <description><![CDATA[\n')
-                seen_at = datetime(*[int(x) for x in seen_at.split("-")])
-                f.write(f"AWS Region {value} detected at {seen_at.strftime('%Y-%m-%d %H:%M:%S')}<br>\n")
-                f.write(']]></description>\n')
-                f.write('    </item>\n')
-            elif value in all_services:
-                f.write('    <item>\n')
-                f.write(f'      <title>AWS {value} Service Detected</title>\n')
-                f.write(f'      <link>{base_url}#{(value + seen_at).replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
-                f.write('      <description><![CDATA[\n')
-                seen_at = datetime(*[int(x) for x in seen_at.split("-")])
-                f.write(f"AWS Service {value} detected at {seen_at.strftime('%Y-%m-%d %H:%M:%S')}<br>\n")
-                f.write(']]></description>\n')
-                f.write('    </item>\n')
-            if seen_at < bail_at:
-                break
+                        f.write(f"Changed by {cur[3]}<br><br>\n")
+                        for cur_range in cur[4]:
+                            if cur_range.startswith("+"):
+                                f.write(f"Added {cur_range[1:]}<br>\n")
+                            elif cur_range.startswith("-"):
+                                f.write(f"Removed {cur_range[1:]}<br>\n")
+                            else:
+                                f.write(f"{cur_range}<br>\n")
+                    f.write(']]></description>\n')
+                    f.write('    </item>\n')
+                    bail -= 1
+                    if bail == 0:
+                        break
+            
+            # Also log the newest regions and services, so feed readers will show it
+            bail_at = datetime.now(UTC).replace(tzinfo=None) - timedelta(days=30)
+            regions = [(value, key) for key, value in firsts.items()]
+            regions.sort(reverse=True)
+            for seen_at, value in regions:
+                seen_at = seen_at[:19]
+                if value in all_regions:
+                    f.write('    <item>\n')
+                    f.write(f'      <title>AWS {value} Region Detected</title>\n')
+                    f.write(f'      <link>{base_url}#{(value + seen_at).replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
+                    f.write('      <description><![CDATA[\n')
+                    seen_at = datetime(*[int(x) for x in seen_at.split("-")])
+                    f.write(f"AWS Region {value} detected at {seen_at.strftime('%Y-%m-%d %H:%M:%S')}<br>\n")
+                    f.write(']]></description>\n')
+                    f.write('    </item>\n')
+                elif value in all_services:
+                    f.write('    <item>\n')
+                    f.write(f'      <title>AWS {value} Service Detected</title>\n')
+                    f.write(f'      <link>{base_url}#{(value + seen_at).replace(" ", "").replace("-", "").replace(":", "")}</link>\n')
+                    f.write('      <description><![CDATA[\n')
+                    seen_at = datetime(*[int(x) for x in seen_at.split("-")])
+                    f.write(f"AWS Service {value} detected at {seen_at.strftime('%Y-%m-%d %H:%M:%S')}<br>\n")
+                    f.write(']]></description>\n')
+                    f.write('    </item>\n')
+                if seen_at < bail_at:
+                    break
 
-        f.write('  </channel>\n')
-        f.write('</rss>\n')
+            f.write('  </channel>\n')
+            f.write('</rss>\n')
 
     log_step("Done with most work")
     if not force:
@@ -498,6 +509,7 @@ if changed or force:
         subprocess.check_call(["git", "add", "history_changes.json"])
         subprocess.check_call(["git", "add", "history_count.svg"])
         subprocess.check_call(["git", "add", "rss.xml"])
+        subprocess.check_call(["git", "add", "rss_big_changes.xml"])
         subprocess.check_call(["git", "add", "README.md"])
 
         log_step("Creating git commit")
