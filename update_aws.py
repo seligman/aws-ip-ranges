@@ -446,7 +446,7 @@ if changed or force:
             for cur in rss_history[::-1]:
                 show_item = True
                 if opts.get("big_changes", False):
-                    if abs(cur[3]) <= 5000:
+                    if abs(cur[0]) <= 5000:
                         show_item = False
                 
                 if show_item:
