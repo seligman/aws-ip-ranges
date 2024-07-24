@@ -5,6 +5,42 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
+      <title>AWS IP Ranges update for 2024-07-24 17:33:10</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20240724173310</link>
+      <description><![CDATA[
+Changed by -778<br><br>
+Removed 13.34.74.0/25<br>
+Removed 13.34.71.192/26<br>
+Removed 13.34.72.64/26<br>
+Removed 13.34.72.128/26<br>
+Removed 13.34.77.0/26<br>
+Removed 13.34.77.128/26<br>
+Removed 13.34.78.0/26<br>
+Removed 13.34.78.128/26<br>
+Removed 13.34.79.0/26<br>
+Removed 13.34.79.128/26<br>
+Removed 13.34.69.96/27<br>
+Removed 13.34.69.48/28<br>
+Removed 13.34.69.36/30<br>
+Removed 13.34.69.44/30<br>
+Removed 13.34.68.196/31<br>
+Removed 13.34.68.232/31<br>
+Removed 13.34.69.40/31<br>
+Removed 13.34.68.195/32<br>
+Removed 13.34.68.198/32<br>
+Removed 13.34.68.204/32<br>
+Removed 13.34.68.207/32<br>
+Removed 13.34.68.227/32<br>
+Removed 13.34.68.228/32<br>
+Removed 13.34.68.235/32<br>
+Removed 13.34.68.236/32<br>
+Removed 13.34.68.239/32<br>
+Removed 13.34.69.32/32<br>
+Removed 13.34.69.35/32<br>
+Removed 13.34.69.43/32<br>
+]]></description>
+    </item>
+    <item>
       <title>AWS IP Ranges update for 2024-07-24 16:53:09</title>
       <link>https://github.com/seligman/aws-ip-ranges#20240724165309</link>
       <description><![CDATA[
@@ -665,13 +701,6 @@ No changes to IPs
     <item>
       <title>AWS IP Ranges update for 2024-07-17 19:23:09</title>
       <link>https://github.com/seligman/aws-ip-ranges#20240717192309</link>
-      <description><![CDATA[
-No changes to IPs
-]]></description>
-    </item>
-    <item>
-      <title>AWS IP Ranges update for 2024-07-17 17:33:07</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20240717173307</link>
       <description><![CDATA[
 No changes to IPs
 ]]></description>
