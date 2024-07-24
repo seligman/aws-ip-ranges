@@ -5,6 +5,51 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
+      <title>AWS IP Ranges update for 2024-07-24 18:53:10</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20240724185310</link>
+      <description><![CDATA[
+Changed by -1780<br><br>
+Removed 13.34.65.0/24<br>
+Removed 13.34.51.128/25<br>
+Removed 13.34.52.128/25<br>
+Removed 13.34.53.0/25<br>
+Removed 13.34.62.0/25<br>
+Removed 13.34.63.0/25<br>
+Removed 13.34.64.0/25<br>
+Removed 13.34.52.64/26<br>
+Removed 13.34.53.192/26<br>
+Removed 13.34.58.64/26<br>
+Removed 13.34.58.192/26<br>
+Removed 13.34.59.0/26<br>
+Removed 13.34.62.128/26<br>
+Removed 13.34.64.192/26<br>
+Removed 13.34.66.128/26<br>
+Removed 13.34.50.0/27<br>
+Removed 13.34.53.160/27<br>
+Removed 13.34.54.0/27<br>
+Removed 13.34.55.32/27<br>
+Removed 13.34.55.64/27<br>
+Removed 13.34.69.0/27<br>
+Removed 13.34.69.64/27<br>
+Removed 13.34.68.200/30<br>
+Removed 13.34.68.230/31<br>
+Removed 13.34.68.193/32<br>
+Removed 13.34.68.194/32<br>
+Removed 13.34.68.199/32<br>
+Removed 13.34.68.205/32<br>
+Removed 13.34.68.206/32<br>
+Removed 13.34.68.225/32<br>
+Removed 13.34.68.226/32<br>
+Removed 13.34.68.229/32<br>
+Removed 13.34.68.234/32<br>
+Removed 13.34.68.237/32<br>
+Removed 13.34.68.238/32<br>
+Removed 13.34.69.33/32<br>
+Removed 13.34.69.34/32<br>
+Removed 13.34.69.42/32<br>
+]]></description>
+    </item>
+    <item>
       <title>AWS IP Ranges update for 2024-07-24 17:33:10</title>
       <link>https://github.com/seligman/aws-ip-ranges#20240724173310</link>
       <description><![CDATA[
@@ -694,13 +739,6 @@ Added 83.119.128.0/18<br>
     <item>
       <title>AWS IP Ranges update for 2024-07-18 12:53:09</title>
       <link>https://github.com/seligman/aws-ip-ranges#20240718125309</link>
-      <description><![CDATA[
-No changes to IPs
-]]></description>
-    </item>
-    <item>
-      <title>AWS IP Ranges update for 2024-07-17 19:23:09</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20240717192309</link>
       <description><![CDATA[
 No changes to IPs
 ]]></description>
