@@ -5,6 +5,13 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
+      <title>AWS IP Ranges update for 2024-08-13 15:13:09</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20240813151309</link>
+      <description><![CDATA[
+No changes to IPs
+]]></description>
+    </item>
+    <item>
       <title>AWS IP Ranges update for 2024-08-12 18:53:10</title>
       <link>https://github.com/seligman/aws-ip-ranges#20240812185310</link>
       <description><![CDATA[
@@ -496,94 +503,6 @@ Removed 13.34.21.225/32<br>
 Removed 13.34.22.1/32<br>
 Removed 13.34.22.8/32<br>
 Removed 13.34.22.14/32<br>
-]]></description>
-    </item>
-    <item>
-      <title>AWS IP Ranges update for 2024-07-24 20:53:09</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20240724205309</link>
-      <description><![CDATA[
-Changed by -1852<br><br>
-Removed 13.34.35.0/24<br>
-Removed 13.34.37.0/24<br>
-Removed 13.34.27.0/25<br>
-Removed 13.34.32.0/25<br>
-Removed 13.34.36.0/25<br>
-Removed 13.34.38.0/25<br>
-Removed 13.34.39.0/25<br>
-Removed 13.34.29.0/26<br>
-Removed 13.34.31.128/26<br>
-Removed 13.34.32.128/26<br>
-Removed 13.34.34.128/26<br>
-Removed 13.34.36.128/26<br>
-Removed 13.34.38.128/26<br>
-Removed 13.34.26.192/27<br>
-Removed 13.34.27.128/27<br>
-Removed 13.34.39.128/27<br>
-Removed 13.34.39.192/27<br>
-Removed 13.34.22.128/28<br>
-Removed 13.34.22.144/29<br>
-Removed 13.34.24.8/29<br>
-Removed 13.34.24.40/29<br>
-Removed 13.34.25.8/29<br>
-Removed 13.34.25.40/29<br>
-Removed 13.34.25.216/29<br>
-Removed 13.34.25.248/29<br>
-Removed 13.34.32.200/29<br>
-Removed 13.34.32.232/29<br>
-Removed 13.34.24.4/30<br>
-Removed 13.34.24.36/30<br>
-Removed 13.34.25.4/30<br>
-Removed 13.34.25.36/30<br>
-Removed 13.34.32.196/30<br>
-Removed 13.34.32.228/30<br>
-Removed 13.34.38.196/30<br>
-Removed 13.34.38.204/30<br>
-Removed 13.34.38.228/30<br>
-Removed 13.34.38.236/30<br>
-Removed 13.34.24.2/31<br>
-Removed 13.34.24.34/31<br>
-Removed 13.34.25.2/31<br>
-Removed 13.34.25.34/31<br>
-Removed 13.34.25.204/31<br>
-Removed 13.34.32.194/31<br>
-Removed 13.34.32.208/31<br>
-Removed 13.34.32.226/31<br>
-Removed 13.34.32.240/31<br>
-Removed 13.34.38.194/31<br>
-Removed 13.34.38.226/31<br>
-Removed 13.34.39.162/31<br>
-Removed 13.34.39.170/31<br>
-Removed 13.34.39.174/31<br>
-Removed 13.34.39.184/31<br>
-Removed 13.34.39.228/31<br>
-Removed 13.34.22.9/32<br>
-Removed 13.34.22.15/32<br>
-Removed 13.34.24.1/32<br>
-Removed 13.34.24.33/32<br>
-Removed 13.34.25.1/32<br>
-Removed 13.34.25.33/32<br>
-Removed 13.34.32.193/32<br>
-Removed 13.34.32.225/32<br>
-Removed 13.34.38.193/32<br>
-Removed 13.34.38.200/32<br>
-Removed 13.34.38.203/32<br>
-Removed 13.34.38.225/32<br>
-Removed 13.34.38.232/32<br>
-Removed 13.34.38.235/32<br>
-Removed 13.34.39.161/32<br>
-Removed 13.34.39.165/32<br>
-Removed 13.34.39.169/32<br>
-Removed 13.34.39.173/32<br>
-Removed 13.34.39.176/32<br>
-Removed 13.34.39.181/32<br>
-Removed 13.34.39.187/32<br>
-Removed 13.34.39.188/32<br>
-Removed 13.34.39.190/32<br>
-Removed 13.34.39.225/32<br>
-Removed 13.34.39.227/32<br>
-Removed 13.34.39.232/32<br>
-Removed 13.34.39.245/32<br>
-Removed 13.34.39.250/32<br>
 ]]></description>
     </item>
     <item>
