@@ -37,7 +37,7 @@ This file is generated from the [source data](announces.json), which is manually
 | il-central-1 | Israel (Tel Aviv) | [2022-02-03](https://github.com/seligman/aws-ip-ranges/blob/439a2ba453178a4de3bf8271e82a0a30e355131a/ip-ranges.json#L889) | [2023-08-01](https://aws.amazon.com/blogs/aws/now-open-aws-israel-tel-aviv-region/) | 544 |
 | ap-southeast-6 |  | [2022-08-02](https://github.com/seligman/aws-ip-ranges/blob/3461b64bfe43ffe778641b743a7746edf5720ed8/ip-ranges.json#L21607) |  |  |
 | ca-west-1 | Canada West (Calgary) | [2022-09-08](https://github.com/seligman/aws-ip-ranges/blob/c7033f0104a780124ea5791865ea7b9a68c5cd4b/ip-ranges.json#L763) | [2023-12-20](https://aws.amazon.com/blogs/aws/the-aws-canada-west-calgary-region-is-now-available/) | 468 |
-| ap-southeast-5 |  | [2023-07-21](https://github.com/seligman/aws-ip-ranges/blob/689fc5838a0a6bafecee8d9a4490422d7593036e/ip-ranges.json#L379) |  |  |
+| ap-southeast-5 | Asia Pacific (Malaysia) | [2023-07-21](https://github.com/seligman/aws-ip-ranges/blob/689fc5838a0a6bafecee8d9a4490422d7593036e/ip-ranges.json#L379) | [2024-08-21](https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-malaysia-region/) | 397 |
 | eusc-de-east-1 |  | [2023-11-20](https://github.com/seligman/aws-ip-ranges/blob/23590e18c52ca531a533028259c8f029b2d36e3c/ip-ranges.json#L13555) |  |  |
 
 \* = This region's date found in ip-ranges.json comes from a historical

@@ -322,7 +322,11 @@
     {
         "region": "ap-southeast-5",
         "appeared_ip_ranges": "2023-07-21",
-        "commit": "689fc5838a0a6bafecee8d9a4490422d7593036e,379"
+        "commit": "689fc5838a0a6bafecee8d9a4490422d7593036e,379",
+        "announced": "2024-08-21",
+        "days_to_announce": 397,
+        "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-malaysia-region/",
+        "name": "Asia Pacific (Malaysia)"
     },
     {
         "region": "eusc-de-east-1",
