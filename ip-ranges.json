@@ -1,6 +1,6 @@
 {
-  "syncToken": "1726671789",
-  "createDate": "2024-09-18-15-03-09",
+  "syncToken": "1726761190",
+  "createDate": "2024-09-19-15-53-10",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -31315,6 +31315,12 @@
       "region": "us-west-1",
       "service": "EC2",
       "network_border_group": "us-west-1"
+    },
+    {
+      "ip_prefix": "98.88.0.0/13",
+      "region": "us-east-1",
+      "service": "EC2",
+      "network_border_group": "us-east-1"
     },
     {
       "ip_prefix": "15.161.0.0/16",
