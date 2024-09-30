@@ -5,6 +5,49 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
+      <title>AWS IP Ranges update for 2024-09-30 23:43:10</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20240930234310</link>
+      <description><![CDATA[
+Changed by +821809<br><br>
+Added 43.208.0.0/13<br>
+Added 78.12.0.0/14<br>
+Added 15.190.96.0/19<br>
+Added 15.190.80.0/20<br>
+Added 15.248.112.0/20<br>
+Added 136.18.144.0/20<br>
+Added 3.5.192.0/21<br>
+Added 15.190.248.0/21<br>
+Added 15.248.128.0/21<br>
+Added 23.254.0.0/21<br>
+Added 3.5.60.0/22<br>
+Added 15.190.244.0/22<br>
+Added 16.12.76.0/22<br>
+Added 13.248.76.0/23<br>
+Added 15.177.102.0/23<br>
+Added 16.12.72.0/23<br>
+Added 13.248.78.0/24<br>
+Added 15.177.104.0/24<br>
+Added 16.12.71.0/24<br>
+Added 16.12.75.0/24<br>
+Added 16.12.80.0/24<br>
+Added 35.71.125.0/24<br>
+Added 35.71.126.0/24<br>
+Added 150.222.53.64/26<br>
+Added 150.222.53.128/26<br>
+Added 52.94.250.96/27<br>
+Added 76.223.170.64/27<br>
+Added 150.222.53.32/27<br>
+Added 150.222.53.192/27<br>
+Added 52.94.250.128/28<br>
+Added 76.223.170.48/28<br>
+Added 104.255.59.208/29<br>
+Added 104.255.57.100/30<br>
+Added 104.255.59.206/31<br>
+Added 104.255.59.216/31<br>
+Added 104.255.57.98/32<br>
+]]></description>
+    </item>
+    <item>
       <title>AWS IP Ranges update for 2024-09-27 18:53:07</title>
       <link>https://github.com/seligman/aws-ip-ranges#20240927185307</link>
       <description><![CDATA[
@@ -151,10 +194,24 @@ No changes to IPs
 ]]></description>
     </item>
     <item>
-      <title>AWS IP Ranges update for 2024-09-16 01:33:17</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20240916013317</link>
+      <title>AWS mx-central-1 Region Detected</title>
+      <link>https://github.com/seligman/aws-ip-ranges#mxcentral120240930234310</link>
       <description><![CDATA[
-No changes to IPs
+AWS Region mx-central-1 detected at 2024-09-30 23:43:10<br>
+]]></description>
+    </item>
+    <item>
+      <title>AWS ap-southeast-7 Region Detected</title>
+      <link>https://github.com/seligman/aws-ip-ranges#apsoutheast720240930234310</link>
+      <description><![CDATA[
+AWS Region ap-southeast-7 detected at 2024-09-30 23:43:10<br>
+]]></description>
+    </item>
+    <item>
+      <title>AWS ap-east-2 Region Detected</title>
+      <link>https://github.com/seligman/aws-ip-ranges#apeast220240930234310</link>
+      <description><![CDATA[
+AWS Region ap-east-2 detected at 2024-09-30 23:43:10<br>
 ]]></description>
     </item>
     <item>
