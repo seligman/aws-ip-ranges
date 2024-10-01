@@ -158,10 +158,10 @@ def find_regions():
                     found = True
                     break
             if found:
-                print("Already in announces.md")
+                print("Already in announces.json")
             else:
                 announces.append(to_add)
-                print("Added to announces.md")
+                print("Added to announces.json")
     
     save_announces(announces)
 

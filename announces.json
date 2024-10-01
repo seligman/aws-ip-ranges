@@ -332,5 +332,20 @@
         "region": "eusc-de-east-1",
         "appeared_ip_ranges": "2023-11-20",
         "commit": "23590e18c52ca531a533028259c8f029b2d36e3c,13555"
+    },
+    {
+        "region": "ap-east-2",
+        "appeared_ip_ranges": "2024-09-30",
+        "commit": "01d6b9118d92119999202780ca725cfdc75e6533,19"
+    },
+    {
+        "region": "ap-southeast-7",
+        "appeared_ip_ranges": "2024-09-30",
+        "commit": "01d6b9118d92119999202780ca725cfdc75e6533,247"
+    },
+    {
+        "region": "mx-central-1",
+        "appeared_ip_ranges": "2024-09-30",
+        "commit": "01d6b9118d92119999202780ca725cfdc75e6533,157"
     }
 ]

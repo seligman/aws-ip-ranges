@@ -39,6 +39,9 @@ This file is generated from the [source data](announces.json), which is manually
 | ca-west-1 | Canada West (Calgary) | [2022-09-08](https://github.com/seligman/aws-ip-ranges/blob/c7033f0104a780124ea5791865ea7b9a68c5cd4b/ip-ranges.json#L763) | [2023-12-20](https://aws.amazon.com/blogs/aws/the-aws-canada-west-calgary-region-is-now-available/) | 468 |
 | ap-southeast-5 | Asia Pacific (Malaysia) | [2023-07-21](https://github.com/seligman/aws-ip-ranges/blob/689fc5838a0a6bafecee8d9a4490422d7593036e/ip-ranges.json#L379) | [2024-08-21](https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-malaysia-region/) | 397 |
 | eusc-de-east-1 |  | [2023-11-20](https://github.com/seligman/aws-ip-ranges/blob/23590e18c52ca531a533028259c8f029b2d36e3c/ip-ranges.json#L13555) |  |  |
+| ap-east-2 |  | [2024-09-30](https://github.com/seligman/aws-ip-ranges/blob/01d6b9118d92119999202780ca725cfdc75e6533/ip-ranges.json#L19) |  |  |
+| ap-southeast-7 |  | [2024-09-30](https://github.com/seligman/aws-ip-ranges/blob/01d6b9118d92119999202780ca725cfdc75e6533/ip-ranges.json#L247) |  |  |
+| mx-central-1 |  | [2024-09-30](https://github.com/seligman/aws-ip-ranges/blob/01d6b9118d92119999202780ca725cfdc75e6533/ip-ranges.json#L157) |  |  |
 
 \* = This region's date found in ip-ranges.json comes from a historical
 view of the data before this repository was up and running.  It is likely
