@@ -309,26 +309,5 @@ Removed 13.34.31.80/32<br>
 AWS Region mx-central-1 detected at 2024-09-30 23:43:10<br>
 ]]></description>
     </item>
-    <item>
-      <title>AWS ap-southeast-7 Region Detected</title>
-      <link>https://github.com/seligman/aws-ip-ranges#apsoutheast720240930234310</link>
-      <description><![CDATA[
-AWS Region ap-southeast-7 detected at 2024-09-30 23:43:10<br>
-]]></description>
-    </item>
-    <item>
-      <title>AWS ap-east-2 Region Detected</title>
-      <link>https://github.com/seligman/aws-ip-ranges#apeast220240930234310</link>
-      <description><![CDATA[
-AWS Region ap-east-2 detected at 2024-09-30 23:43:10<br>
-]]></description>
-    </item>
-    <item>
-      <title>AWS IVS_REALTIME Service Detected</title>
-      <link>https://github.com/seligman/aws-ip-ranges#IVS_REALTIME20240611172309</link>
-      <description><![CDATA[
-AWS Service IVS_REALTIME detected at 2024-06-11 17:23:09<br>
-]]></description>
-    </item>
   </channel>
 </rss>
