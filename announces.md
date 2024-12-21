@@ -42,6 +42,7 @@ This file is generated from the [source data](announces.json), which is manually
 | ap-east-2 |  | [2024-09-30](https://github.com/seligman/aws-ip-ranges/blob/01d6b9118d92119999202780ca725cfdc75e6533/ip-ranges.json#L19) |  |  |
 | ap-southeast-7 |  | [2024-09-30](https://github.com/seligman/aws-ip-ranges/blob/01d6b9118d92119999202780ca725cfdc75e6533/ip-ranges.json#L247) |  |  |
 | mx-central-1 |  | [2024-09-30](https://github.com/seligman/aws-ip-ranges/blob/01d6b9118d92119999202780ca725cfdc75e6533/ip-ranges.json#L157) |  |  |
+| me-west-1 |  | [2024-12-20](https://github.com/seligman/aws-ip-ranges/blob/607dce4301614958e3789db0bdfd36d3a24f823a/ip-ranges.json#L1933) |  |  |
 
 \* = This region's date found in ip-ranges.json comes from a historical
 view of the data before this repository was up and running.  It is likely

@@ -347,5 +347,10 @@
         "region": "mx-central-1",
         "appeared_ip_ranges": "2024-09-30",
         "commit": "01d6b9118d92119999202780ca725cfdc75e6533,157"
+    },
+    {
+        "region": "me-west-1",
+        "appeared_ip_ranges": "2024-12-20",
+        "commit": "607dce4301614958e3789db0bdfd36d3a24f823a,1933"
     }
 ]
