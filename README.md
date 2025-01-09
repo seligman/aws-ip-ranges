@@ -19,11 +19,11 @@ To get updates as they happen:
 
 ![History of AWS](history_count.svg)
 
-[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2025-01-08:
+[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2025-01-09:
 
 | | IPs | Percent |
 | --- | ---: | ---: |
-| Amazon AWS | 82,271,226 | 2.22219 |
+| Amazon AWS | 82,271,487 | 2.22220 |
 | Microsoft Azure | 45,036,635 | 1.21646 |
 | Google Cloud | 14,590,720 | 0.39410 |
 
@@ -34,6 +34,7 @@ To get updates as they happen:
 
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
+| 2025&#8209;01&#8209;09&nbsp;01:13:11 | 2.22220 | 82,271,487 | +261 | +52.93.52.160/29,&nbsp;+52.93.53.0/29,&nbsp;+52.93.84.160/29,&nbsp;... |
 | 2024&#8209;12&#8209;20&nbsp;23:03:10 | | | | Region me-west-1 |
 | 2024&#8209;12&#8209;20&nbsp;23:03:10 | 2.22219 | 82,271,226 | +262,144 | +51.204.0.0/14 |
 | 2024&#8209;12&#8209;19&nbsp;01:33:08 | 2.21511 | 82,009,082 | +256 | +35.96.14.0/24 |
@@ -48,7 +49,6 @@ To get updates as they happen:
 | 2024&#8209;12&#8209;05&nbsp;06:03:07 | 2.16531 | 80,165,370 | +2,048 | +54.25.0.0/21 |
 | 2024&#8209;12&#8209;04&nbsp;19:03:07 | 2.16525 | 80,163,322 | +256 | +35.96.10.0/24 |
 | 2024&#8209;12&#8209;02&nbsp;23:43:16 | 2.16525 | 80,163,066 | +512 | +35.96.6.0/24,&nbsp;+192.157.36.0/24 |
-| 2024&#8209;12&#8209;02&nbsp;23:03:07 | 2.16523 | 80,162,554 | -256 | -35.96.6.0/24 |
 
 
 # 15 largest changes to date:
