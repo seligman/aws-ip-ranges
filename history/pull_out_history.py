@@ -23,7 +23,7 @@ for row in history.split("\n"):
         else:
             seen.add(hash)
             time = datetime(*[int(x) for x in json.loads(data)['createDate'][:19].split("-")])
-            if os.path.isfile(time.strftime("%Y") + ".tar.gz"):
+            if os.path.isfile(time.strftime("%Y") + ".tar.gz") or os.path.isfile(time.strftime("%Y") + "_01.tar.gz"):
                 print(", already archived " + time.strftime("%Y-%m-%d %H:%M:%S"), flush=True)
                 break
             else:
