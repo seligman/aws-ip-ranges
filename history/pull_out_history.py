@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-import subprocess
+from datetime import datetime
 from hashlib import sha256
 import json
-from datetime import datetime
 import os
+import subprocess
 
 seen = set()
 years = set()
@@ -36,7 +36,70 @@ for row in history.split("\n"):
                 print(", created file for " + time.strftime("%Y-%m-%d %H:%M:%S"), flush=True)
 
 for year in sorted(years)[:-1]:
-    print(f"Compressing {year}")
-    cmd = f"find {year} -type f | sort | tar --owner=0 --group=0 -T - -cvzf {year}.tar.gz ; rm -rf {year}"
+    files = []
+    for dirname, dirnames, filenames in os.walk(year):
+        for fn in filenames:
+            full_name = os.path.join(dirname, fn)
+            files.append({
+                'fn': fn,
+                'full_name': full_name, 
+                'size': os.path.getsize(full_name),
+            })
+
+    # Sort by filename, in other words, sort by date
+    files.sort(key=lambda x: x['fn'])
+    batches = []
+
+    # Try to find the compression ratio
+    test_batch = {
+        "size": 0,
+        "files": [],
+    }
+    for file in files:
+        test_batch["size"] += file['size']
+        test_batch["files"].append(file)
+        if test_batch["size"] >= (50 * 1024 * 1024):
+            break
+    with open("_temp_files", "wt") as f:
+        for cur in test_batch['files']:
+            f.write(cur['full_name'] + "\n")
+    dest_fn = "test_batch.tar.gz"
+    cmd = f"tar --owner=0 --group=0 -T _temp_files -czf {dest_fn}"
+    print("$ " + cmd)
+    subprocess.check_call(cmd, shell=True)
+    os.unlink('_temp_files')
+    # Give ourselves a 10% buffer for future files
+    test_batch["actual_compressed"] = os.path.getsize(dest_fn)
+    test_batch["compressed"] = int(os.path.getsize(dest_fn) * 1.1)
+    os.unlink(dest_fn)
+    compression_ratio = test_batch['size'] / test_batch['compressed']
+    print(f"# Got an expected ratio of {compression_ratio:.2f}")
+
+    for file in files:
+        # Given the test file compressed, try to limit filesize to 95 MiB
+        if len(batches) == 0 or batches[-1]['size'] >= (95 * 1024 * 1024) * compression_ratio:
+            batches.append({'files': [], 'size': 0, 'id': ''})
+        batches[-1]['files'].append(file)
+        batches[-1]['size'] += file['size']
+
+    if len(batches) > 1:
+        for i, batch in enumerate(batches):
+            batch['id'] = f"_{i+1:02d}"
+
+    for batch in batches:
+        with open("_temp_files", "wt") as f:
+            for cur in batch['files']:
+                f.write(cur['full_name'] + "\n")
+        dest_fn = f"{year}{batch['id']}.tar.gz"
+        cmd = f"tar --owner=0 --group=0 -T _temp_files -czf {dest_fn}"
+        print("$ " + cmd)
+        subprocess.check_call(cmd, shell=True)
+        os.unlink('_temp_files')
+        actual_size = os.path.getsize(dest_fn)
+        expected_size = int(batch['size'] / (test_batch['size'] / test_batch['actual_compressed']))
+        print(f"# File size is {actual_size:,}, expected {expected_size:,}, that's {abs(expected_size - actual_size)/actual_size*100:.2f}% off")
+        if os.path.getsize(dest_fn) >= 100 * 1024 * 1024:
+            raise Exception(f"{dest_fn} is too big!")
+    cmd = f"rm -rf {year}"
     print("$ " + cmd)
     subprocess.check_call(cmd, shell=True)
