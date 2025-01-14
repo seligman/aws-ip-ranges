@@ -339,11 +339,6 @@
         "commit": "01d6b9118d92119999202780ca725cfdc75e6533,19"
     },
     {
-        "region": "mx-central-1",
-        "appeared_ip_ranges": "2024-09-30",
-        "commit": "01d6b9118d92119999202780ca725cfdc75e6533,157"
-    },
-    {
         "region": "ap-southeast-7",
         "appeared_ip_ranges": "2024-09-30",
         "commit": "01d6b9118d92119999202780ca725cfdc75e6533,247",
@@ -351,6 +346,15 @@
         "days_to_announce": 99,
         "announce_url": "https://aws.amazon.com/blogs/aws/announcing-the-new-aws-asia-pacific-thailand-region/",
         "name": "Asia Pacific (Thailand)"
+    },
+    {
+        "region": "mx-central-1",
+        "appeared_ip_ranges": "2024-09-30",
+        "commit": "01d6b9118d92119999202780ca725cfdc75e6533,157",
+        "announced": "2025-01-14",
+        "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-mexico-central-region/",
+        "name": "Mexico (Central)",
+        "days_to_announce": 106
     },
     {
         "region": "me-west-1",
