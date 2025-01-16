@@ -261,6 +261,13 @@ Added 93.77.128.0/19<br>
 ]]></description>
     </item>
     <item>
+      <title>AWS DATADEPOT Service Detected</title>
+      <link>https://github.com/seligman/aws-ip-ranges#DATADEPOT20250116191311</link>
+      <description><![CDATA[
+AWS Service DATADEPOT detected at 2025-01-16 19:13:11<br>
+]]></description>
+    </item>
+    <item>
       <title>AWS me-west-1 Region Detected</title>
       <link>https://github.com/seligman/aws-ip-ranges#mewest120241220230310</link>
       <description><![CDATA[
