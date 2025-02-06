@@ -472,7 +472,7 @@ if changed or force:
                         break
             
             # Also log the newest regions and services, so feed readers will show it
-            bail_at = datetime.now(UTC).replace(tzinfo=None) - timedelta(days=30)
+            bail_at = (datetime.now(UTC).replace(tzinfo=None) - timedelta(days=30)).strftime("%Y-%m-%d-%H-%M-%S")
             regions = [(value, key) for key, value in firsts.items()]
             regions.sort(reverse=True)
             for seen_at, value in regions:
