@@ -5,6 +5,29 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
+      <title>AWS IP Ranges update for 2025-02-06 16:43:12</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20250206164312</link>
+      <description><![CDATA[
+Changed by +21760<br><br>
+Added 45.57.128.0/18<br>
+Added 35.50.228.0/22<br>
+Added 35.50.236.0/22<br>
+Added 15.248.106.0/23<br>
+Added 35.50.226.0/23<br>
+Added 35.50.234.0/23<br>
+Added 35.96.244.0/23<br>
+Added 15.230.123.0/24<br>
+Added 24.110.9.0/24<br>
+Added 35.50.135.0/24<br>
+Added 35.50.224.0/24<br>
+Added 35.50.232.0/24<br>
+Added 54.25.14.0/24<br>
+Added 136.18.3.0/24<br>
+Removed 159.248.132.0/24<br>
+Removed 193.57.169.0/24<br>
+]]></description>
+    </item>
+    <item>
       <title>AWS IP Ranges update for 2025-01-17 20:33:11</title>
       <link>https://github.com/seligman/aws-ip-ranges#20250117203311</link>
       <description><![CDATA[
@@ -193,31 +216,10 @@ No changes to IPs
 ]]></description>
     </item>
     <item>
-      <title>AWS IP Ranges update for 2024-12-23 19:03:10</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20241223190310</link>
-      <description><![CDATA[
-No changes to IPs
-]]></description>
-    </item>
-    <item>
-      <title>AWS DATADEPOT Service Detected</title>
-      <link>https://github.com/seligman/aws-ip-ranges#DATADEPOT20250116191311</link>
-      <description><![CDATA[
-AWS Service DATADEPOT detected at 2025-01-16 19:13:11<br>
-]]></description>
-    </item>
-    <item>
       <title>AWS me-west-1 Region Detected</title>
       <link>https://github.com/seligman/aws-ip-ranges#mewest120241220230310</link>
       <description><![CDATA[
 AWS Region me-west-1 detected at 2024-12-20 23:03:10<br>
-]]></description>
-    </item>
-    <item>
-      <title>AWS mx-central-1 Region Detected</title>
-      <link>https://github.com/seligman/aws-ip-ranges#mxcentral120240930234310</link>
-      <description><![CDATA[
-AWS Region mx-central-1 detected at 2024-09-30 23:43:10<br>
 ]]></description>
     </item>
   </channel>
