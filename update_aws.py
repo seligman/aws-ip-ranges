@@ -472,7 +472,7 @@ if changed or force:
                         break
             
             # Also log the newest regions and services, so feed readers will show it
-            bail_at = (datetime.now(UTC).replace(tzinfo=None) - timedelta(days=30)).strftime("%Y-%m-%d-%H-%M-%S")
+            bail_at = datetime.now(UTC).replace(tzinfo=None) - timedelta(days=30)
             regions = [(value, key) for key, value in firsts.items()]
             regions.sort(reverse=True)
             for seen_at, value in regions:
@@ -495,8 +495,9 @@ if changed or force:
                     f.write(f"AWS Service {value} detected at {seen_at.strftime('%Y-%m-%d %H:%M:%S')}<br>\n")
                     f.write(']]></description>\n')
                     f.write('    </item>\n')
-                if seen_at < bail_at:
-                    break
+                if isinstance(seen_at, datetime):
+                    if seen_at < bail_at:
+                        break
 
             f.write('  </channel>\n')
             f.write('</rss>\n')
