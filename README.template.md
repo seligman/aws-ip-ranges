@@ -9,7 +9,7 @@ This repository tracks changes to that file, and based off a trigger on the SNS
 topic automatically produces this chart showing how what percentage of the 
 Internet's IPv4 address space AWS is in control of.  Here's some 
 more [information about when different regions](announces.md) came 
-online, and here's an [animation of the history](https://youtu.be/Su25yl7eol8) 
+online, and here's an [animation of the history](https://youtu.be/v__lzuvKxU0) 
 of the AWS's IP usage.
 
 To get updates as they happen:
