@@ -9,7 +9,7 @@ This repository tracks changes to that file, and based off a trigger on the SNS
 topic automatically produces this chart showing how what percentage of the 
 Internet's IPv4 address space AWS is in control of.  Here's some 
 more [information about when different regions](announces.md) came 
-online, and here's an [animation of the history](https://youtu.be/Su25yl7eol8) 
+online, and here's an [animation of the history](https://youtu.be/v__lzuvKxU0) 
 of the AWS's IP usage.
 
 To get updates as they happen:
@@ -19,11 +19,11 @@ To get updates as they happen:
 
 ![History of AWS](history_count.svg)
 
-[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2025-03-10:
+[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2025-03-11:
 
 | | IPs | Percent |
 | --- | ---: | ---: |
-| Amazon AWS | 91,548,259 | 2.47277 |
+| Amazon AWS | 91,552,355 | 2.47288 |
 | Microsoft Azure | 46,027,205 | 1.24322 |
 | Google Cloud | 14,600,448 | 0.39437 |
 
@@ -34,6 +34,7 @@ To get updates as they happen:
 
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
+| 2025&#8209;03&#8209;11&nbsp;16:53:17 | 2.47288 | 91,552,355 | +4,096 | +18.97.80.0/20 |
 | 2025&#8209;03&#8209;10&nbsp;19:53:18 | 2.47277 | 91,548,259 | +1,900,544 | +16.22.0.0/15,&nbsp;+16.48.0.0/15,&nbsp;+16.58.0.0/15,&nbsp;... |
 | 2025&#8209;03&#8209;10&nbsp;18:23:19 | 2.42143 | 89,647,715 | +524,288 | +16.152.0.0/15,&nbsp;+16.164.0.0/15,&nbsp;+16.174.0.0/15,&nbsp;... |
 | 2025&#8209;03&#8209;10&nbsp;16:53:20 | 2.40727 | 89,123,427 | +6,225,920 | +100.48.0.0/12,&nbsp;+16.144.0.0/13,&nbsp;+16.192.0.0/13,&nbsp;... |
@@ -48,7 +49,6 @@ To get updates as they happen:
 | 2025&#8209;02&#8209;24&nbsp;17:33:09 | 2.23025 | 82,569,475 | +65,536 | +13.146.0.0/16 |
 | 2025&#8209;02&#8209;24&nbsp;16:13:12 | 2.22848 | 82,503,939 | +65,536 | +13.144.0.0/16 |
 | 2025&#8209;02&#8209;24&nbsp;14:13:10 | 2.22671 | 82,438,403 | -65,536 | -51.119.0.0/16 |
-| 2025&#8209;02&#8209;21&nbsp;19:13:11 | 2.22848 | 82,503,939 | +131,072 | +13.128.0.0/16,&nbsp;+13.130.0.0/16 |
 
 
 # 15 largest changes to date:
