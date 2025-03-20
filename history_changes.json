@@ -3855,5 +3855,6 @@
 "2cbed4fb25907c5eddaa9b196c8178e4c8f02fd5":{"added":[],"removed":[]},
 "a8d27ef9c4dd8ac4d979b5d61c775856b0b747ff":{"added":["35.96.249.0/24"],"removed":[]},
 "c4da9d84324afeabcfa353f19c5e9399c5ed3084":{"added":[],"removed":["71.141.8.0/21"]},
-"b586ee060b9bf7328a3bc75775558c6176467ee7":{"added":[],"removed":[]}
+"b586ee060b9bf7328a3bc75775558c6176467ee7":{"added":[],"removed":[]},
+"59f65f0a3189031f3a380dd9839266af029502cb":{"added":["5.179.96.0/20","31.220.220.0/22"],"removed":[]}
 }
