@@ -5,6 +5,41 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
+      <title>AWS IP Ranges update for 2025-03-24 21:53:17</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20250324215317</link>
+      <description><![CDATA[
+Changed by -40960<br><br>
+Removed 5.60.224.0/19<br>
+Removed 5.60.208.0/20<br>
+Removed 5.60.152.0/21<br>
+Removed 5.60.200.0/21<br>
+Removed 5.60.0.0/22<br>
+Removed 5.60.8.0/22<br>
+Removed 5.60.16.0/22<br>
+Removed 5.60.24.0/22<br>
+Removed 5.60.32.0/22<br>
+Removed 5.60.40.0/22<br>
+Removed 5.60.48.0/22<br>
+Removed 5.60.56.0/22<br>
+Removed 5.60.64.0/22<br>
+Removed 5.60.72.0/22<br>
+Removed 5.60.80.0/22<br>
+Removed 5.60.88.0/22<br>
+Removed 5.60.96.0/22<br>
+Removed 5.60.104.0/22<br>
+Removed 5.60.112.0/22<br>
+Removed 5.60.120.0/22<br>
+Removed 5.60.128.0/22<br>
+Removed 5.60.136.0/22<br>
+Removed 5.60.144.0/22<br>
+Removed 5.60.164.0/22<br>
+Removed 5.60.172.0/22<br>
+Removed 5.60.180.0/22<br>
+Removed 5.60.188.0/22<br>
+Removed 5.60.196.0/22<br>
+]]></description>
+    </item>
+    <item>
       <title>AWS IP Ranges update for 2025-03-22 00:23:17</title>
       <link>https://github.com/seligman/aws-ip-ranges#20250322002317</link>
       <description><![CDATA[
@@ -149,28 +184,6 @@ Added 18.97.96.0/20<br>
       <description><![CDATA[
 Changed by +4096<br><br>
 Added 18.97.80.0/20<br>
-]]></description>
-    </item>
-    <item>
-      <title>AWS IP Ranges update for 2025-03-10 19:53:18</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20250310195318</link>
-      <description><![CDATA[
-Changed by +1900544<br><br>
-Added 16.22.0.0/15<br>
-Added 16.48.0.0/15<br>
-Added 16.58.0.0/15<br>
-Added 16.60.0.0/15<br>
-Added 16.76.0.0/15<br>
-Added 16.180.0.0/15<br>
-Added 16.188.0.0/15<br>
-Added 16.206.0.0/15<br>
-Added 16.208.0.0/15<br>
-Added 32.236.0.0/15<br>
-Added 32.240.0.0/15<br>
-Added 35.18.0.0/15<br>
-Added 168.192.0.0/15<br>
-Added 172.106.0.0/15<br>
-Added 16.19.0.0/16<br>
 ]]></description>
     </item>
     <item>
