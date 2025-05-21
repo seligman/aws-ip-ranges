@@ -5,6 +5,13 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
+      <title>AWS IP Ranges update for 2025-05-21 12:33:18</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20250521123318</link>
+      <description><![CDATA[
+No changes to IPs
+]]></description>
+    </item>
+    <item>
       <title>AWS IP Ranges update for 2025-05-20 22:33:30</title>
       <link>https://github.com/seligman/aws-ip-ranges#20250520223330</link>
       <description><![CDATA[
@@ -150,11 +157,10 @@ No changes to IPs
 ]]></description>
     </item>
     <item>
-      <title>AWS IP Ranges update for 2025-05-13 19:03:21</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20250513190321</link>
+      <title>AWS AURORA_DSQL Service Detected</title>
+      <link>https://github.com/seligman/aws-ip-ranges#AURORA_DSQL20250521123318</link>
       <description><![CDATA[
-Changed by -256<br><br>
-Removed 35.96.247.0/24<br>
+AWS Service AURORA_DSQL detected at 2025-05-21 12:33:18<br>
 ]]></description>
     </item>
     <item>
