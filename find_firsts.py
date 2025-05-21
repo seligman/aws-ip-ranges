@@ -28,9 +28,12 @@ def main():
         for region in regions | services:
             firsts[region] = min(firsts.get(region, data['createDate']), data['createDate'])
 
-    with open("first_seens.json", "wt") as f:
-        json.dump(firsts, f, indent=4, sort_keys=True)
-        f.write("\n")
+    with open("first_seens.json", "w", encoding="utf-8", newline="") as f:
+        f.write("{\n")
+        temp = [(x, json.dumps(y, separators=(",", ":"))) for x,y in firsts.items()]
+        temp.sort(key=lambda x: (x[1], x[0]))
+        f.write(",\n".join(f"{json.dumps(x)}:{y}" for x,y in temp))
+        f.write("\n}\n")
 
 if __name__ == "__main__":
     main()

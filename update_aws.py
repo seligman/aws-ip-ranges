@@ -47,7 +47,7 @@ class Cache:
                 self.data = json.load(f)
     def get_sorted(self):
         temp = [(x, json.dumps(y, separators=(",", ":"))) for x,y in self.data.items()]
-        temp.sort(key=lambda x: x[1])
+        temp.sort(key=lambda x: (x[1], x[0]))
         return temp
     def save(self):
         with open(self.filename, "w", encoding="utf-8", newline="") as f:
