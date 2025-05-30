@@ -3986,5 +3986,6 @@
 "4bb28e6fa4dd0ccb12351a53827bd0187fb4ecda":{"added":[],"removed":[]},
 "80df0a97b06ca83c27ec15b849c9552d21ba484b":{"added":["35.55.41.0/24","35.55.42.0/24"],"removed":[]},
 "9029cf8623c80b7e549cecf1bf9c401524fbd24c":{"added":[],"removed":["35.55.16.0/24"]},
-"fda18cc4d8a6361f3eaef41b3544c8d329481911":{"added":["150.247.34.0/24"],"removed":[]}
+"fda18cc4d8a6361f3eaef41b3544c8d329481911":{"added":["150.247.34.0/24"],"removed":[]},
+"971d7beffeddfe41768083090acb63aeaf6a2c11":{"added":["35.96.28.0/22","35.96.254.0/23","35.96.253.0/24"],"removed":[]}
 }
