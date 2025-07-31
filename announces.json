@@ -364,5 +364,10 @@
         "region": "me-west-1",
         "appeared_ip_ranges": "2024-12-20",
         "commit": "607dce4301614958e3789db0bdfd36d3a24f823a,1933"
+    },
+    {
+        "region": "sa-west-1",
+        "appeared_ip_ranges": "2025-07-31",
+        "commit": "e6728ce777acd596de40b81c47f860a1572bfb7c,8221"
     }
 ]

@@ -43,6 +43,7 @@ This file is generated from the [source data](announces.json), which is manually
 | mx-central-1 | Mexico (Central) | [2024-09-30](https://github.com/seligman/aws-ip-ranges/blob/01d6b9118d92119999202780ca725cfdc75e6533/ip-ranges.json#L157) | [2025-01-14](https://aws.amazon.com/blogs/aws/now-open-aws-mexico-central-region/) | 106 |
 | ap-east-2 | Asia Pacific (Taipei) | [2024-09-30](https://github.com/seligman/aws-ip-ranges/blob/01d6b9118d92119999202780ca725cfdc75e6533/ip-ranges.json#L19) | [2025-06-05](https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-taipei-region/) | 248 |
 | me-west-1 |  | [2024-12-20](https://github.com/seligman/aws-ip-ranges/blob/607dce4301614958e3789db0bdfd36d3a24f823a/ip-ranges.json#L1933) |  |  |
+| sa-west-1 |  | [2025-07-31](https://github.com/seligman/aws-ip-ranges/blob/e6728ce777acd596de40b81c47f860a1572bfb7c/ip-ranges.json#L8221) |  |  |
 
 \* = This region's date found in ip-ranges.json comes from a historical
 view of the data before this repository was up and running.  It is likely
