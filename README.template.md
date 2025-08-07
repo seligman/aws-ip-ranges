@@ -35,3 +35,5 @@ To get updates as they happen:
 | | Percent | IPs | Change | CIDRs |
 | :--- | ---: | ---: | ---: | :--- |
 {top10_changes}
+
+If you find this project useful, consider [buying me a cup coffee](https://coff.ee/seligman).  Thanks!
