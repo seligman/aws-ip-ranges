@@ -1,6 +1,6 @@
 {
-  "syncToken": "1755715699",
-  "createDate": "2025-08-20-18-48-19",
+  "syncToken": "1755721100",
+  "createDate": "2025-08-20-20-18-20",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -787,6 +787,12 @@
       "region": "eu-central-1",
       "service": "AMAZON",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "216.244.40.0/21",
+      "region": "us-east-1",
+      "service": "AMAZON",
+      "network_border_group": "us-east-1-dfw-1"
     },
     {
       "ip_prefix": "13.236.0.0/14",
@@ -3130,9 +3136,9 @@
     },
     {
       "ip_prefix": "3.2.89.0/24",
-      "region": "ap-southeast-3",
+      "region": "eu-west-3",
       "service": "AMAZON",
-      "network_border_group": "ap-southeast-3"
+      "network_border_group": "eu-west-3"
     },
     {
       "ip_prefix": "13.196.0.0/14",
@@ -35121,6 +35127,12 @@
       "network_border_group": "cn-north-1"
     },
     {
+      "ip_prefix": "216.244.40.0/21",
+      "region": "us-east-1",
+      "service": "EC2",
+      "network_border_group": "us-east-1-dfw-1"
+    },
+    {
       "ip_prefix": "13.236.0.0/14",
       "region": "ap-southeast-2",
       "service": "EC2",
@@ -35866,9 +35878,9 @@
     },
     {
       "ip_prefix": "3.2.89.0/24",
-      "region": "ap-southeast-3",
+      "region": "eu-west-3",
       "service": "EC2",
-      "network_border_group": "ap-southeast-3"
+      "network_border_group": "eu-west-3"
     },
     {
       "ip_prefix": "15.188.0.0/16",
@@ -55770,9 +55782,9 @@
     },
     {
       "ipv6_prefix": "2600:f0f0:6118::/48",
-      "region": "ap-southeast-3",
+      "region": "eu-west-3",
       "service": "AMAZON",
-      "network_border_group": "ap-southeast-3"
+      "network_border_group": "eu-west-3"
     },
     {
       "ipv6_prefix": "2606:7b40:1000:7220::/60",
@@ -70092,9 +70104,9 @@
     },
     {
       "ipv6_prefix": "2600:f0f0:6118::/48",
-      "region": "ap-southeast-3",
+      "region": "eu-west-3",
       "service": "EC2",
-      "network_border_group": "ap-southeast-3"
+      "network_border_group": "eu-west-3"
     },
     {
       "ipv6_prefix": "2606:7b40:1000:7220::/60",
