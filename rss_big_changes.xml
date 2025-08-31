@@ -213,12 +213,5 @@ Added 35.55.30.0/24<br>
 AWS Region sa-west-1 detected at 2025-07-31 14:23:20<br>
 ]]></description>
     </item>
-    <item>
-      <title>AWS IVS_LOW_LATENCY Service Detected</title>
-      <link>https://github.com/seligman/aws-ip-ranges#IVS_LOW_LATENCY20250729144333</link>
-      <description><![CDATA[
-AWS Service IVS_LOW_LATENCY detected at 2025-07-29 14:43:33<br>
-]]></description>
-    </item>
   </channel>
 </rss>
