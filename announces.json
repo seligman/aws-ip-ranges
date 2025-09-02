@@ -308,7 +308,11 @@
     {
         "region": "ap-southeast-6",
         "appeared_ip_ranges": "2022-08-02",
-        "commit": "3461b64bfe43ffe778641b743a7746edf5720ed8,21607"
+        "commit": "3461b64bfe43ffe778641b743a7746edf5720ed8,21607",
+        "announced": "2025-09-01",
+        "announce_url": "https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-new-zealand-region/",
+        "name": "Asia Pacific (New Zealand)",
+        "days_to_announce": 1126
     },
     {
         "region": "ca-west-1",
