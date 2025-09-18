@@ -5,6 +5,14 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
+      <title>AWS IP Ranges update for 2025-09-18 15:58:24</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20250918155824</link>
+      <description><![CDATA[
+Changed by +256<br><br>
+Added 37.203.157.0/24<br>
+]]></description>
+    </item>
+    <item>
       <title>AWS IP Ranges update for 2025-09-18 00:28:38</title>
       <link>https://github.com/seligman/aws-ip-ranges#20250918002838</link>
       <description><![CDATA[
@@ -148,11 +156,10 @@ Added 216.244.11.0/24<br>
 ]]></description>
     </item>
     <item>
-      <title>AWS IP Ranges update for 2025-09-09 00:38:23</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20250909003823</link>
+      <title>AWS DATADEPOT Service Detected</title>
+      <link>https://github.com/seligman/aws-ip-ranges#DATADEPOT20250918155824</link>
       <description><![CDATA[
-Changed by +256<br><br>
-Added 16.12.3.0/24<br>
+AWS Service DATADEPOT detected at 2025-09-18 15:58:24<br>
 ]]></description>
     </item>
     <item>
