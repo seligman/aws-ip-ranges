@@ -1,6 +1,6 @@
 {
-  "syncToken": "1763444899",
-  "createDate": "2025-11-18-05-48-19",
+  "syncToken": "1763479121",
+  "createDate": "2025-11-18-15-18-41",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -41965,6 +41965,12 @@
       "region": "us-west-2",
       "service": "EC2",
       "network_border_group": "us-west-2-las-1b"
+    },
+    {
+      "ip_prefix": "16.25.0.0/16",
+      "region": "me-south-1",
+      "service": "EC2",
+      "network_border_group": "me-south-1"
     },
     {
       "ip_prefix": "99.77.140.0/24",
