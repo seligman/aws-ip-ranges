@@ -1,6 +1,6 @@
 {
-  "syncToken": "1764635306",
-  "createDate": "2025-12-02-00-28-26",
+  "syncToken": "1764689922",
+  "createDate": "2025-12-02-15-38-42",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -48997,6 +48997,24 @@
       "region": "ap-southeast-4",
       "service": "CODEBUILD",
       "network_border_group": "ap-southeast-4"
+    },
+    {
+      "ip_prefix": "56.68.33.32/28",
+      "region": "ap-southeast-5",
+      "service": "CODEBUILD",
+      "network_border_group": "ap-southeast-5"
+    },
+    {
+      "ip_prefix": "3.103.24.192/28",
+      "region": "ap-southeast-6",
+      "service": "CODEBUILD",
+      "network_border_group": "ap-southeast-6"
+    },
+    {
+      "ip_prefix": "43.209.155.112/28",
+      "region": "ap-southeast-7",
+      "service": "CODEBUILD",
+      "network_border_group": "ap-southeast-7"
     },
     {
       "ip_prefix": "3.98.171.224/29",
