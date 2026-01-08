@@ -1,6 +1,6 @@
 {
-  "syncToken": "1767904684",
-  "createDate": "2026-01-08-20-38-04",
+  "syncToken": "1767907684",
+  "createDate": "2026-01-08-21-28-04",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -57103,6 +57103,18 @@
       "region": "ap-southeast-4",
       "service": "MEDIA_PACKAGE_V2",
       "network_border_group": "ap-southeast-4"
+    },
+    {
+      "ip_prefix": "56.68.33.56/29",
+      "region": "ap-southeast-5",
+      "service": "MEDIA_PACKAGE_V2",
+      "network_border_group": "ap-southeast-5"
+    },
+    {
+      "ip_prefix": "56.68.33.64/29",
+      "region": "ap-southeast-5",
+      "service": "MEDIA_PACKAGE_V2",
+      "network_border_group": "ap-southeast-5"
     },
     {
       "ip_prefix": "15.156.152.184/29",
