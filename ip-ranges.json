@@ -1,6 +1,6 @@
 {
-  "syncToken": "1768334884",
-  "createDate": "2026-01-13-20-08-04",
+  "syncToken": "1768340885",
+  "createDate": "2026-01-13-21-48-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -35719,6 +35719,12 @@
       "region": "mx-central-1",
       "service": "S3",
       "network_border_group": "mx-central-1"
+    },
+    {
+      "ip_prefix": "1.178.95.0/24",
+      "region": "sa-east-1",
+      "service": "S3",
+      "network_border_group": "sa-east-1"
     },
     {
       "ip_prefix": "15.228.107.0/28",
@@ -74043,6 +74049,12 @@
       "region": "eu-west-3",
       "service": "S3",
       "network_border_group": "eu-west-3"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:81::/48",
+      "region": "sa-east-1",
+      "service": "S3",
+      "network_border_group": "sa-east-1"
     },
     {
       "ipv6_prefix": "2600:f0f2:7010::/48",
