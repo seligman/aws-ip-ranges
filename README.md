@@ -19,12 +19,12 @@ To get updates as they happen:
 
 ![History of AWS](history_count.svg)
 
-[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2026-01-13:
+[Comparing to other providers](https://github.com/seligman/cloud_sizes), as of 2026-01-14:
 
 | | IPs | Percent |
 | --- | ---: | ---: |
 | Amazon AWS | 95,496,391 | 2.57941 |
-| Microsoft Azure | 48,871,438 | 1.32004 |
+| Microsoft Azure | 48,871,766 | 1.32005 |
 | Google Cloud | 16,361,632 | 0.44194 |
 
 
