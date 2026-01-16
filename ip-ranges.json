@@ -1,6 +1,6 @@
 {
-  "syncToken": "1768583884",
-  "createDate": "2026-01-16-17-18-04",
+  "syncToken": "1768595884",
+  "createDate": "2026-01-16-20-38-04",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -47187,6 +47187,12 @@
       "network_border_group": "GLOBAL"
     },
     {
+      "ip_prefix": "52.61.226.0/23",
+      "region": "us-gov-west-1",
+      "service": "ROUTE53",
+      "network_border_group": "us-gov-west-1"
+    },
+    {
       "ip_prefix": "34.217.143.0/24",
       "region": "us-west-2",
       "service": "ROUTE53",
@@ -47281,6 +47287,12 @@
       "region": "us-gov-east-1",
       "service": "ROUTE53",
       "network_border_group": "us-gov-east-1"
+    },
+    {
+      "ip_prefix": "96.127.116.0/23",
+      "region": "us-gov-west-1",
+      "service": "ROUTE53",
+      "network_border_group": "us-gov-west-1"
     },
     {
       "ip_prefix": "120.52.22.96/27",
