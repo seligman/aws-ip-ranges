@@ -1,6 +1,6 @@
 {
-  "syncToken": "1769117885",
-  "createDate": "2026-01-22-21-38-05",
+  "syncToken": "1769120885",
+  "createDate": "2026-01-22-22-28-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -35811,6 +35811,12 @@
       "network_border_group": "ap-southeast-2"
     },
     {
+      "ip_prefix": "1.178.19.0/24",
+      "region": "ap-southeast-3",
+      "service": "S3",
+      "network_border_group": "ap-southeast-3"
+    },
+    {
       "ip_prefix": "108.136.154.16/28",
       "region": "ap-southeast-3",
       "service": "S3",
@@ -35955,6 +35961,12 @@
       "network_border_group": "eu-central-1"
     },
     {
+      "ip_prefix": "1.178.21.0/24",
+      "region": "eu-central-2",
+      "service": "S3",
+      "network_border_group": "eu-central-2"
+    },
+    {
       "ip_prefix": "16.62.56.224/28",
       "region": "eu-central-2",
       "service": "S3",
@@ -36079,6 +36091,12 @@
       "region": "il-central-1",
       "service": "S3",
       "network_border_group": "il-central-1"
+    },
+    {
+      "ip_prefix": "1.178.20.0/24",
+      "region": "me-central-1",
+      "service": "S3",
+      "network_border_group": "me-central-1"
     },
     {
       "ip_prefix": "3.28.70.112/28",
@@ -74993,6 +75011,12 @@
       "network_border_group": "ap-southeast-2"
     },
     {
+      "ipv6_prefix": "2600:f0f1:89::/48",
+      "region": "ap-southeast-3",
+      "service": "S3",
+      "network_border_group": "ap-southeast-3"
+    },
+    {
       "ipv6_prefix": "2600:f0f1:84::/48",
       "region": "ap-southeast-5",
       "service": "S3",
@@ -75009,6 +75033,12 @@
       "region": "eu-central-1",
       "service": "S3",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:8b::/48",
+      "region": "eu-central-2",
+      "service": "S3",
+      "network_border_group": "eu-central-2"
     },
     {
       "ipv6_prefix": "2600:f0f2:701f::/48",
@@ -75039,6 +75069,12 @@
       "region": "eu-west-3",
       "service": "S3",
       "network_border_group": "eu-west-3"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:8a::/48",
+      "region": "me-central-1",
+      "service": "S3",
+      "network_border_group": "me-central-1"
     },
     {
       "ipv6_prefix": "2600:f0f1:86::/48",
