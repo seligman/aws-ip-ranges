@@ -1,6 +1,6 @@
 {
-  "syncToken": "1769120885",
-  "createDate": "2026-01-22-22-28-05",
+  "syncToken": "1769191085",
+  "createDate": "2026-01-23-17-58-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -301,6 +301,12 @@
       "region": "ap-northeast-2",
       "service": "AMAZON",
       "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ip_prefix": "65.178.0.0/15",
+      "region": "ap-southeast-7",
+      "service": "AMAZON",
+      "network_border_group": "ap-southeast-7"
     },
     {
       "ip_prefix": "69.107.11.184/29",
@@ -13959,6 +13965,12 @@
       "network_border_group": "me-central-1"
     },
     {
+      "ip_prefix": "51.172.0.0/15",
+      "region": "eusc-de-east-1",
+      "service": "AMAZON",
+      "network_border_group": "eusc-de-east-1"
+    },
+    {
       "ip_prefix": "52.93.127.115/32",
       "region": "ap-southeast-1",
       "service": "AMAZON",
@@ -17389,6 +17401,12 @@
       "region": "ap-south-1",
       "service": "AMAZON",
       "network_border_group": "ap-south-1"
+    },
+    {
+      "ip_prefix": "65.176.0.0/15",
+      "region": "eu-west-2",
+      "service": "AMAZON",
+      "network_border_group": "eu-west-2"
     },
     {
       "ip_prefix": "94.36.0.0/15",
@@ -22237,6 +22255,12 @@
       "region": "us-west-1",
       "service": "AMAZON",
       "network_border_group": "us-west-1"
+    },
+    {
+      "ip_prefix": "184.192.0.0/12",
+      "region": "us-east-1",
+      "service": "AMAZON",
+      "network_border_group": "us-east-1"
     },
     {
       "ip_prefix": "207.171.160.0/20",
@@ -59663,6 +59687,12 @@
       "network_border_group": "eu-west-1"
     },
     {
+      "ipv6_prefix": "2001:3fc6:1::/48",
+      "region": "eusc-de-east-1",
+      "service": "AMAZON",
+      "network_border_group": "eusc-de-east-1"
+    },
+    {
       "ipv6_prefix": "2406:da32:7000::/40",
       "region": "me-central-1",
       "service": "AMAZON",
@@ -77115,6 +77145,12 @@
       "region": "eu-west-1",
       "service": "EC2",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ipv6_prefix": "2001:3fc6:1::/48",
+      "region": "eusc-de-east-1",
+      "service": "EC2",
+      "network_border_group": "eusc-de-east-1"
     },
     {
       "ipv6_prefix": "2406:da32:7000::/40",
