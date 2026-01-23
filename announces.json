@@ -335,7 +335,11 @@
     {
         "region": "eusc-de-east-1",
         "appeared_ip_ranges": "2023-11-20",
-        "commit": "23590e18c52ca531a533028259c8f029b2d36e3c,13555"
+        "commit": "23590e18c52ca531a533028259c8f029b2d36e3c,13555",
+        "announced": "2026-01-14",
+        "announce_url": "https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/",
+        "name": "AWS European Sovereign Cloud (Germany)",
+        "days_to_announce": 786
     },
     {
         "region": "ap-southeast-7",
