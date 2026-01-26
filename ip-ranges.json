@@ -1,6 +1,6 @@
 {
-  "syncToken": "1769218684",
-  "createDate": "2026-01-24-01-38-04",
+  "syncToken": "1769408884",
+  "createDate": "2026-01-26-06-28-04",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -36345,6 +36345,12 @@
       "network_border_group": "us-east-1"
     },
     {
+      "ip_prefix": "3.2.74.0/24",
+      "region": "us-east-1",
+      "service": "S3",
+      "network_border_group": "us-east-1"
+    },
+    {
       "ip_prefix": "44.192.134.240/28",
       "region": "us-east-1",
       "service": "S3",
@@ -36370,6 +36376,12 @@
     },
     {
       "ip_prefix": "3.141.102.224/28",
+      "region": "us-east-2",
+      "service": "S3",
+      "network_border_group": "us-east-2"
+    },
+    {
+      "ip_prefix": "3.2.67.0/24",
       "region": "us-east-2",
       "service": "S3",
       "network_border_group": "us-east-2"
@@ -36406,6 +36418,12 @@
     },
     {
       "ip_prefix": "1.178.9.0/24",
+      "region": "us-west-2",
+      "service": "S3",
+      "network_border_group": "us-west-2"
+    },
+    {
+      "ip_prefix": "3.2.68.0/24",
       "region": "us-west-2",
       "service": "S3",
       "network_border_group": "us-west-2"
@@ -75239,6 +75257,12 @@
       "network_border_group": "us-east-1"
     },
     {
+      "ipv6_prefix": "2600:f0f0:610a::/48",
+      "region": "us-east-1",
+      "service": "S3",
+      "network_border_group": "us-east-1"
+    },
+    {
       "ipv6_prefix": "2600:f0f2:7010::/48",
       "region": "us-east-1",
       "service": "S3",
@@ -75257,6 +75281,12 @@
       "network_border_group": "us-east-1"
     },
     {
+      "ipv6_prefix": "2600:f0f0:6103::/48",
+      "region": "us-east-2",
+      "service": "S3",
+      "network_border_group": "us-east-2"
+    },
+    {
       "ipv6_prefix": "2600:f0f2:7014::/48",
       "region": "us-east-2",
       "service": "S3",
@@ -75267,6 +75297,12 @@
       "region": "us-west-1",
       "service": "S3",
       "network_border_group": "us-west-1"
+    },
+    {
+      "ipv6_prefix": "2600:f0f0:6104::/48",
+      "region": "us-west-2",
+      "service": "S3",
+      "network_border_group": "us-west-2"
     },
     {
       "ipv6_prefix": "2600:f0f2:7013::/48",
