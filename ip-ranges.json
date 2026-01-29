@@ -1,6 +1,6 @@
 {
-  "syncToken": "1769696285",
-  "createDate": "2026-01-29-14-18-05",
+  "syncToken": "1769714285",
+  "createDate": "2026-01-29-19-18-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -36153,6 +36153,12 @@
       "network_border_group": "ap-southeast-5"
     },
     {
+      "ip_prefix": "1.178.27.0/24",
+      "region": "ap-southeast-6",
+      "service": "S3",
+      "network_border_group": "ap-southeast-6"
+    },
+    {
       "ip_prefix": "3.102.119.112/28",
       "region": "ap-southeast-6",
       "service": "S3",
@@ -36163,6 +36169,12 @@
       "region": "ap-southeast-6",
       "service": "S3",
       "network_border_group": "ap-southeast-6"
+    },
+    {
+      "ip_prefix": "1.178.28.0/24",
+      "region": "ap-southeast-7",
+      "service": "S3",
+      "network_border_group": "ap-southeast-7"
     },
     {
       "ip_prefix": "43.208.66.128/28",
@@ -36193,6 +36205,12 @@
       "region": "ca-central-1",
       "service": "S3",
       "network_border_group": "ca-central-1"
+    },
+    {
+      "ip_prefix": "1.178.26.0/24",
+      "region": "ca-west-1",
+      "service": "S3",
+      "network_border_group": "ca-west-1"
     },
     {
       "ip_prefix": "40.176.101.64/28",
@@ -36351,6 +36369,12 @@
       "network_border_group": "eu-west-3"
     },
     {
+      "ip_prefix": "1.178.25.0/24",
+      "region": "il-central-1",
+      "service": "S3",
+      "network_border_group": "il-central-1"
+    },
+    {
       "ip_prefix": "51.17.129.160/28",
       "region": "il-central-1",
       "service": "S3",
@@ -36427,6 +36451,12 @@
       "region": "me-south-1",
       "service": "S3",
       "network_border_group": "me-south-1"
+    },
+    {
+      "ip_prefix": "1.178.29.0/24",
+      "region": "mx-central-1",
+      "service": "S3",
+      "network_border_group": "mx-central-1"
     },
     {
       "ip_prefix": "78.12.79.192/28",
@@ -57951,6 +57981,12 @@
       "network_border_group": "ca-central-1"
     },
     {
+      "ip_prefix": "18.99.129.0/25",
+      "region": "ca-west-1",
+      "service": "AURORA_DSQL",
+      "network_border_group": "ca-west-1"
+    },
+    {
       "ip_prefix": "18.96.39.128/25",
       "region": "eu-central-1",
       "service": "AURORA_DSQL",
@@ -75587,10 +75623,28 @@
       "network_border_group": "ap-southeast-5"
     },
     {
+      "ipv6_prefix": "2600:f0f2:7021::/48",
+      "region": "ap-southeast-6",
+      "service": "S3",
+      "network_border_group": "ap-southeast-6"
+    },
+    {
+      "ipv6_prefix": "2600:f0f2:7022::/48",
+      "region": "ap-southeast-7",
+      "service": "S3",
+      "network_border_group": "ap-southeast-7"
+    },
+    {
       "ipv6_prefix": "2600:f0f2:701e::/48",
       "region": "ca-central-1",
       "service": "S3",
       "network_border_group": "ca-central-1"
+    },
+    {
+      "ipv6_prefix": "2600:f0f2:7020::/48",
+      "region": "ca-west-1",
+      "service": "S3",
+      "network_border_group": "ca-west-1"
     },
     {
       "ipv6_prefix": "2600:f0f2:7018::/48",
@@ -75641,6 +75695,12 @@
       "network_border_group": "eu-west-3"
     },
     {
+      "ipv6_prefix": "2600:f0f1:8f::/48",
+      "region": "il-central-1",
+      "service": "S3",
+      "network_border_group": "il-central-1"
+    },
+    {
       "ipv6_prefix": "2600:f0f1:8a::/48",
       "region": "me-central-1",
       "service": "S3",
@@ -75651,6 +75711,12 @@
       "region": "me-south-1",
       "service": "S3",
       "network_border_group": "me-south-1"
+    },
+    {
+      "ipv6_prefix": "2600:f0f2:7023::/48",
+      "region": "mx-central-1",
+      "service": "S3",
+      "network_border_group": "mx-central-1"
     },
     {
       "ipv6_prefix": "2600:f0f1:81::/48",
@@ -88419,6 +88485,12 @@
       "region": "ca-central-1",
       "service": "AURORA_DSQL",
       "network_border_group": "ca-central-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f1a:4040:b100::/56",
+      "region": "ca-west-1",
+      "service": "AURORA_DSQL",
+      "network_border_group": "ca-west-1"
     },
     {
       "ipv6_prefix": "2a05:d014:15a0:7500::/56",
