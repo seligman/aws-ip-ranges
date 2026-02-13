@@ -1,6 +1,6 @@
 {
-  "syncToken": "1770942484",
-  "createDate": "2026-02-13-00-28-04",
+  "syncToken": "1771012684",
+  "createDate": "2026-02-13-19-58-04",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -14133,12 +14133,6 @@
       "network_border_group": "us-east-2"
     },
     {
-      "ip_prefix": "35.111.164.0/24",
-      "region": "us-east-2",
-      "service": "AMAZON",
-      "network_border_group": "us-east-2"
-    },
-    {
       "ip_prefix": "52.93.86.196/32",
       "region": "us-east-1",
       "service": "AMAZON",
@@ -23503,12 +23497,6 @@
       "region": "us-west-2",
       "service": "AMAZON",
       "network_border_group": "us-west-2"
-    },
-    {
-      "ip_prefix": "35.111.160.0/24",
-      "region": "us-east-2",
-      "service": "AMAZON",
-      "network_border_group": "us-east-2"
     },
     {
       "ip_prefix": "35.154.0.0/16",
@@ -42477,12 +42465,6 @@
       "network_border_group": "us-east-2"
     },
     {
-      "ip_prefix": "35.111.164.0/24",
-      "region": "us-east-2",
-      "service": "EC2",
-      "network_border_group": "us-east-2"
-    },
-    {
       "ip_prefix": "56.126.0.0/16",
       "region": "sa-east-1",
       "service": "EC2",
@@ -45643,12 +45625,6 @@
       "region": "us-west-2",
       "service": "EC2",
       "network_border_group": "us-west-2"
-    },
-    {
-      "ip_prefix": "35.111.160.0/24",
-      "region": "us-east-2",
-      "service": "EC2",
-      "network_border_group": "us-east-2"
     },
     {
       "ip_prefix": "35.154.0.0/16",
@@ -65681,12 +65657,6 @@
       "network_border_group": "us-west-2"
     },
     {
-      "ipv6_prefix": "2600:f0f0:400::/47",
-      "region": "GLOBAL",
-      "service": "AMAZON",
-      "network_border_group": "GLOBAL"
-    },
-    {
       "ipv6_prefix": "2600:f0f0:8170::/48",
       "region": "ap-northeast-3",
       "service": "AMAZON",
@@ -66867,6 +66837,12 @@
       "region": "ap-southeast-1",
       "service": "AMAZON",
       "network_border_group": "ap-southeast-1"
+    },
+    {
+      "ipv6_prefix": "2600:f0f0:400::/44",
+      "region": "GLOBAL",
+      "service": "AMAZON",
+      "network_border_group": "GLOBAL"
     },
     {
       "ipv6_prefix": "2600:f0f0:552d::/48",
@@ -87779,7 +87755,7 @@
       "network_border_group": "GLOBAL"
     },
     {
-      "ipv6_prefix": "2600:f0f0:400::/47",
+      "ipv6_prefix": "2600:f0f0:400::/44",
       "region": "GLOBAL",
       "service": "ROUTE53",
       "network_border_group": "GLOBAL"
