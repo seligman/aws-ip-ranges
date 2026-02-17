@@ -1,6 +1,6 @@
 {
-  "syncToken": "1771365484",
-  "createDate": "2026-02-17-21-58-04",
+  "syncToken": "1771372684",
+  "createDate": "2026-02-17-23-58-04",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -64746,9 +64746,9 @@
     },
     {
       "ipv6_prefix": "2600:f0f2:7000::/44",
-      "region": "GLOBAL",
+      "region": "us-gov-east-1",
       "service": "AMAZON",
-      "network_border_group": "GLOBAL"
+      "network_border_group": "us-gov-east-1"
     },
     {
       "ipv6_prefix": "2606:7b40:9fc::/48",
@@ -81731,6 +81731,12 @@
       "network_border_group": "ap-southeast-1"
     },
     {
+      "ipv6_prefix": "2600:f0f2:7000::/44",
+      "region": "us-gov-east-1",
+      "service": "EC2",
+      "network_border_group": "us-gov-east-1"
+    },
+    {
       "ipv6_prefix": "2606:7b40:9fc::/48",
       "region": "us-west-2",
       "service": "EC2",
@@ -89045,12 +89051,6 @@
       "network_border_group": "eu-north-1"
     },
     {
-      "ipv6_prefix": "2600:f0f2:7000::/44",
-      "region": "GLOBAL",
-      "service": "ROUTE53",
-      "network_border_group": "GLOBAL"
-    },
-    {
       "ipv6_prefix": "2600:9000:f530::/46",
       "region": "GLOBAL",
       "service": "ROUTE53",
@@ -89085,6 +89085,12 @@
       "region": "eusc-de-east-1",
       "service": "ROUTE53",
       "network_border_group": "eusc-de-east-1"
+    },
+    {
+      "ipv6_prefix": "2600:f0f2:7000::/44",
+      "region": "us-gov-east-1",
+      "service": "ROUTE53",
+      "network_border_group": "us-gov-east-1"
     },
     {
       "ipv6_prefix": "2600:f0f0:400::/44",
