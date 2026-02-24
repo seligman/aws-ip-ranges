@@ -1,6 +1,6 @@
 {
-  "syncToken": "1771958884",
-  "createDate": "2026-02-24-18-48-04",
+  "syncToken": "1771966085",
+  "createDate": "2026-02-24-20-48-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -39117,6 +39117,12 @@
       "network_border_group": "ap-southeast-6"
     },
     {
+      "ip_prefix": "16.19.0.0/16",
+      "region": "eu-central-2",
+      "service": "EC2",
+      "network_border_group": "eu-central-2"
+    },
+    {
       "ip_prefix": "18.99.128.0/20",
       "region": "ca-west-1",
       "service": "EC2",
@@ -40375,6 +40381,12 @@
       "region": "eu-west-1",
       "service": "EC2",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "56.11.0.0/16",
+      "region": "ap-southeast-1",
+      "service": "EC2",
+      "network_border_group": "ap-southeast-1"
     },
     {
       "ip_prefix": "155.146.128.0/20",
@@ -42883,6 +42895,12 @@
       "region": "us-west-2",
       "service": "EC2",
       "network_border_group": "us-west-2-las-1"
+    },
+    {
+      "ip_prefix": "16.192.0.0/16",
+      "region": "eu-north-1",
+      "service": "EC2",
+      "network_border_group": "eu-north-1"
     },
     {
       "ip_prefix": "192.31.213.0/24",
@@ -47161,6 +47179,12 @@
       "region": "eu-north-1",
       "service": "EC2",
       "network_border_group": "eu-north-1"
+    },
+    {
+      "ip_prefix": "16.59.0.0/16",
+      "region": "us-east-2",
+      "service": "EC2",
+      "network_border_group": "us-east-2"
     },
     {
       "ip_prefix": "16.214.16.0/22",
