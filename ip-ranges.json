@@ -1,6 +1,6 @@
 {
-  "syncToken": "1772632086",
-  "createDate": "2026-03-04-13-48-06",
+  "syncToken": "1772647084",
+  "createDate": "2026-03-04-17-58-04",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -36283,6 +36283,18 @@
       "region": "us-gov-east-1",
       "service": "S3",
       "network_border_group": "us-gov-east-1"
+    },
+    {
+      "ip_prefix": "31.220.252.0/24",
+      "region": "us-gov-east-1",
+      "service": "S3",
+      "network_border_group": "us-gov-east-1"
+    },
+    {
+      "ip_prefix": "1.178.30.0/24",
+      "region": "us-gov-west-1",
+      "service": "S3",
+      "network_border_group": "us-gov-west-1"
     },
     {
       "ip_prefix": "15.200.176.128/28",
