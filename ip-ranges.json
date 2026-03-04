@@ -1,6 +1,6 @@
 {
-  "syncToken": "1772654285",
-  "createDate": "2026-03-04-19-58-05",
+  "syncToken": "1772665085",
+  "createDate": "2026-03-04-22-58-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -7101,6 +7101,12 @@
       "network_border_group": "ap-southeast-6"
     },
     {
+      "ip_prefix": "23.228.214.0/24",
+      "region": "us-east-1",
+      "service": "AMAZON",
+      "network_border_group": "us-east-1"
+    },
+    {
       "ip_prefix": "35.97.193.0/24",
       "region": "eu-central-1",
       "service": "AMAZON",
@@ -7417,6 +7423,12 @@
       "region": "eu-central-1",
       "service": "AMAZON",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "23.228.213.0/24",
+      "region": "us-east-1",
+      "service": "AMAZON",
+      "network_border_group": "us-east-1"
     },
     {
       "ip_prefix": "32.192.0.0/13",
@@ -25065,6 +25077,12 @@
       "network_border_group": "ap-southeast-1"
     },
     {
+      "ip_prefix": "23.228.212.0/24",
+      "region": "GLOBAL",
+      "service": "AMAZON",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "35.26.0.0/15",
       "region": "ap-east-1",
       "service": "AMAZON",
@@ -40461,6 +40479,12 @@
       "network_border_group": "eu-south-2"
     },
     {
+      "ip_prefix": "23.228.214.0/24",
+      "region": "us-east-1",
+      "service": "EC2",
+      "network_border_group": "us-east-1"
+    },
+    {
       "ip_prefix": "99.77.235.0/24",
       "region": "af-south-1",
       "service": "EC2",
@@ -40585,6 +40609,12 @@
       "region": "eu-central-1",
       "service": "EC2",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "23.228.213.0/24",
+      "region": "us-east-1",
+      "service": "EC2",
+      "network_border_group": "us-east-1"
     },
     {
       "ip_prefix": "32.192.0.0/13",
@@ -49264,6 +49294,12 @@
     },
     {
       "ip_prefix": "23.228.223.0/24",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT",
+      "network_border_group": "GLOBAL"
+    },
+    {
+      "ip_prefix": "23.228.212.0/24",
       "region": "GLOBAL",
       "service": "CLOUDFRONT",
       "network_border_group": "GLOBAL"
