@@ -1,6 +1,6 @@
 {
-  "syncToken": "1773953884",
-  "createDate": "2026-03-19-20-58-04",
+  "syncToken": "1773961085",
+  "createDate": "2026-03-19-22-58-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -76175,6 +76175,12 @@
       "network_border_group": "cn-north-1"
     },
     {
+      "ipv6_prefix": "2600:1f60:ec00::/40",
+      "region": "sa-west-1",
+      "service": "S3",
+      "network_border_group": "sa-west-1"
+    },
+    {
       "ipv6_prefix": "2a05:d059:a000::/40",
       "region": "eu-south-1",
       "service": "S3",
@@ -76293,12 +76299,6 @@
       "region": "ap-southeast-2",
       "service": "S3",
       "network_border_group": "ap-southeast-2"
-    },
-    {
-      "ipv6_prefix": "2600:1f60:ec80::/48",
-      "region": "sa-west-1",
-      "service": "S3",
-      "network_border_group": "sa-west-1"
     },
     {
       "ipv6_prefix": "2600:1fef:6000::/40",
@@ -76637,12 +76637,6 @@
       "network_border_group": "ap-southeast-1"
     },
     {
-      "ipv6_prefix": "2600:1f60:ecc0::/48",
-      "region": "sa-west-1",
-      "service": "S3",
-      "network_border_group": "sa-west-1"
-    },
-    {
       "ipv6_prefix": "2600:1ff8:2000::/40",
       "region": "us-gov-west-1",
       "service": "S3",
@@ -76959,12 +76953,6 @@
       "region": "eu-west-1",
       "service": "S3",
       "network_border_group": "eu-west-1"
-    },
-    {
-      "ipv6_prefix": "2600:1f60:ec00::/56",
-      "region": "sa-west-1",
-      "service": "S3",
-      "network_border_group": "sa-west-1"
     },
     {
       "ipv6_prefix": "2a05:d050:9000::/40",
@@ -77409,12 +77397,6 @@
       "region": "us-east-1",
       "service": "S3",
       "network_border_group": "us-east-1"
-    },
-    {
-      "ipv6_prefix": "2600:1f60:ec40::/48",
-      "region": "sa-west-1",
-      "service": "S3",
-      "network_border_group": "sa-west-1"
     },
     {
       "ipv6_prefix": "2600:1fa0:a400::/40",
