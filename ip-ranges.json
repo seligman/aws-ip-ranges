@@ -1,6 +1,6 @@
 {
-  "syncToken": "1774303684",
-  "createDate": "2026-03-23-22-08-04",
+  "syncToken": "1774311485",
+  "createDate": "2026-03-24-00-18-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -2655,6 +2655,12 @@
       "network_border_group": "me-south-1"
     },
     {
+      "ip_prefix": "40.143.64.0/21",
+      "region": "eu-south-2",
+      "service": "AMAZON",
+      "network_border_group": "eu-south-2"
+    },
+    {
       "ip_prefix": "52.93.5.0/24",
       "region": "ca-central-1",
       "service": "AMAZON",
@@ -4285,6 +4291,12 @@
       "region": "eu-west-2",
       "service": "AMAZON",
       "network_border_group": "eu-west-2"
+    },
+    {
+      "ip_prefix": "24.110.8.0/23",
+      "region": "us-east-2",
+      "service": "AMAZON",
+      "network_border_group": "us-east-2"
     },
     {
       "ip_prefix": "52.93.20.0/24",
@@ -39781,6 +39793,12 @@
       "region": "us-east-1",
       "service": "EC2",
       "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "24.110.8.0/23",
+      "region": "us-east-2",
+      "service": "EC2",
+      "network_border_group": "us-east-2"
     },
     {
       "ip_prefix": "56.10.0.0/16",
