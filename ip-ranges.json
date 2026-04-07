@@ -1,6 +1,6 @@
 {
-  "syncToken": "1775539024",
-  "createDate": "2026-04-07-05-17-04",
+  "syncToken": "1775549824",
+  "createDate": "2026-04-07-08-17-04",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -2491,6 +2491,12 @@
       "region": "us-gov-west-1",
       "service": "AMAZON",
       "network_border_group": "us-gov-west-1"
+    },
+    {
+      "ip_prefix": "45.33.170.0/24",
+      "region": "us-east-1",
+      "service": "AMAZON",
+      "network_border_group": "us-east-1"
     },
     {
       "ip_prefix": "52.93.45.128/25",
