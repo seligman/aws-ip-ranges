@@ -377,5 +377,10 @@
         "region": "sa-west-1",
         "appeared_ip_ranges": "2025-07-31",
         "commit": "e6728ce777acd596de40b81c47f860a1572bfb7c,8221"
+    },
+    {
+        "region": "us-south-1",
+        "appeared_ip_ranges": "2026-04-13",
+        "commit": "6167f21b2e6430fcdd71e6107045e900ccb3c979,70917"
     }
 ]
