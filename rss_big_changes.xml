@@ -225,6 +225,13 @@ Added 52.46.184.0/22<br>
 ]]></description>
     </item>
     <item>
+      <title>AWS us-south-1 Region Detected</title>
+      <link>https://github.com/seligman/aws-ip-ranges#ussouth120260414195705</link>
+      <description><![CDATA[
+AWS Region us-south-1 detected at 2026-04-14 19:57:05<br>
+]]></description>
+    </item>
+    <item>
       <title>AWS sa-west-1 Region Detected</title>
       <link>https://github.com/seligman/aws-ip-ranges#sawest120250731142320</link>
       <description><![CDATA[
