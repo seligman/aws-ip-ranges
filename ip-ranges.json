@@ -1,6 +1,6 @@
 {
-  "syncToken": "1777222625",
-  "createDate": "2026-04-26-16-57-05",
+  "syncToken": "1777403226",
+  "createDate": "2026-04-28-19-07-06",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -35157,6 +35157,12 @@
       "network_border_group": "eu-west-1"
     },
     {
+      "ip_prefix": "3.80.16.0/23",
+      "region": "us-east-1",
+      "service": "CHIME_VOICECONNECTOR",
+      "network_border_group": "us-east-1"
+    },
+    {
       "ip_prefix": "51.0.252.0/24",
       "region": "eusc-de-east-1",
       "service": "ROUTE53_HEALTHCHECKS",
@@ -65663,6 +65669,12 @@
       "network_border_group": "eu-west-1"
     },
     {
+      "ipv6_prefix": "2600:f0f1:14::/46",
+      "region": "us-east-1",
+      "service": "AMAZON",
+      "network_border_group": "us-east-1"
+    },
+    {
       "ipv6_prefix": "2600:f0f2:701a::/48",
       "region": "ap-south-1",
       "service": "AMAZON",
@@ -84207,6 +84219,12 @@
       "region": "eu-west-1",
       "service": "EC2",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ipv6_prefix": "2600:f0f1:14::/46",
+      "region": "us-east-1",
+      "service": "EC2",
+      "network_border_group": "us-east-1"
     },
     {
       "ipv6_prefix": "2600:f0f2:701a::/48",
