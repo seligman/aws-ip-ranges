@@ -1,6 +1,6 @@
 {
-  "syncToken": "1777433824",
-  "createDate": "2026-04-29-03-37-04",
+  "syncToken": "1777490225",
+  "createDate": "2026-04-29-19-17-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -30699,6 +30699,12 @@
       "network_border_group": "ap-southeast-1"
     },
     {
+      "ip_prefix": "35.98.128.0/21",
+      "region": "eu-central-1",
+      "service": "AMAZON",
+      "network_border_group": "eu-central-1"
+    },
+    {
       "ip_prefix": "40.166.0.0/16",
       "region": "us-west-1",
       "service": "AMAZON",
@@ -46539,12 +46545,6 @@
       "network_border_group": "eu-west-1"
     },
     {
-      "ip_prefix": "1.178.172.0/23",
-      "region": "GLOBAL",
-      "service": "EC2",
-      "network_border_group": "GLOBAL"
-    },
-    {
       "ip_prefix": "35.50.232.0/24",
       "region": "ap-south-1",
       "service": "EC2",
@@ -46987,12 +46987,6 @@
       "region": "ap-southeast-4",
       "service": "EC2",
       "network_border_group": "ap-southeast-4"
-    },
-    {
-      "ip_prefix": "1.179.60.0/23",
-      "region": "GLOBAL",
-      "service": "EC2",
-      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "54.26.166.0/24",
@@ -51657,6 +51651,12 @@
       "network_border_group": "us-east-1"
     },
     {
+      "ip_prefix": "1.178.172.0/23",
+      "region": "GLOBAL",
+      "service": "GLOBALACCELERATOR",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "23.238.128.0/17",
       "region": "GLOBAL",
       "service": "GLOBALACCELERATOR",
@@ -51685,6 +51685,12 @@
       "region": "eu-central-1",
       "service": "GLOBALACCELERATOR",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "1.179.60.0/23",
+      "region": "GLOBAL",
+      "service": "GLOBALACCELERATOR",
+      "network_border_group": "GLOBAL"
     },
     {
       "ip_prefix": "3.2.59.0/24",
