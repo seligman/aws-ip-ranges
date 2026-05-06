@@ -1,6 +1,6 @@
 {
-  "syncToken": "1778044025",
-  "createDate": "2026-05-06-05-07-05",
+  "syncToken": "1778082425",
+  "createDate": "2026-05-06-15-47-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -7155,6 +7155,12 @@
       "network_border_group": "sa-east-1"
     },
     {
+      "ip_prefix": "15.248.162.5/32",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
+    },
+    {
       "ip_prefix": "16.214.8.0/22",
       "region": "us-west-2",
       "service": "AMAZON",
@@ -13191,6 +13197,12 @@
       "network_border_group": "us-east-1"
     },
     {
+      "ip_prefix": "15.248.162.4/32",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
+    },
+    {
       "ip_prefix": "35.50.177.0/24",
       "region": "sa-east-1",
       "service": "AMAZON",
@@ -16837,6 +16849,12 @@
       "region": "ap-southeast-3",
       "service": "AMAZON",
       "network_border_group": "ap-southeast-3"
+    },
+    {
+      "ip_prefix": "15.248.162.2/32",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "16.12.8.0/24",
@@ -23719,6 +23737,12 @@
       "region": "ap-northeast-2",
       "service": "AMAZON",
       "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ip_prefix": "15.248.162.3/32",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "16.12.14.0/24",
@@ -70409,12 +70433,6 @@
       "network_border_group": "ap-south-1"
     },
     {
-      "ipv6_prefix": "2600:f0f1:14::/48",
-      "region": "GLOBAL",
-      "service": "AMAZON",
-      "network_border_group": "GLOBAL"
-    },
-    {
       "ipv6_prefix": "2606:f40:1800::/40",
       "region": "eu-central-1",
       "service": "AMAZON",
@@ -92964,12 +92982,6 @@
     },
     {
       "ipv6_prefix": "2600:f0f0:601::/48",
-      "region": "GLOBAL",
-      "service": "CLOUDFRONT",
-      "network_border_group": "GLOBAL"
-    },
-    {
-      "ipv6_prefix": "2600:f0f1:14::/48",
       "region": "GLOBAL",
       "service": "CLOUDFRONT",
       "network_border_group": "GLOBAL"
