@@ -1,6 +1,6 @@
 {
-  "syncToken": "1778179625",
-  "createDate": "2026-05-07-18-47-05",
+  "syncToken": "1778188026",
+  "createDate": "2026-05-07-21-07-06",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -31401,6 +31401,12 @@
       "network_border_group": "eu-south-2"
     },
     {
+      "ip_prefix": "51.74.192.0/18",
+      "region": "GLOBAL",
+      "service": "AMAZON",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ip_prefix": "52.93.60.0/24",
       "region": "us-east-1",
       "service": "AMAZON",
@@ -39031,6 +39037,12 @@
       "region": "eu-central-1",
       "service": "WORKSPACES_GATEWAYS",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ip_prefix": "16.18.68.0/22",
+      "region": "eu-central-2",
+      "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "eu-central-2"
     },
     {
       "ip_prefix": "35.152.232.0/22",
@@ -50860,6 +50872,12 @@
     },
     {
       "ip_prefix": "3.173.128.0/18",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT",
+      "network_border_group": "GLOBAL"
+    },
+    {
+      "ip_prefix": "51.74.192.0/18",
       "region": "GLOBAL",
       "service": "CLOUDFRONT",
       "network_border_group": "GLOBAL"
@@ -68187,6 +68205,12 @@
       "region": "il-central-1",
       "service": "AMAZON",
       "network_border_group": "il-central-1"
+    },
+    {
+      "ipv6_prefix": "2001:3fc6:20::/43",
+      "region": "GLOBAL",
+      "service": "AMAZON",
+      "network_border_group": "GLOBAL"
     },
     {
       "ipv6_prefix": "2400:7fc0:6000::/40",
@@ -92988,6 +93012,12 @@
     },
     {
       "ipv6_prefix": "2400:7fc0:500::/40",
+      "region": "GLOBAL",
+      "service": "CLOUDFRONT",
+      "network_border_group": "GLOBAL"
+    },
+    {
+      "ipv6_prefix": "2001:3fc6:20::/43",
       "region": "GLOBAL",
       "service": "CLOUDFRONT",
       "network_border_group": "GLOBAL"
