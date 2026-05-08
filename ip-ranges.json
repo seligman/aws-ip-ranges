@@ -1,6 +1,6 @@
 {
-  "syncToken": "1778196426",
-  "createDate": "2026-05-07-23-27-06",
+  "syncToken": "1778209026",
+  "createDate": "2026-05-08-02-57-06",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -38937,6 +38937,12 @@
       "network_border_group": "ap-northeast-2"
     },
     {
+      "ip_prefix": "16.208.44.0/22",
+      "region": "ap-northeast-3",
+      "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "ap-northeast-3"
+    },
+    {
       "ip_prefix": "13.126.243.0/24",
       "region": "ap-south-1",
       "service": "WORKSPACES_GATEWAYS",
@@ -39025,6 +39031,12 @@
       "region": "ca-central-1",
       "service": "WORKSPACES_GATEWAYS",
       "network_border_group": "ca-central-1"
+    },
+    {
+      "ip_prefix": "16.174.56.0/22",
+      "region": "ca-west-1",
+      "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "ca-west-1"
     },
     {
       "ip_prefix": "18.156.52.0/24",
