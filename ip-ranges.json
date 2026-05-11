@@ -1,6 +1,6 @@
 {
-  "syncToken": "1778527624",
-  "createDate": "2026-05-11-19-27-04",
+  "syncToken": "1778535426",
+  "createDate": "2026-05-11-21-37-06",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -61391,6 +61391,12 @@
       "network_border_group": "us-east-1"
     },
     {
+      "ipv6_prefix": "2605:9cc0:1ff0:6000::/56",
+      "region": "GLOBAL",
+      "service": "AMAZON",
+      "network_border_group": "GLOBAL"
+    },
+    {
       "ipv6_prefix": "2a05:d06a:c000::/40",
       "region": "eu-west-2",
       "service": "AMAZON",
@@ -69743,6 +69749,12 @@
       "network_border_group": "us-east-1"
     },
     {
+      "ipv6_prefix": "2001:3fc3:3000::/36",
+      "region": "eusc-de-east-1",
+      "service": "AMAZON",
+      "network_border_group": "eusc-de-east-1"
+    },
+    {
       "ipv6_prefix": "2406:da38:a000::/40",
       "region": "ap-south-1",
       "service": "AMAZON",
@@ -76619,6 +76631,12 @@
       "network_border_group": "ap-northeast-1"
     },
     {
+      "ipv6_prefix": "2406:daf6:4000::/48",
+      "region": "ap-northeast-1",
+      "service": "AMAZON",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
       "ipv6_prefix": "2406:da70:2000:100::/56",
       "region": "ap-northeast-2",
       "service": "AMAZON",
@@ -76644,6 +76662,12 @@
     },
     {
       "ipv6_prefix": "2406:da70:2000::/56",
+      "region": "ap-northeast-2",
+      "service": "AMAZON",
+      "network_border_group": "ap-northeast-2"
+    },
+    {
+      "ipv6_prefix": "2406:daf6:2000::/48",
       "region": "ap-northeast-2",
       "service": "AMAZON",
       "network_border_group": "ap-northeast-2"
@@ -76680,6 +76704,12 @@
     },
     {
       "ipv6_prefix": "2406:da70:a000::/56",
+      "region": "ap-south-1",
+      "service": "AMAZON",
+      "network_border_group": "ap-south-1"
+    },
+    {
+      "ipv6_prefix": "2406:daf6:a000::/48",
       "region": "ap-south-1",
       "service": "AMAZON",
       "network_border_group": "ap-south-1"
@@ -76751,6 +76781,12 @@
       "network_border_group": "ap-southeast-2"
     },
     {
+      "ipv6_prefix": "2406:daf6:c000::/48",
+      "region": "ap-southeast-2",
+      "service": "AMAZON",
+      "network_border_group": "ap-southeast-2"
+    },
+    {
       "ipv6_prefix": "2600:1f70:1000:100::/56",
       "region": "ca-central-1",
       "service": "AMAZON",
@@ -76781,6 +76817,12 @@
       "network_border_group": "ca-central-1"
     },
     {
+      "ipv6_prefix": "2600:1ff6:1000::/48",
+      "region": "ca-central-1",
+      "service": "AMAZON",
+      "network_border_group": "ca-central-1"
+    },
+    {
       "ipv6_prefix": "2a05:d03a:4000:100::/56",
       "region": "eu-central-1",
       "service": "AMAZON",
@@ -76806,6 +76848,12 @@
     },
     {
       "ipv6_prefix": "2a05:d03a:4000::/56",
+      "region": "eu-central-1",
+      "service": "AMAZON",
+      "network_border_group": "eu-central-1"
+    },
+    {
+      "ipv6_prefix": "2a05:d076:4000::/48",
       "region": "eu-central-1",
       "service": "AMAZON",
       "network_border_group": "eu-central-1"
@@ -76950,6 +76998,12 @@
     },
     {
       "ipv6_prefix": "2a05:d03a:2000::/56",
+      "region": "eu-west-3",
+      "service": "AMAZON",
+      "network_border_group": "eu-west-3"
+    },
+    {
+      "ipv6_prefix": "2a05:d076:2000::/48",
       "region": "eu-west-3",
       "service": "AMAZON",
       "network_border_group": "eu-west-3"
@@ -81141,6 +81195,12 @@
       "region": "us-east-1",
       "service": "EC2",
       "network_border_group": "us-east-1"
+    },
+    {
+      "ipv6_prefix": "2605:9cc0:1ff0:6000::/56",
+      "region": "GLOBAL",
+      "service": "EC2",
+      "network_border_group": "GLOBAL"
     },
     {
       "ipv6_prefix": "2a05:d06a:c000::/40",
@@ -87693,6 +87753,12 @@
       "region": "us-east-1",
       "service": "EC2",
       "network_border_group": "us-east-1"
+    },
+    {
+      "ipv6_prefix": "2001:3fc3:3000::/36",
+      "region": "eusc-de-east-1",
+      "service": "EC2",
+      "network_border_group": "eusc-de-east-1"
     },
     {
       "ipv6_prefix": "2406:da38:a000::/40",
