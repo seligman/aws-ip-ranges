@@ -1,6 +1,6 @@
 {
-  "syncToken": "1778623625",
-  "createDate": "2026-05-12-22-07-05",
+  "syncToken": "1778677626",
+  "createDate": "2026-05-13-13-07-06",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -21984,7 +21984,7 @@
       "ip_prefix": "45.57.128.0/18",
       "region": "ap-southeast-1",
       "service": "AMAZON",
-      "network_border_group": "ap-southeast-1"
+      "network_border_group": "ap-southeast-1-han-1"
     },
     {
       "ip_prefix": "52.93.1.0/24",
@@ -35217,6 +35217,12 @@
       "network_border_group": "us-west-2"
     },
     {
+      "ip_prefix": "32.184.190.0/23",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
+    },
+    {
       "ip_prefix": "34.223.24.0/22",
       "region": "us-west-2",
       "service": "AMAZON",
@@ -46932,7 +46938,7 @@
       "ip_prefix": "45.57.128.0/18",
       "region": "ap-southeast-1",
       "service": "EC2",
-      "network_border_group": "ap-southeast-1"
+      "network_border_group": "ap-southeast-1-han-1"
     },
     {
       "ip_prefix": "99.77.55.50/32",
@@ -63668,7 +63674,7 @@
       "ipv6_prefix": "2406:da2a:8000::/36",
       "region": "ap-southeast-1",
       "service": "AMAZON",
-      "network_border_group": "ap-southeast-1"
+      "network_border_group": "ap-southeast-1-han-1"
     },
     {
       "ipv6_prefix": "2406:da33:4800::/40",
@@ -67796,7 +67802,7 @@
       "ipv6_prefix": "2406:da1a:8000::/36",
       "region": "ap-southeast-1",
       "service": "AMAZON",
-      "network_border_group": "ap-southeast-1"
+      "network_border_group": "ap-southeast-1-han-1"
     },
     {
       "ipv6_prefix": "2406:da2f::/36",
@@ -82982,7 +82988,7 @@
       "ipv6_prefix": "2406:da2a:8000::/36",
       "region": "ap-southeast-1",
       "service": "EC2",
-      "network_border_group": "ap-southeast-1"
+      "network_border_group": "ap-southeast-1-han-1"
     },
     {
       "ipv6_prefix": "2406:da33:4800::/40",
@@ -86252,7 +86258,7 @@
       "ipv6_prefix": "2406:da1a:8000::/36",
       "region": "ap-southeast-1",
       "service": "EC2",
-      "network_border_group": "ap-southeast-1"
+      "network_border_group": "ap-southeast-1-han-1"
     },
     {
       "ipv6_prefix": "2406:da2f::/36",
