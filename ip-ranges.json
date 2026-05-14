@@ -1,6 +1,6 @@
 {
-  "syncToken": "1778735226",
-  "createDate": "2026-05-14-05-07-06",
+  "syncToken": "1778766426",
+  "createDate": "2026-05-14-13-47-06",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -52957,12 +52957,6 @@
       "region": "cn-north-1",
       "service": "CLOUD9",
       "network_border_group": "cn-north-1"
-    },
-    {
-      "ip_prefix": "52.83.25.128/27",
-      "region": "cn-northwest-1",
-      "service": "CLOUD9",
-      "network_border_group": "cn-northwest-1"
     },
     {
       "ip_prefix": "52.83.25.160/27",
