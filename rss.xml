@@ -5,6 +5,13 @@
     <link>https://github.com/seligman/aws-ip-ranges</link>
     <description>Changes to AWS's IP Ranges</description>
     <item>
+      <title>AWS IP Ranges update for 2026-05-15 21:17:04</title>
+      <link>https://github.com/seligman/aws-ip-ranges#20260515211704</link>
+      <description><![CDATA[
+No changes to IPs
+]]></description>
+    </item>
+    <item>
       <title>AWS IP Ranges update for 2026-05-15 05:07:06</title>
       <link>https://github.com/seligman/aws-ip-ranges#20260515050706</link>
       <description><![CDATA[
@@ -148,27 +155,10 @@ No changes to IPs
 ]]></description>
     </item>
     <item>
-      <title>AWS IP Ranges update for 2026-05-08 19:37:05</title>
-      <link>https://github.com/seligman/aws-ip-ranges#20260508193705</link>
-      <description><![CDATA[
-Changed by +136192<br><br>
-Added 46.168.0.0/15<br>
-Added 15.190.176.0/20<br>
-Added 15.190.224.0/22<br>
-]]></description>
-    </item>
-    <item>
       <title>AWS us-south-1 Region Detected</title>
       <link>https://github.com/seligman/aws-ip-ranges#ussouth120260415210704</link>
       <description><![CDATA[
 AWS Region us-south-1 detected at 2026-04-15 21:07:04<br>
-]]></description>
-    </item>
-    <item>
-      <title>AWS sa-west-1 Region Detected</title>
-      <link>https://github.com/seligman/aws-ip-ranges#sawest120250731142320</link>
-      <description><![CDATA[
-AWS Region sa-west-1 detected at 2025-07-31 14:23:20<br>
 ]]></description>
     </item>
   </channel>
