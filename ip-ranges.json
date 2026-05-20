@@ -1,6 +1,6 @@
 {
-  "syncToken": "1779312424",
-  "createDate": "2026-05-20-21-27-04",
+  "syncToken": "1779320226",
+  "createDate": "2026-05-20-23-37-06",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -35961,6 +35961,12 @@
       "network_border_group": "us-east-1"
     },
     {
+      "ip_prefix": "3.2.101.0/24",
+      "region": "ap-east-2",
+      "service": "S3",
+      "network_border_group": "ap-east-2"
+    },
+    {
       "ip_prefix": "16.12.15.0/24",
       "region": "eu-west-2",
       "service": "S3",
@@ -37249,6 +37255,12 @@
       "region": "sa-east-1",
       "service": "S3",
       "network_border_group": "sa-east-1"
+    },
+    {
+      "ip_prefix": "3.2.102.0/24",
+      "region": "ap-southeast-6",
+      "service": "S3",
+      "network_border_group": "ap-southeast-6"
     },
     {
       "ip_prefix": "3.5.236.0/22",
@@ -39655,6 +39667,12 @@
       "region": "ap-southeast-7",
       "service": "EC2",
       "network_border_group": "ap-southeast-7"
+    },
+    {
+      "ip_prefix": "77.112.0.0/14",
+      "region": "us-east-2",
+      "service": "EC2",
+      "network_border_group": "us-east-2"
     },
     {
       "ip_prefix": "3.4.0.0/24",
@@ -77795,6 +77813,12 @@
       "network_border_group": "cn-northwest-1"
     },
     {
+      "ipv6_prefix": "2600:f0f0:6126::/48",
+      "region": "ap-southeast-6",
+      "service": "S3",
+      "network_border_group": "ap-southeast-6"
+    },
+    {
       "ipv6_prefix": "2a05:d078:c000::/40",
       "region": "eu-west-2",
       "service": "S3",
@@ -78945,6 +78969,12 @@
       "region": "ap-southeast-2",
       "service": "S3",
       "network_border_group": "ap-southeast-2"
+    },
+    {
+      "ipv6_prefix": "2600:f0f0:6125::/48",
+      "region": "ap-east-2",
+      "service": "S3",
+      "network_border_group": "ap-east-2"
     },
     {
       "ipv6_prefix": "2a05:d078:2000::/40",
