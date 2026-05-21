@@ -1,6 +1,6 @@
 {
-  "syncToken": "1779320226",
-  "createDate": "2026-05-20-23-37-06",
+  "syncToken": "1779388025",
+  "createDate": "2026-05-21-18-27-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -60447,6 +60447,12 @@
       "network_border_group": "eu-north-1"
     },
     {
+      "ip_prefix": "18.96.194.0/25",
+      "region": "eu-south-2",
+      "service": "AURORA_DSQL",
+      "network_border_group": "eu-south-2"
+    },
+    {
       "ip_prefix": "18.97.198.128/25",
       "region": "eu-west-1",
       "service": "AURORA_DSQL",
@@ -93987,6 +93993,12 @@
       "region": "eu-north-1",
       "service": "AURORA_DSQL",
       "network_border_group": "eu-north-1"
+    },
+    {
+      "ipv6_prefix": "2a05:d011:95f:c900::/56",
+      "region": "eu-south-2",
+      "service": "AURORA_DSQL",
+      "network_border_group": "eu-south-2"
     },
     {
       "ipv6_prefix": "2a05:d018:b3d:8200::/56",
