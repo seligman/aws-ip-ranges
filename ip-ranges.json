@@ -1,6 +1,6 @@
 {
-  "syncToken": "1780021026",
-  "createDate": "2026-05-29-02-17-06",
+  "syncToken": "1780065426",
+  "createDate": "2026-05-29-14-37-06",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -49539,6 +49539,12 @@
       "network_border_group": "us-east-1"
     },
     {
+      "ip_prefix": "15.175.0.0/16",
+      "region": "ca-central-1",
+      "service": "EC2",
+      "network_border_group": "ca-central-1"
+    },
+    {
       "ip_prefix": "52.94.250.128/28",
       "region": "ap-east-2",
       "service": "EC2",
@@ -49837,6 +49843,12 @@
       "region": "us-east-2",
       "service": "EC2",
       "network_border_group": "us-east-2"
+    },
+    {
+      "ip_prefix": "15.252.0.0/16",
+      "region": "ap-south-1",
+      "service": "EC2",
+      "network_border_group": "ap-south-1"
     },
     {
       "ip_prefix": "16.214.44.0/22",
