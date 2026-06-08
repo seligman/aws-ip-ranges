@@ -1,6 +1,6 @@
 {
-  "syncToken": "1780923425",
-  "createDate": "2026-06-08-12-57-05",
+  "syncToken": "1780951624",
+  "createDate": "2026-06-08-20-47-04",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -59205,6 +59205,12 @@
       "network_border_group": "eu-central-1"
     },
     {
+      "ip_prefix": "18.199.180.140/30",
+      "region": "eu-central-1",
+      "service": "EBS",
+      "network_border_group": "eu-central-1"
+    },
+    {
       "ip_prefix": "3.64.226.232/29",
       "region": "eu-central-1",
       "service": "EBS",
@@ -59299,6 +59305,12 @@
       "region": "eu-west-1",
       "service": "EBS",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "16.60.228.176/30",
+      "region": "eu-west-2",
+      "service": "EBS",
+      "network_border_group": "eu-west-2"
     },
     {
       "ip_prefix": "18.168.37.136/29",
