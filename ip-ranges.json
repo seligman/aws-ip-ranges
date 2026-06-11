@@ -1,6 +1,6 @@
 {
-  "syncToken": "1781201824",
-  "createDate": "2026-06-11-18-17-04",
+  "syncToken": "1781206025",
+  "createDate": "2026-06-11-19-27-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -67793,6 +67793,12 @@
       "network_border_group": "eu-central-1"
     },
     {
+      "ipv6_prefix": "2600:f0f0:c102::/48",
+      "region": "us-east-1",
+      "service": "AMAZON",
+      "network_border_group": "us-east-1"
+    },
+    {
       "ipv6_prefix": "2600:f0fb:f000::/44",
       "region": "us-gov-west-1",
       "service": "AMAZON",
@@ -82715,6 +82721,12 @@
       "network_border_group": "ap-northeast-2"
     },
     {
+      "ipv6_prefix": "2406:da26:1c::/48",
+      "region": "ap-northeast-3",
+      "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "ap-northeast-3"
+    },
+    {
       "ipv6_prefix": "2406:da2a:14::/48",
       "region": "ap-south-1",
       "service": "WORKSPACES_GATEWAYS",
@@ -82745,10 +82757,22 @@
       "network_border_group": "ca-central-1"
     },
     {
+      "ipv6_prefix": "2600:1f2a:401c::/48",
+      "region": "ca-west-1",
+      "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "ca-west-1"
+    },
+    {
       "ipv6_prefix": "2a05:d024:18::/48",
       "region": "eu-central-1",
       "service": "WORKSPACES_GATEWAYS",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ipv6_prefix": "2a05:d029:4::/48",
+      "region": "eu-central-2",
+      "service": "WORKSPACES_GATEWAYS",
+      "network_border_group": "eu-central-2"
     },
     {
       "ipv6_prefix": "2a05:d02a:4::/48",
@@ -87381,6 +87405,12 @@
       "region": "eu-central-1",
       "service": "EC2",
       "network_border_group": "eu-central-1"
+    },
+    {
+      "ipv6_prefix": "2600:f0f0:c102::/48",
+      "region": "us-east-1",
+      "service": "EC2",
+      "network_border_group": "us-east-1"
     },
     {
       "ipv6_prefix": "2600:f0fb:f000::/44",
