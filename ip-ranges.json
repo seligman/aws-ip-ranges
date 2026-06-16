@@ -1,6 +1,6 @@
 {
-  "syncToken": "1781555225",
-  "createDate": "2026-06-15-20-27-05",
+  "syncToken": "1781575889",
+  "createDate": "2026-06-16-02-11-29",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -4581,6 +4581,12 @@
       "network_border_group": "us-east-2"
     },
     {
+      "ip_prefix": "15.248.162.0/24",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
+    },
+    {
       "ip_prefix": "16.12.96.0/21",
       "region": "us-west-2",
       "service": "AMAZON",
@@ -7285,12 +7291,6 @@
       "region": "sa-east-1",
       "service": "AMAZON",
       "network_border_group": "sa-east-1"
-    },
-    {
-      "ip_prefix": "15.248.162.5/32",
-      "region": "us-west-2",
-      "service": "AMAZON",
-      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "16.214.8.0/22",
@@ -13437,12 +13437,6 @@
       "network_border_group": "us-east-1"
     },
     {
-      "ip_prefix": "15.248.162.4/32",
-      "region": "us-west-2",
-      "service": "AMAZON",
-      "network_border_group": "us-west-2"
-    },
-    {
       "ip_prefix": "35.50.177.0/24",
       "region": "sa-east-1",
       "service": "AMAZON",
@@ -17101,12 +17095,6 @@
       "region": "ap-southeast-3",
       "service": "AMAZON",
       "network_border_group": "ap-southeast-3"
-    },
-    {
-      "ip_prefix": "15.248.162.2/32",
-      "region": "us-west-2",
-      "service": "AMAZON",
-      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "16.12.8.0/24",
@@ -24117,12 +24105,6 @@
       "network_border_group": "ap-northeast-2"
     },
     {
-      "ip_prefix": "15.248.162.3/32",
-      "region": "us-west-2",
-      "service": "AMAZON",
-      "network_border_group": "us-west-2"
-    },
-    {
       "ip_prefix": "16.12.14.0/24",
       "region": "il-central-1",
       "service": "AMAZON",
@@ -25279,12 +25261,6 @@
       "region": "eu-west-1",
       "service": "AMAZON",
       "network_border_group": "eu-west-1"
-    },
-    {
-      "ip_prefix": "15.248.162.0/32",
-      "region": "us-west-2",
-      "service": "AMAZON",
-      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "16.71.64.0/18",
@@ -30949,12 +30925,6 @@
       "region": "us-east-1",
       "service": "AMAZON",
       "network_border_group": "us-east-1"
-    },
-    {
-      "ip_prefix": "15.248.162.1/32",
-      "region": "us-west-2",
-      "service": "AMAZON",
-      "network_border_group": "us-west-2"
     },
     {
       "ip_prefix": "15.252.0.0/16",
