@@ -1,6 +1,6 @@
 {
-  "syncToken": "1782346025",
-  "createDate": "2026-06-25-00-07-05",
+  "syncToken": "1782366425",
+  "createDate": "2026-06-25-05-47-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -445,6 +445,12 @@
       "region": "eu-west-1",
       "service": "AMAZON",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "63.249.164.0/24",
+      "region": "ap-south-2",
+      "service": "AMAZON",
+      "network_border_group": "ap-south-2"
     },
     {
       "ip_prefix": "96.0.80.0/22",
@@ -1837,6 +1843,12 @@
       "region": "eu-west-1",
       "service": "AMAZON",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "63.249.161.0/24",
+      "region": "ap-east-1",
+      "service": "AMAZON",
+      "network_border_group": "ap-east-1"
     },
     {
       "ip_prefix": "69.107.9.184/29",
@@ -4915,6 +4927,12 @@
       "region": "eu-west-1",
       "service": "AMAZON",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "63.249.206.0/24",
+      "region": "ca-west-1",
+      "service": "AMAZON",
+      "network_border_group": "ca-west-1"
     },
     {
       "ip_prefix": "64.187.128.0/20",
@@ -40209,6 +40227,12 @@
       "network_border_group": "eu-west-1"
     },
     {
+      "ip_prefix": "63.249.164.0/24",
+      "region": "ap-south-2",
+      "service": "EC2",
+      "network_border_group": "ap-south-2"
+    },
+    {
       "ip_prefix": "96.0.80.0/22",
       "region": "ap-southeast-2",
       "service": "EC2",
@@ -40717,6 +40741,12 @@
       "region": "eu-west-1",
       "service": "EC2",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "63.249.161.0/24",
+      "region": "ap-east-1",
+      "service": "EC2",
+      "network_border_group": "ap-east-1"
     },
     {
       "ip_prefix": "15.220.207.0/24",
@@ -41833,6 +41863,12 @@
       "region": "eu-west-1",
       "service": "EC2",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "63.249.206.0/24",
+      "region": "ca-west-1",
+      "service": "EC2",
+      "network_border_group": "ca-west-1"
     },
     {
       "ip_prefix": "64.187.128.0/20",
