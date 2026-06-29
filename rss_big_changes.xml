@@ -213,6 +213,13 @@ Added 56.61.0.0/16<br>
 ]]></description>
     </item>
     <item>
+      <title>AWS EFS Service Detected</title>
+      <link>https://github.com/seligman/aws-ip-ranges#EFS20260629122705</link>
+      <description><![CDATA[
+AWS Service EFS detected at 2026-06-29 12:27:05<br>
+]]></description>
+    </item>
+    <item>
       <title>AWS us-south-1 Region Detected</title>
       <link>https://github.com/seligman/aws-ip-ranges#ussouth120260415210704</link>
       <description><![CDATA[
