@@ -1,6 +1,6 @@
 {
-  "syncToken": "1782731825",
-  "createDate": "2026-06-29-11-17-05",
+  "syncToken": "1782736025",
+  "createDate": "2026-06-29-12-27-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -62889,6 +62889,12 @@
       "network_border_group": "us-west-2"
     },
     {
+      "ip_prefix": "100.59.224.0/25",
+      "region": "us-east-1",
+      "service": "EFS",
+      "network_border_group": "us-east-1"
+    },
+    {
       "ip_prefix": "52.94.24.0/23",
       "region": "eu-west-1",
       "service": "DYNAMODB",
@@ -98271,6 +98277,12 @@
       "region": "us-west-2",
       "service": "AURORA_DSQL",
       "network_border_group": "us-west-2"
+    },
+    {
+      "ipv6_prefix": "2600:1f18:1be8:8f00::/56",
+      "region": "us-east-1",
+      "service": "EFS",
+      "network_border_group": "us-east-1"
     }
   ]
 }
