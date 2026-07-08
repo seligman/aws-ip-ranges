@@ -1,6 +1,6 @@
 {
-  "syncToken": "1783518425",
-  "createDate": "2026-07-08-13-47-05",
+  "syncToken": "1783526825",
+  "createDate": "2026-07-08-16-07-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -63141,6 +63141,12 @@
       "network_border_group": "eu-south-1"
     },
     {
+      "ip_prefix": "16.164.136.0/25",
+      "region": "il-central-1",
+      "service": "EFS",
+      "network_border_group": "il-central-1"
+    },
+    {
       "ip_prefix": "100.59.224.0/25",
       "region": "us-east-1",
       "service": "EFS",
@@ -98565,6 +98571,12 @@
       "region": "eu-south-1",
       "service": "EFS",
       "network_border_group": "eu-south-1"
+    },
+    {
+      "ipv6_prefix": "2a05:d025:4c1:4700::/56",
+      "region": "il-central-1",
+      "service": "EFS",
+      "network_border_group": "il-central-1"
     },
     {
       "ipv6_prefix": "2600:1f18:1be8:8f00::/56",
