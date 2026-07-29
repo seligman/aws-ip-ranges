@@ -246,12 +246,5 @@ Added 35.97.144.0/20<br>
 AWS Service EFS detected at 2026-06-29 12:27:05<br>
 ]]></description>
     </item>
-    <item>
-      <title>AWS us-south-1 Region Detected</title>
-      <link>https://github.com/seligman/aws-ip-ranges#ussouth120260415210704</link>
-      <description><![CDATA[
-AWS Region us-south-1 detected at 2026-04-15 21:07:04<br>
-]]></description>
-    </item>
   </channel>
 </rss>
