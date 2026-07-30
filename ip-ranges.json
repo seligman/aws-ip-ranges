@@ -1,6 +1,6 @@
 {
-  "syncToken": "1785429425",
-  "createDate": "2026-07-30-16-37-05",
+  "syncToken": "1785433625",
+  "createDate": "2026-07-30-17-47-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -60825,6 +60825,12 @@
       "network_border_group": "eu-south-1"
     },
     {
+      "ip_prefix": "16.22.152.0/22",
+      "region": "eu-south-1",
+      "service": "EFS",
+      "network_border_group": "eu-south-1"
+    },
+    {
       "ip_prefix": "16.22.41.144/28",
       "region": "eu-south-1",
       "service": "EFS",
@@ -60844,6 +60850,12 @@
     },
     {
       "ip_prefix": "108.133.102.0/25",
+      "region": "eu-west-1",
+      "service": "EFS",
+      "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "108.133.136.0/22",
       "region": "eu-west-1",
       "service": "EFS",
       "network_border_group": "eu-west-1"
@@ -98219,6 +98231,12 @@
       "network_border_group": "eu-central-2"
     },
     {
+      "ipv6_prefix": "2a05:d01a:5d:8900::/56",
+      "region": "eu-south-1",
+      "service": "EFS",
+      "network_border_group": "eu-south-1"
+    },
+    {
       "ipv6_prefix": "2a05:d01a:eae:1b00::/56",
       "region": "eu-south-1",
       "service": "EFS",
@@ -98229,6 +98247,12 @@
       "region": "eu-south-2",
       "service": "EFS",
       "network_border_group": "eu-south-2"
+    },
+    {
+      "ipv6_prefix": "2a05:d018:1944:bd00::/56",
+      "region": "eu-west-1",
+      "service": "EFS",
+      "network_border_group": "eu-west-1"
     },
     {
       "ipv6_prefix": "2a05:d018:548:fb00::/56",
