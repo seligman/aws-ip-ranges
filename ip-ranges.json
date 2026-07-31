@@ -1,6 +1,6 @@
 {
-  "syncToken": "1785494825",
-  "createDate": "2026-07-31-10-47-05",
+  "syncToken": "1785499024",
+  "createDate": "2026-07-31-11-57-04",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -22699,12 +22699,6 @@
       "region": "us-west-2",
       "service": "AMAZON",
       "network_border_group": "us-west-2"
-    },
-    {
-      "ip_prefix": "1.178.86.0/24",
-      "region": "ap-southeast-3",
-      "service": "AMAZON",
-      "network_border_group": "ap-southeast-3"
     },
     {
       "ip_prefix": "1.178.172.0/23",
@@ -48375,12 +48369,6 @@
       "network_border_group": "ap-southeast-1"
     },
     {
-      "ip_prefix": "1.178.86.0/24",
-      "region": "ap-southeast-3",
-      "service": "EC2",
-      "network_border_group": "ap-southeast-3"
-    },
-    {
       "ip_prefix": "15.129.80.0/22",
       "region": "eu-west-1",
       "service": "EC2",
@@ -60873,6 +60861,12 @@
       "network_border_group": "eu-west-1"
     },
     {
+      "ip_prefix": "108.133.140.0/22",
+      "region": "eu-west-1",
+      "service": "EFS",
+      "network_border_group": "eu-west-1"
+    },
+    {
       "ip_prefix": "16.164.136.0/25",
       "region": "il-central-1",
       "service": "EFS",
@@ -60886,6 +60880,12 @@
     },
     {
       "ip_prefix": "100.59.224.0/25",
+      "region": "us-east-1",
+      "service": "EFS",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "100.62.24.0/22",
       "region": "us-east-1",
       "service": "EFS",
       "network_border_group": "us-east-1"
@@ -98261,6 +98261,12 @@
       "network_border_group": "eu-south-2"
     },
     {
+      "ipv6_prefix": "2a05:d018:1505:aa00::/56",
+      "region": "eu-west-1",
+      "service": "EFS",
+      "network_border_group": "eu-west-1"
+    },
+    {
       "ipv6_prefix": "2a05:d018:1944:bd00::/56",
       "region": "eu-west-1",
       "service": "EFS",
@@ -98286,6 +98292,12 @@
     },
     {
       "ipv6_prefix": "2600:1f18:1be8:8f00::/56",
+      "region": "us-east-1",
+      "service": "EFS",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f18:759e:7a00::/56",
       "region": "us-east-1",
       "service": "EFS",
       "network_border_group": "us-east-1"
