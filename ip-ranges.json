@@ -1,6 +1,6 @@
 {
-  "syncToken": "1786449425",
-  "createDate": "2026-08-11-11-57-05",
+  "syncToken": "1786462025",
+  "createDate": "2026-08-11-15-27-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -50287,6 +50287,12 @@
       "region": "sa-east-1",
       "service": "EC2",
       "network_border_group": "sa-east-1"
+    },
+    {
+      "ip_prefix": "40.180.0.0/15",
+      "region": "eu-west-1",
+      "service": "EC2",
+      "network_border_group": "eu-west-1"
     },
     {
       "ip_prefix": "31.220.247.0/24",
