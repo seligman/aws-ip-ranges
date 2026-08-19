@@ -1,6 +1,6 @@
 {
-  "syncToken": "1787170625",
-  "createDate": "2026-08-19-20-17-05",
+  "syncToken": "1787175425",
+  "createDate": "2026-08-19-21-37-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -60895,6 +60895,18 @@
       "region": "sa-east-1",
       "service": "EBS",
       "network_border_group": "sa-east-1"
+    },
+    {
+      "ip_prefix": "100.29.192.216/30",
+      "region": "us-east-1",
+      "service": "EBS",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "100.29.192.220/30",
+      "region": "us-east-1",
+      "service": "EBS",
+      "network_border_group": "us-east-1"
     },
     {
       "ip_prefix": "32.192.104.4/30",
