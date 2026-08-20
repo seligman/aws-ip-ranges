@@ -1,6 +1,6 @@
 {
-  "syncToken": "1787240224",
-  "createDate": "2026-08-20-15-37-04",
+  "syncToken": "1787245025",
+  "createDate": "2026-08-20-16-57-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -61023,6 +61023,12 @@
       "network_border_group": "cn-north-1"
     },
     {
+      "ip_prefix": "43.196.172.0/22",
+      "region": "cn-north-1",
+      "service": "EFS",
+      "network_border_group": "cn-north-1"
+    },
+    {
       "ip_prefix": "43.192.222.0/25",
       "region": "cn-northwest-1",
       "service": "EFS",
@@ -100035,6 +100041,12 @@
       "region": "GLOBAL",
       "service": "IVS_LOW_LATENCY",
       "network_border_group": "GLOBAL"
+    },
+    {
+      "ipv6_prefix": "2400:7fc0:833b:f400::/56",
+      "region": "cn-north-1",
+      "service": "EFS",
+      "network_border_group": "cn-north-1"
     },
     {
       "ipv6_prefix": "2400:7fc0:86dd:2300::/56",
