@@ -1,6 +1,6 @@
 {
-  "syncToken": "1787336225",
-  "createDate": "2026-08-21-18-17-05",
+  "syncToken": "1787338625",
+  "createDate": "2026-08-21-18-57-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -61063,6 +61063,12 @@
       "region": "cn-northwest-1",
       "service": "EFS",
       "network_border_group": "cn-northwest-1"
+    },
+    {
+      "ip_prefix": "51.72.26.128/25",
+      "region": "eusc-de-east-1",
+      "service": "EFS",
+      "network_border_group": "eusc-de-east-1"
     },
     {
       "ip_prefix": "16.65.98.128/25",
