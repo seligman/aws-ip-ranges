@@ -1,6 +1,6 @@
 {
-  "syncToken": "1787745425",
-  "createDate": "2026-08-26-11-57-05",
+  "syncToken": "1787750225",
+  "createDate": "2026-08-26-13-17-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -61090,6 +61090,12 @@
     },
     {
       "ip_prefix": "51.72.26.128/25",
+      "region": "eusc-de-east-1",
+      "service": "EFS",
+      "network_border_group": "eusc-de-east-1"
+    },
+    {
+      "ip_prefix": "51.72.56.0/22",
       "region": "eusc-de-east-1",
       "service": "EFS",
       "network_border_group": "eusc-de-east-1"
