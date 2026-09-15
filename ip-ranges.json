@@ -1,6 +1,6 @@
 {
-  "syncToken": "1789464425",
-  "createDate": "2026-09-15-09-27-05",
+  "syncToken": "1789488425",
+  "createDate": "2026-09-15-16-07-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -22261,6 +22261,12 @@
       "region": "us-west-2",
       "service": "AMAZON",
       "network_border_group": "us-west-2"
+    },
+    {
+      "ip_prefix": "1.178.86.0/24",
+      "region": "ap-southeast-3",
+      "service": "AMAZON",
+      "network_border_group": "ap-southeast-3"
     },
     {
       "ip_prefix": "1.178.172.0/23",
@@ -47797,6 +47803,12 @@
       "region": "eu-west-1",
       "service": "EC2",
       "network_border_group": "eu-west-1"
+    },
+    {
+      "ip_prefix": "1.178.86.0/24",
+      "region": "ap-southeast-3",
+      "service": "EC2",
+      "network_border_group": "ap-southeast-3"
     },
     {
       "ip_prefix": "3.2.106.0/24",
@@ -103779,6 +103791,36 @@
       "region": "GLOBAL",
       "service": "CLOUDFRONT_ORIGIN_FACING",
       "network_border_group": "GLOBAL"
+    },
+    {
+      "ipv6_prefix": "2406:da11:438:2300::/56",
+      "region": "af-south-1",
+      "service": "CLOUDFRONT_ORIGIN_FACING",
+      "network_border_group": "af-south-1"
+    },
+    {
+      "ipv6_prefix": "2406:da1e:705:1600::/56",
+      "region": "ap-east-1",
+      "service": "CLOUDFRONT_ORIGIN_FACING",
+      "network_border_group": "ap-east-1"
+    },
+    {
+      "ipv6_prefix": "2406:da1c:8d8c:4600::/56",
+      "region": "ap-east-2",
+      "service": "CLOUDFRONT_ORIGIN_FACING",
+      "network_border_group": "ap-east-2"
+    },
+    {
+      "ipv6_prefix": "2406:da1b:e7c:ad00::/56",
+      "region": "ap-south-2",
+      "service": "CLOUDFRONT_ORIGIN_FACING",
+      "network_border_group": "ap-south-2"
+    },
+    {
+      "ipv6_prefix": "2406:da19:e19:4a00::/56",
+      "region": "ap-southeast-3",
+      "service": "CLOUDFRONT_ORIGIN_FACING",
+      "network_border_group": "ap-southeast-3"
     },
     {
       "ipv6_prefix": "2600:1f17:4356:f100::/56",
