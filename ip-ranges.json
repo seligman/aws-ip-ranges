@@ -1,6 +1,6 @@
 {
-  "syncToken": "1790789826",
-  "createDate": "2026-09-30-17-37-06",
+  "syncToken": "1790794624",
+  "createDate": "2026-09-30-18-57-04",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -60477,6 +60477,12 @@
       "network_border_group": "eu-central-1"
     },
     {
+      "ip_prefix": "63.189.140.0/22",
+      "region": "eu-central-1",
+      "service": "EFS",
+      "network_border_group": "eu-central-1"
+    },
+    {
       "ip_prefix": "16.18.164.0/22",
       "region": "eu-central-2",
       "service": "EFS",
@@ -74901,6 +74907,12 @@
       "region": "GLOBAL",
       "service": "AMAZON",
       "network_border_group": "GLOBAL"
+    },
+    {
+      "ipv6_prefix": "2620:107:4000:7e00::/56",
+      "region": "us-west-2",
+      "service": "AMAZON",
+      "network_border_group": "us-west-2"
     },
     {
       "ipv6_prefix": "2a05:d030:800::/40",
@@ -103980,6 +103992,12 @@
     },
     {
       "ipv6_prefix": "2a05:d014:102e:7e00::/56",
+      "region": "eu-central-1",
+      "service": "EFS",
+      "network_border_group": "eu-central-1"
+    },
+    {
+      "ipv6_prefix": "2a05:d014:11e2:dc00::/56",
       "region": "eu-central-1",
       "service": "EFS",
       "network_border_group": "eu-central-1"
