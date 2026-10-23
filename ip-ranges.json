@@ -1,6 +1,6 @@
 {
-  "syncToken": "1792772225",
-  "createDate": "2026-10-23-16-17-05",
+  "syncToken": "1792779425",
+  "createDate": "2026-10-23-18-17-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -61546,6 +61546,12 @@
     },
     {
       "ip_prefix": "100.62.68.0/22",
+      "region": "us-east-1",
+      "service": "EFS",
+      "network_border_group": "us-east-1"
+    },
+    {
+      "ip_prefix": "184.198.80.0/25",
       "region": "us-east-1",
       "service": "EFS",
       "network_border_group": "us-east-1"
