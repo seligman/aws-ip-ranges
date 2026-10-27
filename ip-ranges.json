@@ -1,6 +1,6 @@
 {
-  "syncToken": "1793114825",
-  "createDate": "2026-10-27-15-27-05",
+  "syncToken": "1793122025",
+  "createDate": "2026-10-27-17-27-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -22495,12 +22495,6 @@
       "region": "us-west-2",
       "service": "AMAZON",
       "network_border_group": "us-west-2"
-    },
-    {
-      "ip_prefix": "1.178.86.0/24",
-      "region": "ap-southeast-3",
-      "service": "AMAZON",
-      "network_border_group": "ap-southeast-3"
     },
     {
       "ip_prefix": "1.178.172.0/23",
@@ -48639,12 +48633,6 @@
       "network_border_group": "eu-west-1"
     },
     {
-      "ip_prefix": "1.178.86.0/24",
-      "region": "ap-southeast-3",
-      "service": "EC2",
-      "network_border_group": "ap-southeast-3"
-    },
-    {
       "ip_prefix": "3.2.106.0/24",
       "region": "us-west-2",
       "service": "EC2",
@@ -61180,6 +61168,12 @@
     },
     {
       "ip_prefix": "13.196.156.0/22",
+      "region": "ap-northeast-1",
+      "service": "EFS",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ip_prefix": "13.197.100.0/22",
       "region": "ap-northeast-1",
       "service": "EFS",
       "network_border_group": "ap-northeast-1"
@@ -105348,6 +105342,12 @@
     },
     {
       "ipv6_prefix": "2406:da14:1964:d500::/56",
+      "region": "ap-northeast-1",
+      "service": "EFS",
+      "network_border_group": "ap-northeast-1"
+    },
+    {
+      "ipv6_prefix": "2406:da14:1e82:a000::/56",
       "region": "ap-northeast-1",
       "service": "EFS",
       "network_border_group": "ap-northeast-1"
