@@ -1,6 +1,6 @@
 {
-  "syncToken": "1794807425",
-  "createDate": "2026-11-16-05-37-05",
+  "syncToken": "1794838625",
+  "createDate": "2026-11-16-14-17-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -53308,6 +53308,12 @@
     },
     {
       "ip_prefix": "51.72.40.144/28",
+      "region": "eusc-de-east-1",
+      "service": "CLOUDFRONT",
+      "network_border_group": "eusc-de-east-1"
+    },
+    {
+      "ip_prefix": "51.72.96.0/23",
       "region": "eusc-de-east-1",
       "service": "CLOUDFRONT",
       "network_border_group": "eusc-de-east-1"
