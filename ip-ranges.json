@@ -1,6 +1,6 @@
 {
-  "syncToken": "1795012025",
-  "createDate": "2026-11-18-14-27-05",
+  "syncToken": "1795016825",
+  "createDate": "2026-11-18-15-47-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -22605,6 +22605,12 @@
       "network_border_group": "us-west-2"
     },
     {
+      "ip_prefix": "1.178.86.0/24",
+      "region": "ap-southeast-3",
+      "service": "AMAZON",
+      "network_border_group": "ap-southeast-3"
+    },
+    {
       "ip_prefix": "1.178.172.0/23",
       "region": "GLOBAL",
       "service": "AMAZON",
@@ -32242,9 +32248,9 @@
     },
     {
       "ip_prefix": "51.74.192.0/18",
-      "region": "GLOBAL",
+      "region": "eusc-de-east-1",
       "service": "AMAZON",
-      "network_border_group": "GLOBAL"
+      "network_border_group": "eusc-de-east-1"
     },
     {
       "ip_prefix": "52.93.60.0/24",
@@ -49005,6 +49011,12 @@
       "network_border_group": "eu-west-1"
     },
     {
+      "ip_prefix": "1.178.86.0/24",
+      "region": "ap-southeast-3",
+      "service": "EC2",
+      "network_border_group": "ap-southeast-3"
+    },
+    {
       "ip_prefix": "3.2.106.0/24",
       "region": "us-west-2",
       "service": "EC2",
@@ -53290,9 +53302,9 @@
     },
     {
       "ip_prefix": "51.74.192.0/18",
-      "region": "GLOBAL",
+      "region": "eusc-de-east-1",
       "service": "CLOUDFRONT",
-      "network_border_group": "GLOBAL"
+      "network_border_group": "eusc-de-east-1"
     },
     {
       "ip_prefix": "64.252.64.0/18",
@@ -73242,9 +73254,9 @@
     },
     {
       "ipv6_prefix": "2001:3fc6:20::/43",
-      "region": "GLOBAL",
+      "region": "eusc-de-east-1",
       "service": "AMAZON",
-      "network_border_group": "GLOBAL"
+      "network_border_group": "eusc-de-east-1"
     },
     {
       "ipv6_prefix": "2400:7fc0:6000::/40",
@@ -105282,9 +105294,9 @@
     },
     {
       "ipv6_prefix": "2001:3fc6:20::/43",
-      "region": "GLOBAL",
+      "region": "eusc-de-east-1",
       "service": "CLOUDFRONT",
-      "network_border_group": "GLOBAL"
+      "network_border_group": "eusc-de-east-1"
     },
     {
       "ipv6_prefix": "2600:f0f0:9::/48",
@@ -105786,12 +105798,6 @@
     },
     {
       "ipv6_prefix": "2600:9000:5200::/40",
-      "region": "GLOBAL",
-      "service": "CLOUDFRONT_ORIGIN_FACING",
-      "network_border_group": "GLOBAL"
-    },
-    {
-      "ipv6_prefix": "2001:3fc6:3c::/47",
       "region": "GLOBAL",
       "service": "CLOUDFRONT_ORIGIN_FACING",
       "network_border_group": "GLOBAL"
