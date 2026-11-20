@@ -1,6 +1,6 @@
 {
-  "syncToken": "1795177025",
-  "createDate": "2026-11-20-12-17-05",
+  "syncToken": "1795191425",
+  "createDate": "2026-11-20-16-17-05",
   "prefixes": [
     {
       "ip_prefix": "3.4.12.4/32",
@@ -61977,6 +61977,18 @@
       "network_border_group": "sa-east-1"
     },
     {
+      "ip_prefix": "83.160.241.0/25",
+      "region": "sa-west-1",
+      "service": "EFS",
+      "network_border_group": "sa-west-1"
+    },
+    {
+      "ip_prefix": "83.160.244.0/22",
+      "region": "sa-west-1",
+      "service": "EFS",
+      "network_border_group": "sa-west-1"
+    },
+    {
       "ip_prefix": "100.59.224.0/25",
       "region": "us-east-1",
       "service": "EFS",
@@ -106467,6 +106479,18 @@
       "region": "sa-east-1",
       "service": "EFS",
       "network_border_group": "sa-east-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f1e:c38f:1500::/56",
+      "region": "sa-west-1",
+      "service": "EFS",
+      "network_border_group": "sa-west-1"
+    },
+    {
+      "ipv6_prefix": "2600:1f1e:cbe6:6700::/56",
+      "region": "sa-west-1",
+      "service": "EFS",
+      "network_border_group": "sa-west-1"
     },
     {
       "ipv6_prefix": "2600:1f10:4a47:1300::/56",
